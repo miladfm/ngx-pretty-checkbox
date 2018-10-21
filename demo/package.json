@@ -1,5 +1,5 @@
 {
-  "name": "pretty-checkbox",
+  "name": "pretty-checkbox-demo",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -20,7 +20,10 @@
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
+    "@ng-bootstrap/ng-bootstrap": "^3.3.1",
     "core-js": "^2.5.4",
+    "ngx-pretty-checkbox": "0.0.9",
+    "pretty-checkbox": "^3.0.3",
     "rxjs": "^6.0.0",
     "zone.js": "~0.8.26"
   },

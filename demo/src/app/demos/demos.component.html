@@ -1,0 +1,58 @@
+
+<ngx-pretty-checkbox
+  shape="round"
+  color="primary"
+  (change)="onChange($event)"
+  [value]="'MAMAd'">
+
+  <i pIcon class="material-icons">favorite</i>
+  Label <b>BOLD</b>
+</ngx-pretty-checkbox>
+
+<p-checkbox (change)="onChange($event)">
+  <p-toggle type="on">
+    Toggle On
+  </p-toggle>
+  <p-toggle type="off">
+    Toggle Off
+  </p-toggle>
+</p-checkbox>
+
+<p-radio-group (change)="onChange($event)">
+  <p-radio>Radio1</p-radio>
+  <p-radio>Radio2</p-radio>
+  <p-radio>Radio3</p-radio>
+</p-radio-group>
+
+<!-- com: ngx-pretty-radio-group, p-radio-group -->
+<!-- com: ngx-pretty-radio, p-radio -->
+
+<!-- com: <p-toggle type="on"></p-toggle> -->
+<!-- com: <p-toggle type="off"></p-toggle> -->
+
+<!-- com: ngx-p-indeterminate, p-indeterminate -->
+<!-- com: ngx-p-hover, p-hover -->
+
+
+
+<!-- Attr: will-change -->
+<!-- Attr: [pIcon], [p-icon] -->
+<!-- Attr: [pImage], [p-image] -->
+<!-- Attr: [pSvg], [p-svg] -->
+
+<!-- Output(): change: PrettyCheckBoxChange -->
+
+<!-- Input() stroke: PrettyCheckboxStroke; -->
+<!-- Input() shape: PrettyCheckboxShape; -->
+<!-- Input() animation: PrettyCheckboxAnimation; -->
+<!-- Input() color: PrettyCheckboxColor; -->
+<!-- Input() outline: boolean -->
+<!-- Input() isSwitch: boolean; -->
+<!-- Input() bigger: boolean; -->
+<!-- Input() enableFocus: boolean; -->
+<!-- Input() plain: boolean; -->
+
+<!-- Input() checked: boolean; -->
+<!-- Input() disabled: boolean; -->
+<!-- Input() lock: boolean; -->
+<!-- Input() value: string; -->

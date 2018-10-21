@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "pretty-checkbox": {
+    "pretty-checkbox-demo": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/pretty-checkbox",
+            "outputPath": "dist/pretty-checkbox-demo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,7 +23,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/pretty-checkbox/dist/pretty-checkbox.css"
             ],
             "scripts": []
           },
@@ -50,18 +51,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "pretty-checkbox:build"
+            "browserTarget": "pretty-checkbox-demo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "pretty-checkbox:build:production"
+              "browserTarget": "pretty-checkbox-demo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "pretty-checkbox:build"
+            "browserTarget": "pretty-checkbox-demo:build"
           }
         },
         "test": {
@@ -95,7 +96,7 @@
         }
       }
     },
-    "pretty-checkbox-e2e": {
+    "pretty-checkbox-demo-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +104,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "pretty-checkbox:serve"
+            "devServerTarget": "pretty-checkbox-demo:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "pretty-checkbox:serve:production"
+              "devServerTarget": "pretty-checkbox-demo:serve:production"
             }
           }
         },
@@ -123,5 +124,5 @@
       }
     }
   },
-  "defaultProject": "pretty-checkbox"
+  "defaultProject": "pretty-checkbox-demo"
 }

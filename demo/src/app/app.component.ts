@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { PrettyCheckBoxChange } from 'ngx-pretty-checkbox';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pretty-checkbox';
+  constructor(private route: Router) {}
+
+  goToDemo() {
+    this.route.navigate(['demo']);
+  }
+
+  goToSubDemo(page: string) {
+    this.route.navigate(['demo', page]);
+  }
+
 }
