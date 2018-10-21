@@ -45,10 +45,9 @@
 }
 
 .side-nav__header {
-  margin: 10px 10px 10px 10px;
-  padding: 10px;
+  padding: 15px 0px 10px 15px;
 
-  font-weight: 500;
+  font-weight: 600;
   font-size: 0.95rem;
 }
 .side-nav__header:not(:first-child) {
@@ -56,8 +55,7 @@
 }
 
 .side-nav__item {
-  padding-left: 30px;
-  height: 30px;
+  padding: 12px 12px 12px 30px;
   display: flex;
   align-items: center;
   transition: background-color 0.3s;
@@ -66,4 +64,8 @@
 
 .side-nav__item:hover {
   background-color: #e0e0e0;
+}
+
+.container {
+  flex: 1;
 }

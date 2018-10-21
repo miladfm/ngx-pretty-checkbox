@@ -1,0 +1,24 @@
+:host {
+  margin: 25px;
+}
+.demo-card-wide.mdl-card {
+  width: 250px;
+  min-height: fit-content;
+  text-transform: none;
+  text-align: left;
+  padding: 16px;
+}
+
+.mdl-card__supporting-text {
+  padding: 0px;
+}
+
+.mdl-card__title {
+  padding: 0px;
+}
+
+.mdl-card__title-text {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}

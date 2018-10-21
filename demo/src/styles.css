@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/tomorrow.min.css"); */
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/color-brewer.min.css"); */
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css"); */
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/vs.min.css"); */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/atom-one-light.min.css");
 
 * {
   box-sizing: border-box;

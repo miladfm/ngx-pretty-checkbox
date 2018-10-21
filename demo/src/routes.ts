@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
-import { DemosComponent } from './app/demos/demos.component';
+import { DemosComponent } from './app/components/demos/demos.component';
+import { DemoBasicCheckboxComponent } from './app/components/demo-basic-checkbox/demo-basic-checkbox.component';
 
 export const routes: Routes = [
 
@@ -10,8 +11,8 @@ export const routes: Routes = [
     component: DemosComponent
 
   }, {
-    path: 'demo/demo1',
-    component: DemosComponent
+    path: 'demo/basic-checkbox',
+    component: DemoBasicCheckboxComponent
 
   }, {
     path: '**',

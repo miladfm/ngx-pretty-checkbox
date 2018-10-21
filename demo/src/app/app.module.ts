@@ -4,16 +4,23 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxPrettyCheckboxModule } from 'ngx-pretty-checkbox';
+import { HighlightJsModule } from 'ngx-highlight-js';
+
 import { routes } from 'src/routes';
-import { DemosComponent } from './demos/demos.component';
+import { DemosComponent } from './components/demos/demos.component';
+import { CardComponent } from './components/card/card.component';
+import { DemoBasicCheckboxComponent } from './components/demo-basic-checkbox/demo-basic-checkbox.component';
+import { CodeComponent } from './components/code/code.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DemosComponent
+    DemosComponent,
+    CardComponent,
+    DemoBasicCheckboxComponent,
+    CodeComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +28,7 @@ import { DemosComponent } from './demos/demos.component';
       useHash: true,
     }),
     NgxPrettyCheckboxModule,
-    NgbModule
+    HighlightJsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
