@@ -12,12 +12,14 @@
     <div class="side-nav__header">Install</div>
     <div class="side-nav__item">Sub-install</div>
     
-    <div class="side-nav__header" (click)="goToDemo()">Demos</div>
+    <div class="side-nav__header side-nav__header--item" (click)="goToDemo()">Demos</div>
     <div class="side-nav__item" (click)="goToDemo(DemoRouteName.BasicCheckbox)">Basic Checkbox</div>
     <div class="side-nav__item" (click)="goToDemo()">Demo2</div>
     
-    <div class="side-nav__header">Custom</div>
-    <div class="side-nav__item">Custom1</div>
+    <div class="side-nav__header">API</div>
+    <div class="side-nav__item" (click)="goToApi(ApiRouteName.Checkbox)">Checkbox</div>
+    <div class="side-nav__item" (click)="goToApi(ApiRouteName.Interfaces)">Interfaces</div>
+    <div class="side-nav__item" (click)="goToApi(ApiRouteName.Enums)">Enums</div>
   
   </div>
   

@@ -16,11 +16,155 @@ html, body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow: hidden; 
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 body {
   background-color: #eee;
-  font-family: 'Roboto', sans-serif;
   color: #444;
+}
+
+h5 {
+  font-weight: 400;
+}
+
+select {
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1;
+}
+
+select:focus {
+  outline: none;
+}
+
+.flex__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex__align-self--start {
+  align-self: flex-start;
+}
+
+.content__header {
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0px;
+  margin: 20px;
+}
+
+.content__header--secondary {
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0px;
+  margin: 20px;
+  font-size: 18px;
+}
+
+.content__sub-header {
+  margin-bottom: 30px;
+}
+
+.content__body {
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+}
+
+.content__row {
+  display: flex;
+  padding: 10px;
+}
+
+.content__row:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.content__demo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 200px;
+  padding-right: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.content__demo--action {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.content__demo--action-text {
+  margin-right: 10px;
+}
+
+.content__text {
+  margin: 10px;
+}
+
+.content__text--header {
+  font-weight: bold;
+  margin: 20px 0px;
+}
+
+.content__code {
+  flex: 1;
+  margin-left: 50px;
+}
+
+.code__highlight {
+  background: rgba(0, 0, 0, 0.06);
+  padding: 3px;
+}
+
+
+
+.content__table {
+  border-collapse: collapse;
+  border-radius: 2px;
+  border-spacing: 0;
+  margin: 0 0 32px;
+  width: 100%;
+  color: #666;
+  box-shadow: 0 2px 2px rgba(0,0,0,.24), 0 0 2px rgba(0,0,0,.12);
+}
+
+.content__table th {
+  background: whitesmoke;
+  font-weight: 400;
+  max-width: 100px;
+  padding: 13px 32px;
+  text-align: left;
+}
+
+.content__table td {
+  background-color: #fafafa;
+  padding: 8px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  width: 200px;
+  font-size: 1rem;
+}
+
+.table__description {
+  color: #333;
+  font-weight: 400;
+  margin: 5px;
+  font-size: 1.1rem;
+}
+
+.table__description:not(:first-child) {
+  margin: 15px 5px 5px 5px;
+}
+
+.table__text {
+  margin: 5px;
+}
+
+.table__text--code {
+  font-weight: 100;
 }

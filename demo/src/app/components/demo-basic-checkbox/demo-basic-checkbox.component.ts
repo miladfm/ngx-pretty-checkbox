@@ -1,4 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { PrettyCheckboxStroke } from 'ngx-pretty-checkbox';
 
 @Component({
   selector: 'app-demo-basic-checkbox',
@@ -7,6 +8,8 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DemoBasicCheckboxComponent implements OnInit {
+
+  stroke: PrettyCheckboxStroke;
 
   constructor() { }
 

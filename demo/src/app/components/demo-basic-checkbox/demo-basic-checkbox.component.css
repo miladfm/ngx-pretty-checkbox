@@ -2,34 +2,3 @@
   margin: 20px;
   display: block;
 }
-
-.header {
-  border-bottom: 1px solid #ccc;
-  padding: 20px 0px;
-  margin: 20px;
-}
-
-.content {
-  margin: 40px;
-  display: flex;
-  flex-direction: column;
-}
-
-.row {
-  display: flex;
-  border-bottom: 1px solid #ccc;
-  padding: 10px;
-}
-
-.demo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 150px;
-  border-right: 1px solid #ccc;
-}
-
-.code {
-  flex: 1;
-  margin-left: 50px;
-}

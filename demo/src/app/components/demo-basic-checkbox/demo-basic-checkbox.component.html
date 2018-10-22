@@ -1,16 +1,17 @@
-<h4 class="header">Basic Checkbox</h4>
+<h4 class="content__header">Basic Checkbox</h4>
 
-<div class="content">
+<div class="content__body">
 
-  <div class="row">
+  <!-- Default -->
+  <div class="content__row">
 
-    <div class="demo">
+    <div class="content__demo">
       <p-checkbox>
           Default
       </p-checkbox>
     </div>
 
-    <div class="code">
+    <div class="content__code">
         <textarea highlight-js [options]="{}" lang="html">
 <p-checkbox>
   Default
@@ -21,17 +22,16 @@
   </div>
 
 
+  <!-- Fill -->
+  <div class="content__row">
 
-
-  <div class="row">
-
-    <div class="demo">
+    <div class="content__demo">
       <p-checkbox stroke="fill">
           Fill
       </p-checkbox>
     </div>
 
-    <div class="code">
+    <div class="content__code">
         <textarea highlight-js [options]="{}" lang="html">
 <p-checkbox stroke="fill">
   Fill
@@ -42,19 +42,16 @@
   </div>
 
 
+  <!-- Thick -->
+  <div class="content__row">
 
-
-
-
-  <div class="row">
-
-    <div class="demo">
+    <div class="content__demo">
         <p-checkbox stroke="thick">
             Thick
         </p-checkbox>
     </div>
 
-    <div class="code">
+    <div class="content__code">
         <textarea highlight-js [options]="{}" lang="html">
 <p-checkbox stroke="thick">
     Fill
@@ -63,3 +60,52 @@
     </div>
 
   </div>
+
+
+</div>
+
+
+
+<h5 class="content__header--secondary">Run-Time change</h5>
+
+<div class="content__body">
+
+  <!-- run-time -->
+  <div class="content__row">
+
+    <div class="content__demo flex__column">
+      
+      <div class="content__demo--action">
+        <span class="content__demo--action-text">Stroke:</span>
+        <select [(ngModel)]="stroke">
+          <option>Default</option>
+          <option value="fill">Fill</option>
+          <option value="thick">Thick</option>
+          <option value="slim">Slim</option>
+        </select>
+      </div>
+
+      <p-checkbox will-change [stroke]="stroke">
+          Run-time changeable
+      </p-checkbox>
+      
+    </div>
+
+    <div class="content__code">
+        <textarea highlight-js [options]="{}" lang="html">
+<p-checkbox will-change [stroke]="stroke">
+    Label text
+</p-checkbox>
+          </textarea>
+
+          <textarea highlight-js [options]="{}" lang="typescript">
+@Component({ ... })
+export class ... {
+  stroke: PrettyCheckboxStroke;
+}
+          </textarea>
+    </div>
+
+  </div>
+
+</div>

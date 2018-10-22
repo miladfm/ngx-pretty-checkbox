@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 
@@ -12,6 +13,9 @@ import { DemosComponent } from './components/demos/demos.component';
 import { CardComponent } from './components/card/card.component';
 import { DemoBasicCheckboxComponent } from './components/demo-basic-checkbox/demo-basic-checkbox.component';
 import { CodeComponent } from './components/code/code.component';
+import { CheckboxApiComponent } from './components/checkbox-api/checkbox-api.component';
+import { InterfacesApiComponent } from './components/interfaces-api/interfaces-api.component';
+import { EnumsApiComponent } from './components/enums-api/enums-api.component';
 
 
 @NgModule({
@@ -20,12 +24,16 @@ import { CodeComponent } from './components/code/code.component';
     DemosComponent,
     CardComponent,
     DemoBasicCheckboxComponent,
+    CheckboxApiComponent,
+    InterfacesApiComponent,
+    EnumsApiComponent,
     CodeComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot(routes, {
-      useHash: true,
+      // useHash: true,
     }),
     NgxPrettyCheckboxModule,
     HighlightJsModule

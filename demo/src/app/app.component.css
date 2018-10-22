@@ -50,6 +50,13 @@
   font-weight: 600;
   font-size: 0.95rem;
 }
+.side-nav__header--item {
+  cursor: pointer;
+}
+.side-nav__header--item:hover {
+  background-color: #e0e0e0;
+}
+
 .side-nav__header:not(:first-child) {
   border-top: 1px solid #ccc;
 }
@@ -68,4 +75,5 @@
 
 .container {
   flex: 1;
+  overflow: auto;
 }
