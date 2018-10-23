@@ -1,3 +1,4 @@
+import { DemoSwitchComponent } from './app/components/demo-switch/demo-switch.component';
 import { Routes } from '@angular/router';
 import { DemosComponent } from './app/components/demos/demos.component';
 import { DemoBasicCheckboxComponent } from './app/components/demo-basic-checkbox/demo-basic-checkbox.component';
@@ -17,7 +18,10 @@ export const routes: Routes = [
     path: 'demo/basic-checkbox',
     component: DemoBasicCheckboxComponent
 
-  }, {
+  },  {
+    path: 'demo/switch',
+    component : DemoSwitchComponent
+  },  {
     path: 'api/checkbox',
     component: CheckboxApiComponent
 
