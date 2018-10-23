@@ -17,6 +17,7 @@ import { CheckboxApiComponent } from './components/checkbox-api/checkbox-api.com
 import { InterfacesApiComponent } from './components/interfaces-api/interfaces-api.component';
 import { EnumsApiComponent } from './components/enums-api/enums-api.component';
 import { DemoSwitchComponent } from './components/demo-switch/demo-switch.component';
+import { DemoColorComponent } from './components/demo-color/demo-color.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { DemoSwitchComponent } from './components/demo-switch/demo-switch.compon
     InterfacesApiComponent,
     EnumsApiComponent,
     CodeComponent,
-    DemoSwitchComponent
+    DemoSwitchComponent,
+    DemoColorComponent
   ],
   imports: [
     BrowserModule,
