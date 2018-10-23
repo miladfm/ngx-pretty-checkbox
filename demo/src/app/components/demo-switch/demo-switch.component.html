@@ -1,4 +1,4 @@
-<h4 class="content__header">Basic Checkbox</h4>
+<h4 class="content__header">Switch</h4>
 
 <div class="content__body">
 
@@ -6,14 +6,14 @@
   <div class="content__row">
 
     <div class="content__demo">
-      <p-checkbox>
+      <p-checkbox isSwitch="true">
           Default
       </p-checkbox>
     </div>
 
     <div class="content__code">
         <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox>
+<p-checkbox isSwitch="true">
   Default
 </p-checkbox>
           </textarea>
@@ -26,14 +26,14 @@
   <div class="content__row">
 
     <div class="content__demo">
-      <p-checkbox stroke="fill">
+      <p-checkbox isSwitch="true" stroke="fill">
           Fill
       </p-checkbox>
     </div>
 
     <div class="content__code">
         <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox stroke="fill">
+<p-checkbox isSwitch="true" stroke="fill">
   Fill
 </p-checkbox>
           </textarea>
@@ -42,19 +42,19 @@
   </div>
 
 
-  <!-- Thick -->
+  <!-- Slim -->
   <div class="content__row">
 
     <div class="content__demo">
-        <p-checkbox stroke="thick">
-            Thick
+        <p-checkbox isSwitch="true" stroke="slim">
+          Slim
         </p-checkbox>
     </div>
 
     <div class="content__code">
         <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox stroke="thick">
-  Thick
+<p-checkbox isSwitch="true" stroke="slim">
+  Slim
 </p-checkbox>
           </textarea>
     </div>
@@ -80,12 +80,12 @@
         <select [(ngModel)]="stroke">
           <option>Default</option>
           <option value="fill">Fill</option>
-          <option value="thick">Thick</option>
           <option value="slim">Slim</option>
+          <option>Outline</option>
         </select>
       </div>
 
-      <p-checkbox will-change [stroke]="stroke">
+      <p-checkbox will-change isSwitch="true" [stroke]="stroke">
           Run-time changeable
       </p-checkbox>
       
@@ -93,7 +93,7 @@
 
     <div class="content__code">
         <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox will-change [stroke]="stroke">
+<p-checkbox will-change isSwitch="true" [stroke]="stroke">
     Label text
 </p-checkbox>
           </textarea>

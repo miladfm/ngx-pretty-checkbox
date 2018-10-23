@@ -4,7 +4,9 @@ export enum MainRouteName {
 }
 
 export enum DemoRouteName {
-  BasicCheckbox = 'basic-checkbox'
+  BasicCheckbox = 'basic-checkbox',
+  Switch = 'switch',
+  Colors = 'colors',
 }
 
 export enum ApiRouteName {
