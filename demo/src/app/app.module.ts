@@ -37,6 +37,7 @@ import { RoundFillOutlineColorComponent } from './components/demo-color/round-fi
 import { RoundThickOutlineColorComponent } from './components/demo-color/round-thick-outline-color/round-thick-outline-color.component';
 import { RoundThickColorComponent } from './components/demo-color/round-thick-color/round-thick-color.component';
 import { SwitchColorComponent } from './components/demo-color/switch-color/switch-color.component';
+import { DemoFontIconComponent } from './components/demo-font-icon/demo-font-icon.component';
 
 
 @NgModule({
@@ -69,7 +70,8 @@ import { SwitchColorComponent } from './components/demo-color/switch-color/switc
     RoundFillOutlineColorComponent,
     RoundThickOutlineColorComponent,
     RoundThickColorComponent,
-    SwitchColorComponent
+    SwitchColorComponent,
+    DemoFontIconComponent
   ],
   imports: [
     BrowserModule,
