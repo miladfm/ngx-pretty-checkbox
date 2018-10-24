@@ -1,3 +1,4 @@
+import { DemoSvgComponent } from './app/components/demo-svg/demo-svg.component';
 import { DemoFontIconComponent } from './app/components/demo-font-icon/demo-font-icon.component';
 import { DemoSwitchComponent } from './app/components/demo-switch/demo-switch.component';
 import { Routes } from '@angular/router';
@@ -29,6 +30,9 @@ export const routes: Routes = [
   }, {
     path: 'demo/font-icons',
     component : DemoFontIconComponent
+  }, {
+    path: 'demo/svg',
+    component : DemoSvgComponent
   }, {
     path: 'api/checkbox',
     component: CheckboxApiComponent

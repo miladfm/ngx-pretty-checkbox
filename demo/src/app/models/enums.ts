@@ -7,7 +7,8 @@ export enum DemoRouteName {
   BasicCheckbox = 'basic-checkbox',
   Switch = 'switch',
   Colors = 'colors',
-  FontIcons = 'font-icons'
+  FontIcons = 'font-icons',
+  Svg = 'svg'
 }
 
 export enum ApiRouteName {

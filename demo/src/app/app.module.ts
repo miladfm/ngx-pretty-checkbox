@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
@@ -38,6 +38,7 @@ import { RoundThickOutlineColorComponent } from './components/demo-color/round-t
 import { RoundThickColorComponent } from './components/demo-color/round-thick-color/round-thick-color.component';
 import { SwitchColorComponent } from './components/demo-color/switch-color/switch-color.component';
 import { DemoFontIconComponent } from './components/demo-font-icon/demo-font-icon.component';
+import { DemoSvgComponent } from './components/demo-svg/demo-svg.component';
 
 
 @NgModule({
@@ -71,7 +72,8 @@ import { DemoFontIconComponent } from './components/demo-font-icon/demo-font-ico
     RoundThickOutlineColorComponent,
     RoundThickColorComponent,
     SwitchColorComponent,
-    DemoFontIconComponent
+    DemoFontIconComponent,
+    DemoSvgComponent,
   ],
   imports: [
     BrowserModule,
