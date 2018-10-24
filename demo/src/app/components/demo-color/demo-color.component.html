@@ -104,178 +104,43 @@
 
 </div>
 
-<!-- mixed with checkbox -->
-<h5 class="content__header--secondary">Mixed with Checkbox</h5>
+<app-mixed-color></app-mixed-color>
 
-<div class="content__body">
+<app-outline-color></app-outline-color>
 
-  <!-- Primary and Fill -->
-  <div class="content__row">
+<app-square-fill-color></app-square-fill-color>
 
-    <div class="content__demo">
-      <p-checkbox color="primary" stroke="fill">
-        Fill
-      </p-checkbox>
-    </div>
+<app-square-fill-outline-color></app-square-fill-outline-color>
 
-    <div class="content__code">
-        <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox color="primary" stroke="fill">
-  Fill
-</p-checkbox>
-          </textarea>
-    </div>
+<app-square-thick-color></app-square-thick-color>
 
-  </div>
+<app-square-thick-outline-color></app-square-thick-outline-color>
 
+<app-curve-color></app-curve-color>
 
-  <!-- Success and Thick -->
-  <div class="content__row">
+<app-curve-outline-color></app-curve-outline-color>
 
-    <div class="content__demo">
-      <p-checkbox color="success" stroke="thick">
-        Thick
-      </p-checkbox>
-    </div>
+<app-curve-fill-color></app-curve-fill-color>
 
-    <div class="content__code">
-        <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox color="success" stroke="thick">
-  Thick
-</p-checkbox>
-          </textarea>
-    </div>
+<app-curve-fill-outline-color></app-curve-fill-outline-color>
 
-  </div>
+<app-curve-thick-color></app-curve-thick-color>
 
+<app-curve-thick-outline-color></app-curve-thick-outline-color>
 
-  <!-- Info and Curve -->
-  <div class="content__row">
+<app-round-color></app-round-color>
 
-    <div class="content__demo">
-        <p-checkbox color="info" shape="curve">
-          Curve
-        </p-checkbox>
-    </div>
+<app-round-outline-color></app-round-outline-color>
 
-    <div class="content__code">
-        <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox color="info" shape="curve">
-  Curve
-</p-checkbox>
-          </textarea>
-    </div>
+<app-round-fill-color></app-round-fill-color>
 
-  </div>
-  
+<app-round-fill-outline-color></app-round-fill-outline-color>
 
-  <!-- Warning and Round -->
-  <div class="content__row">
+<app-round-thick-color></app-round-thick-color>
 
-    <div class="content__demo">
-        <p-checkbox color="warning" shape="round">
-          Round
-        </p-checkbox>
-    </div>
+<app-round-thick-outline-color></app-round-thick-outline-color>
 
-    <div class="content__code">
-        <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox color="warning" shape="round">
-  Round
-</p-checkbox>
-          </textarea>
-    </div>
-
-  </div>
-  
-
-  <!-- Danger and Round and Fill -->
-  <div class="content__row">
-
-    <div class="content__demo">
-        <p-checkbox color="danger" shape="round" stroke="fill">
-          Round and fill
-        </p-checkbox>
-    </div>
-
-    <div class="content__code">
-        <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox color="danger" shape="round" stroke="fill">
-  Round and fill
-</p-checkbox>
-          </textarea>
-    </div>
-
-  </div>
-
-
-</div>
-
-<!-- mixed with switch -->
-<h5 class="content__header--secondary">Mixed with Switch</h5>
-
-<div class="content__body">
-
-  <!-- Primary and Default -->
-  <div class="content__row">
-
-    <div class="content__demo">
-      <p-checkbox isSwitch="true" color="primary">
-        Default
-      </p-checkbox>
-    </div>
-
-    <div class="content__code">
-        <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox isSwitch="true" color="primary">
-  Default
-</p-checkbox>
-          </textarea>
-    </div>
-
-  </div>
-
-
-  <!-- Success and Fill -->
-  <div class="content__row">
-
-    <div class="content__demo">
-      <p-checkbox isSwitch="true"  color="success" stroke="fill">
-        Fill
-      </p-checkbox>
-    </div>
-
-    <div class="content__code">
-        <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox isSwitch="true" color="success" stroke="fill">
-  Fill
-</p-checkbox>
-          </textarea>
-    </div>
-
-  </div>
-
-
-  <!-- Danger and Slim -->
-  <div class="content__row">
-
-    <div class="content__demo">
-        <p-checkbox isSwitch="true" color="danger" stroke="slim">
-          Slim
-        </p-checkbox>
-    </div>
-
-    <div class="content__code">
-        <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox isSwitch="true" color="danger" stroke="slim">
-  Slim
-</p-checkbox>
-          </textarea>
-    </div>
-
-  </div>
-
-</div>
+<app-switch-color></app-switch-color>
 
 
 <h5 class="content__header--secondary">Run-Time change</h5>
@@ -288,7 +153,7 @@
     <div class="content__demo flex__column">
       
       <div class="content__demo--action">
-        <span class="content__demo--action-text">Stroke:</span>
+        <span class="content__demo--action-text">Color:</span>
         <select [(ngModel)]="color">
           <option value="primary">Primary</option>
           <option value="success">Success</option>
@@ -306,7 +171,7 @@
 
     <div class="content__code">
         <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox will-change [stroke]="stroke">
+<p-checkbox will-change [color]="color">
     Label text
 </p-checkbox>
           </textarea>
