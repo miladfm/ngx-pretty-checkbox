@@ -8,7 +8,8 @@ export enum DemoRouteName {
   Switch = 'switch',
   Colors = 'colors',
   FontIcons = 'font-icons',
-  Svg = 'svg'
+  Svg = 'svg',
+  Image = 'image',
 }
 
 export enum ApiRouteName {

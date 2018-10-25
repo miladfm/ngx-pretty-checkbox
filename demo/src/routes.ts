@@ -8,6 +8,7 @@ import { CheckboxApiComponent } from './app/components/checkbox-api/checkbox-api
 import { InterfacesApiComponent } from './app/components/interfaces-api/interfaces-api.component';
 import { EnumsApiComponent } from './app/components/enums-api/enums-api.component';
 import { DemoColorComponent } from './app/components/demo-color/demo-color.component';
+import { DemoImageComponent } from './app/components/demo-image/demo-image.component';
 
 export const routes: Routes = [
 
@@ -33,6 +34,9 @@ export const routes: Routes = [
   }, {
     path: 'demo/svg',
     component : DemoSvgComponent
+  }, {
+    path: 'demo/image',
+    component : DemoImageComponent
   }, {
     path: 'api/checkbox',
     component: CheckboxApiComponent

@@ -39,6 +39,8 @@ import { RoundThickColorComponent } from './components/demo-color/round-thick-co
 import { SwitchColorComponent } from './components/demo-color/switch-color/switch-color.component';
 import { DemoFontIconComponent } from './components/demo-font-icon/demo-font-icon.component';
 import { DemoSvgComponent } from './components/demo-svg/demo-svg.component';
+import { DemoImageComponent } from './components/demo-image/demo-image.component';
+import { DemoAnimationComponent } from './components/demo-animation/demo-animation.component';
 
 
 @NgModule({
@@ -74,6 +76,8 @@ import { DemoSvgComponent } from './components/demo-svg/demo-svg.component';
     SwitchColorComponent,
     DemoFontIconComponent,
     DemoSvgComponent,
+    DemoImageComponent,
+    DemoAnimationComponent,
   ],
   imports: [
     BrowserModule,
