@@ -10,6 +10,7 @@ export enum DemoRouteName {
   FontIcons = 'font-icons',
   Svg = 'svg',
   Image = 'image',
+  Animations = 'animations'
 }
 
 export enum ApiRouteName {

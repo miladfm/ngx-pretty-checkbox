@@ -9,6 +9,7 @@ import { InterfacesApiComponent } from './app/components/interfaces-api/interfac
 import { EnumsApiComponent } from './app/components/enums-api/enums-api.component';
 import { DemoColorComponent } from './app/components/demo-color/demo-color.component';
 import { DemoImageComponent } from './app/components/demo-image/demo-image.component';
+import { DemoAnimationComponent } from './app/components/demo-animation/demo-animation.component';
 
 export const routes: Routes = [
 
@@ -37,6 +38,9 @@ export const routes: Routes = [
   }, {
     path: 'demo/image',
     component : DemoImageComponent
+  }, {
+    path: 'demo/animations',
+    component : DemoAnimationComponent
   }, {
     path: 'api/checkbox',
     component: CheckboxApiComponent
