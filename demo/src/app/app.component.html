@@ -10,65 +10,111 @@
   <div class="side-nav">
     <div class="side-nav__scroll">
   
-        <div class="side-nav__header">Install</div>
-        <div class="side-nav__item">Sub-install</div>
-        
-        <div class="side-nav__header side-nav__header--item" (click)="goToDemo()">Demos</div>
-        <div class="side-nav__item" (click)="goToDemo(DemoRouteName.BasicCheckbox)">Basic Checkbox</div>
-        <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Switch)">Switch</div>
 
-        <div class="side-nav__item" (click)="setMixedAccording(!isAccordingMixedOpen)">
-          Mixed
-          <i *ngIf="!isAccordingMixedOpen" class="side-nav__accordion-icon material-icons">arrow_drop_down</i>
-          <i *ngIf="isAccordingMixedOpen" class="side-nav__accordion-icon material-icons">arrow_drop_up</i>
+        <!-- Install -->
+        <div class="side-nav__header side-nav__header--item" (click)="toggleInstallAccording()">
+            Install
+          <i *ngIf="!isAccordingInstallOpen" class="side-nav__accordion-icon material-icons">arrow_drop_down</i>
+          <i *ngIf="isAccordingInstallOpen" class="side-nav__accordion-icon material-icons">arrow_drop_up</i>
         </div>
-        <div #mixedAccordingElem
+
+        <div #installAccordingElem
           class="side-nav__accordion"
-          [style.height]="isAccordingMixedOpen ? mixedAccordingElem.scrollHeight + 'px' : null">
-            <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedColor)">Color</div>
-            <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedOutline)">Outline</div>
-            <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedSquareFill)">Square Fill</div>
-            <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedSquareFillOutline)">Square Fill Outline</div>
-            <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedSquareThick)">Square Thick</div>
-            <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedSquareThickOutline)">Square Thick Outline</div>
-            <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedCurve)">Curve</div>
-            <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedCurveOutline)">Curve Outline</div>
-            <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedCurveFill)">Curve Fill</div>
-            <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedCurveFillOutline)">Curve Fill Outline</div>
-            <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedCurveThick)">Curve Thick</div>
-            <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedCurveThickOutline)">Curve Thick Outline</div>
-            <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedRound)">Round</div>
-            <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedRoundOutline)">Round Outline</div>
-            <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedRoundFill)">Round Fill</div>
-            <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedRoundFillOutline)">Round Fill Outline</div>
-            <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedRoundThick)">Round Thick</div>
-            <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedRoundThickOutline)">Round Thick Outline</div>
-            <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedSwitch)">Switch</div>
+          (transitionend)="onTransitionEnd(isAccordingInstallOpen, installAccordingElem)">
+
+            <div class="side-nav__item">Sub-install</div>
+        </div>
+        
+
+
+        <!-- DEMO -->
+        <div class="side-nav__header side-nav__header--item" (click)="onDemosClick()">
+          Demos
+          <i *ngIf="!isAccordingDemosOpen" class="side-nav__accordion-icon material-icons">arrow_drop_down</i>
+          <i *ngIf="isAccordingDemosOpen" class="side-nav__accordion-icon material-icons">arrow_drop_up</i>
         </div>
 
-        <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Colors)">Colors</div>
+        <div #demosAccordingElem
+          class="side-nav__accordion"
+          (transitionend)="onTransitionEnd(isAccordingDemosOpen, demosAccordingElem)">
 
-        <div class="side-nav__item" (click)="goToDemo(DemoRouteName.FontIcons)">Font Icons</div>
-        <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Svg)">Svg</div>
-        <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Image)">Image</div>
-        <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Animations)">Animations</div>
+          <div class="side-nav__item" (click)="goToDemo(DemoRouteName.BasicCheckbox)">Basic Checkbox</div>
+          <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Switch)">Switch</div>
+  
+          <div class="side-nav__item" (click)="  toggleMixedAccording()">
+            Mixed
+            <i *ngIf="!isAccordingMixedOpen" class="side-nav__accordion-icon material-icons">arrow_drop_down</i>
+            <i *ngIf="isAccordingMixedOpen" class="side-nav__accordion-icon material-icons">arrow_drop_up</i>
+          </div>
+          <div #mixedAccordingElem
+            class="side-nav__accordion"
+            (transitionend)="onTransitionEnd(isAccordingMixedOpen, mixedAccordingElem)">
+
+              <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedColor)">Color</div>
+              <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedOutline)">Outline</div>
+              <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedSquareFill)">Square Fill</div>
+              <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedSquareFillOutline)">Square Fill Outline</div>
+              <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedSquareThick)">Square Thick</div>
+              <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedSquareThickOutline)">Square Thick Outline</div>
+              <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedCurve)">Curve</div>
+              <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedCurveOutline)">Curve Outline</div>
+              <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedCurveFill)">Curve Fill</div>
+              <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedCurveFillOutline)">Curve Fill Outline</div>
+              <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedCurveThick)">Curve Thick</div>
+              <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedCurveThickOutline)">Curve Thick Outline</div>
+              <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedRound)">Round</div>
+              <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedRoundOutline)">Round Outline</div>
+              <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedRoundFill)">Round Fill</div>
+              <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedRoundFillOutline)">Round Fill Outline</div>
+              <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedRoundThick)">Round Thick</div>
+              <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedRoundThickOutline)">Round Thick Outline</div>
+              <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.MixedSwitch)">Switch</div>
+          </div>
+  
+          <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Colors)">Colors</div>
+  
+          <div class="side-nav__item" (click)="goToDemo(DemoRouteName.FontIcons)">Font Icons</div>
+          <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Svg)">Svg</div>
+          <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Image)">Image</div>
+          <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Animations)">Animations</div>
+
+        </div>
         
-        <div class="side-nav__header">API</div>
-        <div class="side-nav__item" (click)="goToApi(ApiRouteName.Checkbox)">Checkbox</div>
-        <div class="side-nav__item" (click)="goToApi(ApiRouteName.CheckboxWillChange)">Checkbox will-change</div>
-        <div class="side-nav__item" (click)="goToApi(ApiRouteName.RadioGroup)">Radio Group</div>
-        <div class="side-nav__item" (click)="goToApi(ApiRouteName.Radio)">Radio</div>
-        <div class="side-nav__item" (click)="goToApi(ApiRouteName.RadioWillChange)">Radio will-change</div>
+        <!-- API -->
 
-        <div class="side-nav__item" (click)="goToApi(ApiRouteName.Toggle)">Toggle</div>
-        <div class="side-nav__item" (click)="goToApi(ApiRouteName.ToggleWillChange)">Toggle will-change</div>
-        <div class="side-nav__item" (click)="goToApi(ApiRouteName.Hover)">Hover</div>
-        <div class="side-nav__item" (click)="goToApi(ApiRouteName.HoverWillChange)">Hover will-change</div>
-        <div class="side-nav__item" (click)="goToApi(ApiRouteName.Indeterminate)">Indeterminate</div>
-        <div class="side-nav__item" (click)="goToApi(ApiRouteName.IndeterminateWillChange)">Indeterminate will-change</div>
+        <div class="side-nav__header side-nav__header--item" (click)="toggleApiAccording()">
+            API
+          <i *ngIf="!isAccordingApiOpen" class="side-nav__accordion-icon material-icons">arrow_drop_down</i>
+          <i *ngIf="isAccordingApiOpen" class="side-nav__accordion-icon material-icons">arrow_drop_up</i>
+        </div>
 
-        <div class="side-nav__item" (click)="goToApi(ApiRouteName.Interfaces)">Interfaces</div>
-        <div class="side-nav__item" (click)="goToApi(ApiRouteName.Enums)">Enums</div>
+        <div #apiAccordingElem
+          class="side-nav__accordion"
+          (transitionend)="onTransitionEnd(isAccordingApiOpen, apiAccordingElem)">
+
+          <div class="side-nav__item" (click)="goToApi(ApiRouteName.Checkbox)">Checkbox</div>
+          <div class="side-nav__item" (click)="goToApi(ApiRouteName.CheckboxWillChange)">Checkbox will-change</div>
+          <div class="side-nav__item" (click)="goToApi(ApiRouteName.RadioGroup)">Radio Group</div>
+          <div class="side-nav__item" (click)="goToApi(ApiRouteName.Radio)">Radio</div>
+          <div class="side-nav__item" (click)="goToApi(ApiRouteName.RadioWillChange)">Radio will-change</div>
+  
+          <div class="side-nav__item" (click)="goToApi(ApiRouteName.Toggle)">Toggle</div>
+          <div class="side-nav__item" (click)="goToApi(ApiRouteName.ToggleWillChange)">Toggle will-change</div>
+          <div class="side-nav__item" (click)="goToApi(ApiRouteName.Hover)">Hover</div>
+          <div class="side-nav__item" (click)="goToApi(ApiRouteName.HoverWillChange)">Hover will-change</div>
+          <div class="side-nav__item" (click)="goToApi(ApiRouteName.Indeterminate)">Indeterminate</div>
+          <div class="side-nav__item" (click)="goToApi(ApiRouteName.IndeterminateWillChange)">Indeterminate will-change</div>
+  
+          <div class="side-nav__item" (click)="goToApi(ApiRouteName.Interfaces)">Interfaces</div>
+          <div class="side-nav__item" (click)="goToApi(ApiRouteName.Enums)">Enums</div>
+  
+          <div class="side-nav__item" (click)="goToApi(ApiRouteName.Svg)">Svg</div>
+          <div class="side-nav__item" (click)="goToApi(ApiRouteName.Image)">Image</div>
+          <div class="side-nav__item" (click)="goToApi(ApiRouteName.Icon)">Icon</div>
+
+        </div>
+
+        
 
     </div>
   </div>

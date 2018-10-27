@@ -52,6 +52,7 @@ import { ApiIndeterminateWillChangeComponent } from './components/api-indetermin
 import { ApiIconComponent } from './components/api-icon/api-icon.component';
 import { ApiSvgComponent } from './components/api-svg/api-svg.component';
 import { ApiImageComponent } from './components/api-image/api-image.component';
+import { ContentSetIndeterminateComponent } from './components/content-set-indeterminate/content-set-indeterminate.component';
 
 
 
@@ -63,6 +64,7 @@ import { ApiImageComponent } from './components/api-image/api-image.component';
 
     CardComponent,
     CodeComponent,
+    ContentSetIndeterminateComponent,
 
     DemosComponent,
     DemoBasicCheckboxComponent,

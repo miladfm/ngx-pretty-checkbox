@@ -49,6 +49,9 @@
 }
 
 .side-nav__header {
+  display: flex;
+  align-items: center;
+
   padding: 15px 0px 10px 15px;
 
   font-weight: 600;
@@ -84,7 +87,7 @@
 }
 
 .side-nav__accordion {
-  height: 0px;
+  /* height: 0px; */
   /* max-height: 0px; */
   overflow: hidden;
   transition: height 0.3s, maxHeight 0.3s;

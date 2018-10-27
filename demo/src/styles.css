@@ -141,7 +141,7 @@ select:focus {
 
 
 
-.content__table {
+.content__table, .content__method {
   border-collapse: collapse;
   border-radius: 2px;
   border-spacing: 0;
@@ -151,27 +151,36 @@ select:focus {
   box-shadow: 0 2px 2px rgba(0,0,0,.24), 0 0 2px rgba(0,0,0,.12);
 }
 
-.content__table th {
+.content__table th, .content__method--header {
   background: whitesmoke;
   font-weight: 400;
-  max-width: 100px;
   padding: 13px 32px;
   text-align: left;
 }
-
-.content__table td {
-  background-color: #fafafa;
-  padding: 8px 16px;
-  border: 1px solid rgba(0, 0, 0, 0.03);
-  width: 200px;
-  font-size: 1rem;
+.content__table th, {
+  max-width: 100px;
 }
 
-.table__description {
+.content__table td, .content__method--description {
+  background-color: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+.content__method--description {
+  padding: 15px 30px;
+}
+.content__table td {
+  padding: 8px 16px;
+  font-size: 1rem;
+  width: 200px;
+}
+
+.table__description, .content__method--description {
   color: #333;
   font-weight: 400;
-  margin: 5px;
   font-size: 1.1rem;
+}
+.table__description {
+  margin: 5px;
 }
 
 .table__description:not(:first-child) {
@@ -196,6 +205,9 @@ select:focus {
   stroke: #fff;
 }
 
+.method {
+
+}
 
 
 

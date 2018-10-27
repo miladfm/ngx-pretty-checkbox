@@ -17,7 +17,6 @@ import { DEFAULT_OUTLINE_PREFIX, DEFAULT_PREFIX, DEFAULT_PRETTY_CLASS_NAME } fro
 import { NgxPrettyHoverComponent } from './ngx-pretty-hover.component';
 import { NgxPrettyIconDirective } from '../directives/ngx-pretty-icon.directive';
 import { NgxPrettyImageDirective } from '../directives/ngx-pretty-image.directive';
-import { NgxPrettyIndeterminateComponent } from './ngx-pretty-Indeterminate.component';
 import { NgxPrettySvgDirective } from '../directives/ngx-pretty-svg.directive';
 import { NgxPrettyToggleComponent } from './ngx-pretty-toggle.component';
 import {
@@ -29,7 +28,6 @@ import {
   } from '../model/interfaces';
 import { NgxPrettyHoverWillChangeComponent } from './ngx-pretty-hover-will-change.component';
 import { NgxPrettyToggleWillChangeComponent } from './ngx-pretty-toggle-will-change.component';
-import { NgxPrettyIndeterminateWillChangeComponent } from './ngx-pretty-Indeterminate-will-change.component';
 import { NgxPrettyRadioGroupDirective } from './ngx-pretty-radio-group.component';
 // tslint:disable:use-host-property-decorator
 
@@ -54,7 +52,7 @@ import { NgxPrettyRadioGroupDirective } from './ngx-pretty-radio-group.component
         <label><ng-content></ng-content></label>
     </div>
 
-    <ng-content select="ngx-p-indeterminate, p-indeterminate, ngx-p-hover, p-hover, ngx-p-toggle, p-toggle"></ng-content>
+    <ng-content select="ngx-p-hover, p-hover, ngx-p-toggle, p-toggle"></ng-content>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
@@ -195,13 +193,6 @@ export class NgxPrettyRadioWillChangeComponent {
   @HostBinding(`class.${DEFAULT_PREFIX}has-hover`)
   get _isHover() { return this._hoverComp || this._hoverWillChangeDir; }
 
-  // Indeterminate
-  @ContentChild(NgxPrettyIndeterminateComponent) _indeterminateComp: NgxPrettyIndeterminateComponent;
-  @ContentChild(NgxPrettyIndeterminateWillChangeComponent) _indeterminateWillChangeComp: NgxPrettyIndeterminateWillChangeComponent;
-
-  @HostBinding(`class.${DEFAULT_PREFIX}has-indeterminate`)
-  get _isIndeterminate() { return this._indeterminateComp || this._indeterminateWillChangeComp; }
-
 
   // ---------- METHODS ---------
   public _onChange(event: Event, checked: boolean, value: string) {
@@ -215,9 +206,6 @@ export class NgxPrettyRadioWillChangeComponent {
     }
   }
 
-  public setIndeterminate(value = true) {
-    this._inputElem.nativeElement.indeterminate = value;
-  }
 }
 
 

@@ -15,9 +15,10 @@
 |    1   |  Milad      |  API - Directive image                                                                      |️️ ⏳ 
 |    1   |  Milad      |  API - Directive svg                                                                        |️️ ⏳ 
 |    1   |  Milad      |  Install                                                                                    |️️ ⏳ 
+|    1   |  Milad      |  setIndeterminate method                                                                    |️️ ✔️
 |    1   |  Milad      |  sub menu for main Route                                                                    |️️ ⏳ 
 |    1   |  Milad      |  Dynamic Demo for all components with Scalability                                           |️️ ⏳ 
-|    1   |  Milad      |  Rename name of API components to api-XXX                                                   |️️ ⏳ 
+|    1   |  Milad      |  Rename name of API components to api-XXX                                                   |️️ ✔️
 |    2   |  Mohammad   |  Animations - Smooth                                                                        | ⏳
 |    2   |  Mohammad   |  Animations - Jelly                                                                         | ⏳
 |    2   |  Mohammad   |  Animations - Tada                                                                          | ⏳
