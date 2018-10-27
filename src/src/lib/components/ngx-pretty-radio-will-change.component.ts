@@ -61,7 +61,7 @@ import { NgxPrettyRadioGroupDirective } from './ngx-pretty-radio-group.component
   host: {
     'class': DEFAULT_PRETTY_CLASS_NAME
   },
-  exportAs: 'ngxPrettyRadio'
+  exportAs: 'ngxPrettyRadioWillChange'
 })
 export class NgxPrettyRadioWillChangeComponent {
 

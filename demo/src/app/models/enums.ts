@@ -36,6 +36,10 @@ export enum DemoRouteName {
 
 export enum ApiRouteName {
   Checkbox = 'checkbox',
+  CheckboxWillChange = 'checkbox-will-change',
+  RadioGroup = 'radio-group',
+  Radio = 'radio',
+  RadioWillChange = 'radio-will-change',
   Interfaces = 'interfaces',
   Enums = 'enums'
 }

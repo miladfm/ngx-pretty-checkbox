@@ -10,7 +10,7 @@ import { EnumsApiComponent } from './app/components/enums-api/enums-api.componen
 import { DemoColorComponent } from './app/components/demo-color/demo-color.component';
 import { DemoImageComponent } from './app/components/demo-image/demo-image.component';
 import { DemoAnimationComponent } from './app/components/demo-animation/demo-animation.component';
-import { DemoRouteName } from './app/models/enums';
+import { DemoRouteName, MainRouteName, ApiRouteName } from './app/models/enums';
 import { MixedColorComponent } from './app/components/demo-mixed-color/demo-mixed-color.component';
 import { MixedOutlineComponent } from './app/components/demo-mixed-outline/demo-mixed-outline.component';
 import { MixedSquareFillComponent } from './app/components/demo-mixed-square-fill/demo-mixed-square-fill.component';
@@ -30,128 +30,186 @@ import { MixedRoundFillOutlineComponent } from './app/components/demo-mixed-roun
 import { MixedRoundThickComponent } from './app/components/demo-mixed-round-thick/demo-mixed-round-thick.component';
 import { MixedRoundThickOutlineComponent } from './app/components/demo-mixed-round-thick-outline/demo-mixed-round-thick-outline.component';
 import { MixedSwitchComponent } from './app/components/demo-mixed-switch/demo-mixed-switch.component';
+import { CheckboxWillChangeApiComponent } from './app/components/checkbox-will-change-api/checkbox-will-change-api.component';
+import { RadioGroupApiComponent } from './app/components/checkbox-will-change-api/components/radio-group-api/radio-group-api.component';
+import { RadioApiComponent } from './app/components/checkbox-will-change-api/components/radio-api/radio-api.component';
+import { RadioWillChangeApiComponent } from './app/components/checkbox-will-change-api/components/radio-will-change-api/radio-will-change-api.component';
 
 export const routes: Routes = [
 
   // { path: '', redirectTo: '/main', pathMatch: 'full' },
 
   {
-    path: 'demo',
+    // demo
+    path: `${MainRouteName.Demo}`,
     component: DemosComponent
 
   }, {
-    path: `demo/${DemoRouteName.MixedColor}`,
+    // demo/mixed-color
+    path: `${MainRouteName.Demo}/${DemoRouteName.MixedColor}`,
     component: MixedColorComponent
+
   }, {
-    path: `demo/${DemoRouteName.MixedOutline}`,
+    // demo/mixed-outline
+    path: `${MainRouteName.Demo}/${DemoRouteName.MixedOutline}`,
     component: MixedOutlineComponent
 
   }, {
-    path: `demo/${DemoRouteName.MixedSquareFill}`,
+    // demo/mixed-square-fill
+    path: `${MainRouteName.Demo}/${DemoRouteName.MixedSquareFill}`,
     component: MixedSquareFillComponent
 
   }, {
-    path: `demo/${DemoRouteName.MixedSquareFillOutline}`,
+    // demo/mixed-square-fill-outline
+    path: `${MainRouteName.Demo}/${DemoRouteName.MixedSquareFillOutline}`,
     component: MixedSquareFillOutlineComponent
 
   }, {
-    path: `demo/${DemoRouteName.MixedSquareThick}`,
+    // demo/mixed-square-thick
+    path: `${MainRouteName.Demo}/${DemoRouteName.MixedSquareThick}`,
     component: MixedSquareThickComponent
 
   }, {
-    path: `demo/${DemoRouteName.MixedSquareThickOutline}`,
+    // demo/mixed-square-thick-outline
+    path: `${MainRouteName.Demo}/${DemoRouteName.MixedSquareThickOutline}`,
     component: MixedSquareThickOutlineComponent
 
   }, {
-    path: `demo/${DemoRouteName.MixedCurve}`,
+    // demo/mixed-curve
+    path: `${MainRouteName.Demo}/${DemoRouteName.MixedCurve}`,
     component: MixedCurveComponent
 
   }, {
-    path: `demo/${DemoRouteName.MixedCurveOutline}`,
+    // demo/mixed-curve-outline
+    path: `${MainRouteName.Demo}/${DemoRouteName.MixedCurveOutline}`,
     component: MixedCurveOutlineComponent
 
   }, {
-    path: `demo/${DemoRouteName.MixedCurveFill}`,
+    // demo/mixed-curve-fill
+    path: `${MainRouteName.Demo}/${DemoRouteName.MixedCurveFill}`,
     component: MixedCurveFillComponent
 
   }, {
-    path: `demo/${DemoRouteName.MixedCurveFillOutline}`,
+    // demo/mixed-curve-fill-outline
+    path: `${MainRouteName.Demo}/${DemoRouteName.MixedCurveFillOutline}`,
     component: MixedCurveFillOutlineComponent
 
   }, {
-    path: `demo/${DemoRouteName.MixedCurveThick}`,
+    // demo/mixed-curve-thick
+    path: `${MainRouteName.Demo}/${DemoRouteName.MixedCurveThick}`,
     component: MixedCurveThickComponent
 
   }, {
-    path: `demo/${DemoRouteName.MixedCurveThickOutline}`,
+    // demo/mixed-curve-thick-outline
+    path: `${MainRouteName.Demo}/${DemoRouteName.MixedCurveThickOutline}`,
     component: MixedCurveThickOutlineComponent
 
   }, {
-    path: `demo/${DemoRouteName.MixedRound}`,
+    // demo/mixed-round
+    path: `${MainRouteName.Demo}/${DemoRouteName.MixedRound}`,
     component: MixedRoundComponent
 
   }, {
-    path: `demo/${DemoRouteName.MixedRoundOutline}`,
+    // demo/mixed-round-outline
+    path: `${MainRouteName.Demo}/${DemoRouteName.MixedRoundOutline}`,
     component: MixedRoundOutlineComponent
 
   }, {
-    path: `demo/${DemoRouteName.MixedRoundFill}`,
+    // demo/mixed-round-fill
+    path: `${MainRouteName.Demo}/${DemoRouteName.MixedRoundFill}`,
     component: MixedRoundFillComponent
 
   }, {
-    path: `demo/${DemoRouteName.MixedRoundFillOutline}`,
+    // demo/mixed-round-fill-outline
+    path: `${MainRouteName.Demo}/${DemoRouteName.MixedRoundFillOutline}`,
     component: MixedRoundFillOutlineComponent
 
   }, {
-    path: `demo/${DemoRouteName.MixedRoundThick}`,
+    // demo/mixed-round-thick
+    path: `${MainRouteName.Demo}/${DemoRouteName.MixedRoundThick}`,
     component: MixedRoundThickComponent
 
   }, {
-    path: `demo/${DemoRouteName.MixedRoundThickOutline}`,
+    // mixed-round-thick-outline
+    path: `${MainRouteName.Demo}/${DemoRouteName.MixedRoundThickOutline}`,
     component: MixedRoundThickOutlineComponent
 
   }, {
-    path: `demo/${DemoRouteName.MixedSwitch}`,
+    // demo/mixed-switch
+    path: `${MainRouteName.Demo}/${DemoRouteName.MixedSwitch}`,
     component: MixedSwitchComponent
-// --------------------
+
+
   }, {
-    path: 'demo/basic-checkbox',
+    // demo/basic-checkbox
+    path: `${MainRouteName.Demo}/${DemoRouteName.BasicCheckbox}`,
     component: DemoBasicCheckboxComponent
 
   }, {
-    path: 'demo/switch',
+    // demo/switch
+    path: `${MainRouteName.Demo}/${DemoRouteName.Switch}`,
     component : DemoSwitchComponent
 
   }, {
-    path: 'demo/colors',
+    // demo/colors
+    path: `${MainRouteName.Demo}/${DemoRouteName.Colors}`,
     component : DemoColorComponent
 
   }, {
-    path: 'demo/font-icons',
+    // demo/font-icons
+    path: `${MainRouteName.Demo}/${DemoRouteName.FontIcons}`,
     component : DemoFontIconComponent
 
   }, {
-    path: 'demo/svg',
+    // demo/svg
+    path: `${MainRouteName.Demo}/${DemoRouteName.Svg}`,
     component : DemoSvgComponent
 
   }, {
-    path: 'demo/image',
+    // demo/image
+    path: `${MainRouteName.Demo}/${DemoRouteName.Image}`,
     component : DemoImageComponent
 
   }, {
-    path: 'demo/animations',
+    // demo/animations
+    path: `${MainRouteName.Demo}/${DemoRouteName.Animations}`,
     component : DemoAnimationComponent
 
+
+
   }, {
-    path: 'api/checkbox',
+    // api/checkbox
+    path: `${MainRouteName.API}/${ApiRouteName.Checkbox}`,
     component: CheckboxApiComponent
 
   }, {
-    path: 'api/interfaces',
+    // api/checkbox-will-change
+    path: `${MainRouteName.API}/${ApiRouteName.CheckboxWillChange}`,
+    component: CheckboxWillChangeApiComponent
+
+  }, {
+    // api/radio-group
+    path: `${MainRouteName.API}/${ApiRouteName.RadioGroup}`,
+    component: RadioGroupApiComponent
+
+  }, {
+    // api/radio
+    path: `${MainRouteName.API}/${ApiRouteName.Radio}`,
+    component: RadioApiComponent
+
+  }, {
+    // api/radio-will-change
+    path: `${MainRouteName.API}/${ApiRouteName.RadioWillChange}`,
+    component: RadioWillChangeApiComponent
+
+  }, {
+    // api/interfaces
+    path: `${MainRouteName.API}/${ApiRouteName.Interfaces}`,
     component: InterfacesApiComponent
 
   }, {
-    path: 'api/enums',
+    // api/enums
+    path: `${MainRouteName.API}/${ApiRouteName.Enums}`,
     component: EnumsApiComponent
 
   }, {
