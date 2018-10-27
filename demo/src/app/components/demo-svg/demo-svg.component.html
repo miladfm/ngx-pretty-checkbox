@@ -1,0 +1,134 @@
+<h4 class="content__header">Svg</h4>
+
+<div class="content__body">
+
+  <!-- verifier -->
+  <div class="content__row">
+
+    <div class="content__demo">
+      <p-checkbox shape="round">
+        <img p-svg src="https://material.io/tools/icons/static/icons/baseline-verified_user-24px.svg">
+        verifier
+      </p-checkbox>
+    </div>
+
+    <div class="content__code">
+        <textarea highlight-js [options]="{}" lang="html">
+<p-checkbox shape="round">
+  <img p-svg src="https://material.io/tools/icons/static/icons/baseline-verified_user-24px.svg">
+  verifier
+</p-checkbox>
+          </textarea>
+    </div>
+
+  </div>
+
+
+  <!-- Play -->
+  <div class="content__row">
+
+    <div class="content__demo">
+      <p-checkbox shape="curve">
+        <svg p-svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M8 5v14l11-7z"/>
+          <path d="M0 0h24v24H0z" fill="none"/>
+        </svg>
+        Play
+      </p-checkbox>
+    </div>
+
+    <div class="content__code">
+        <textarea highlight-js [options]="{}" lang="html">
+<p-checkbox shape="curve">
+  <svg p-svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M8 5v14l11-7z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+  </svg>
+  Play
+</p-checkbox>
+        </textarea>
+    </div>
+
+  </div>
+
+
+  <!-- Add -->
+  <div class="content__row">
+
+    <div class="content__demo">
+        <p-checkbox>
+          <svg p-svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <symbol id="my-icon">
+              <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+              <path d="M0 0h24v24H0z" fill="none"/>
+            </symbol>
+            <use href="#my-icon"/>
+          </svg>
+            Add
+        </p-checkbox>
+    </div>
+
+    <div class="content__code">
+        <textarea highlight-js [options]="{}" lang="html">
+<p-checkbox>
+  <svg p-svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <symbol id="my-icon">
+      <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+      <path d="M0 0h24v24H0z" fill="none"/>
+    </symbol>
+    <use href="#my-icon"/>
+  </svg>
+  Add
+</p-checkbox>
+          </textarea>
+    </div>
+
+  </div>
+
+
+</div>
+
+
+<!-- 
+<h5 class="content__header--secondary">Run-Time change</h5>
+
+<div class="content__body">
+
+  <div class="content__row">
+
+    <div class="content__demo flex__column">
+      
+      <div class="content__demo--action">
+        <span class="content__demo--action-text">Stroke:</span>
+        <select [(ngModel)]="stroke">
+          <option>Default</option>
+          <option value="fill">Fill</option>
+          <option value="thick">Thick</option>
+          <option value="slim">Slim</option>
+        </select>
+      </div>
+
+      <p-checkbox will-change [stroke]="stroke">
+          Run-time changeable
+      </p-checkbox>
+      
+    </div>
+
+    <div class="content__code">
+        <textarea highlight-js [options]="{}" lang="html">
+<p-checkbox will-change [stroke]="stroke">
+    Label text
+</p-checkbox>
+          </textarea>
+
+          <textarea highlight-js [options]="{}" lang="typescript">
+@Component({ ... })
+export class ... {
+  stroke: PrettyCheckboxStroke;
+}
+          </textarea>
+    </div>
+
+  </div>
+
+</div> -->

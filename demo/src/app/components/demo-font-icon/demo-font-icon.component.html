@@ -1,20 +1,22 @@
-<h4 class="content__header">Switch</h4>
+<h4 class="content__header">Font Icon</h4>
 
 <div class="content__body">
 
-  <!-- Default -->
+  <!-- Favorite -->
   <div class="content__row">
 
     <div class="content__demo">
-      <p-checkbox isSwitch="true">
-          Default
+      <p-checkbox shape="round">
+        <i p-icon class="material-icons">favorite</i>
+        Favorite
       </p-checkbox>
     </div>
 
     <div class="content__code">
         <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox isSwitch="true">
-  Default
+<p-checkbox shape="round">
+  <i p-icon class="material-icons">favorite</i>
+  Favorite
 </p-checkbox>
           </textarea>
     </div>
@@ -22,39 +24,43 @@
   </div>
 
 
-  <!-- Fill -->
+  <!-- Rss -->
   <div class="content__row">
 
     <div class="content__demo">
-      <p-checkbox isSwitch="true" stroke="fill">
-          Fill
+      <p-checkbox shape="curve">
+        <i p-icon class="material-icons">rss_feed</i>
+        Rss
       </p-checkbox>
     </div>
 
     <div class="content__code">
         <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox isSwitch="true" stroke="fill">
-  Fill
+<p-checkbox shape="curve">
+  <i p-icon class="material-icons">rss_feed</i>
+  Rss
 </p-checkbox>
-          </textarea>
+        </textarea>
     </div>
 
   </div>
 
 
-  <!-- Slim -->
+  <!-- Error -->
   <div class="content__row">
 
     <div class="content__demo">
-        <p-checkbox isSwitch="true" stroke="slim">
-          Slim
+        <p-checkbox>
+            <i p-icon class="material-icons">error_outline</i>
+            Error
         </p-checkbox>
     </div>
 
     <div class="content__code">
         <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox isSwitch="true" stroke="slim">
-  Slim
+<p-checkbox>
+  <i p-icon class="material-icons">error_outline</i>
+  Error
 </p-checkbox>
           </textarea>
     </div>
@@ -65,12 +71,11 @@
 </div>
 
 
-
+<!-- 
 <h5 class="content__header--secondary">Run-Time change</h5>
 
 <div class="content__body">
 
-  <!-- run-time -->
   <div class="content__row">
 
     <div class="content__demo flex__column">
@@ -78,13 +83,14 @@
       <div class="content__demo--action">
         <span class="content__demo--action-text">Stroke:</span>
         <select [(ngModel)]="stroke">
-          <option>Default - Outline</option>
+          <option>Default</option>
           <option value="fill">Fill</option>
+          <option value="thick">Thick</option>
           <option value="slim">Slim</option>
         </select>
       </div>
 
-      <p-checkbox will-change isSwitch="true" [stroke]="stroke">
+      <p-checkbox will-change [stroke]="stroke">
           Run-time changeable
       </p-checkbox>
       
@@ -92,7 +98,7 @@
 
     <div class="content__code">
         <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox will-change isSwitch="true" [stroke]="stroke">
+<p-checkbox will-change [stroke]="stroke">
     Label text
 </p-checkbox>
           </textarea>
@@ -107,4 +113,4 @@ export class ... {
 
   </div>
 
-</div>
+</div> -->

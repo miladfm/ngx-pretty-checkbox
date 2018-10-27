@@ -1,0 +1,157 @@
+<h4 class="content__header">Basic Checkbox</h4>
+
+<div class="content__body">
+
+  <!-- Smooth -->
+  <div class="content__row">
+
+    <div class="content__demo">
+      <p-checkbox animation="smooth">
+        Smooth
+      </p-checkbox>
+    </div>
+
+    <div class="content__code">
+        <textarea highlight-js [options]="{}" lang="html">
+<p-checkbox animation="smooth">
+  Smooth
+</p-checkbox>
+          </textarea>
+    </div>
+
+  </div>
+
+
+  <!-- Jelly -->
+  <div class="content__row">
+
+    <div class="content__demo">
+      <p-checkbox shape="round" animation="jelly">
+        <i p-icon class="material-icons">done_all</i>
+        Jelly
+      </p-checkbox>
+    </div>
+
+    <div class="content__code">
+        <textarea highlight-js [options]="{}" lang="html">
+<p-checkbox shape="round" animation="jelly">
+  <i p-icon class="material-icons">done_all</i>
+  Jelly
+</p-checkbox>
+          </textarea>
+    </div>
+
+  </div>
+
+
+  <!-- Tada -->
+  <div class="content__row">
+
+      <div class="content__demo">
+        <p-checkbox shape="curve" animation="tada"> 
+          <img src="https://lokesh-coder.github.io/pretty-checkbox/img/checked/003.png" p-image>
+          Tada
+        </p-checkbox>
+      </div>
+  
+      <div class="content__code">
+          <textarea highlight-js [options]="{}" lang="html">
+<p-checkbox shape="curve" animation="tada"> 
+  <img src="https://lokesh-coder.github.io/pretty-checkbox/img/checked/003.png" p-image>
+  Tada
+</p-checkbox>
+            </textarea>
+      </div>
+  
+    </div>
+
+  <!-- Rotate -->
+  <div class="content__row">
+
+      <div class="content__demo">
+        <p-checkbox color="info" animation="rotate"> 
+          <i class="material-icons" p-icon>airplanemode_active</i>
+          Rotate
+        </p-checkbox>
+      </div>
+  
+      <div class="content__code">
+          <textarea highlight-js [options]="{}" lang="html">
+<p-checkbox color="info" animation="rotate"> 
+  <i class="material-icons" p-icon>airplanemode_active</i>
+  Rotate
+</p-checkbox>
+            </textarea>
+      </div>
+  
+    </div>
+
+  <!-- Pulse -->
+  <div class="content__row">
+
+      <div class="content__demo">
+        <p-checkbox stroke="thick" shape="round" outline="true" color="warning" animation="pulse"> 
+          Pulse
+        </p-checkbox>
+      </div>
+  
+      <div class="content__code">
+          <textarea highlight-js [options]="{}" lang="html">
+<p-checkbox stroke="thick" shape="round" outline="true" color="warning" animation="pulse"> 
+  Pulse
+</p-checkbox>
+            </textarea>
+      </div>
+  
+    </div>
+
+</div>
+
+
+
+<h5 class="content__header--secondary">Run-Time change</h5>
+
+<div class="content__body">
+
+  <!-- run-time -->
+  <div class="content__row">
+
+    <div class="content__demo flex__column">
+      
+      <div class="content__demo--action">
+        <span class="content__demo--action-text">Stroke:</span>
+        <select [(ngModel)]="animation">
+          <option value="smooth">Smooth</option>
+          <option value="jelly">Jelly</option>
+          <option value="tada">Tada</option>
+          <option value="rotate">Rotate</option>
+          <option value="pulse">Pulse</option>
+        </select>
+      </div>
+
+      <p-checkbox will-change [animation]="animation">
+          <i p-icon class="material-icons">done_all</i>
+          Run-time changeable
+      </p-checkbox>
+      
+    </div>
+
+    <div class="content__code">
+        <textarea highlight-js [options]="{}" lang="html">
+<p-checkbox will-change [animation]="animation">
+    <i p-icon class="material-icons">done_all</i>
+    Label text
+</p-checkbox>
+          </textarea>
+
+          <textarea highlight-js [options]="{}" lang="typescript">
+@Component({ ... })
+export class ... {
+  animation: PrettyCheckboxAnimation;
+}
+          </textarea>
+    </div>
+
+  </div>
+
+</div>

@@ -1,3 +1,5 @@
+import { DemoSvgComponent } from './app/components/demo-svg/demo-svg.component';
+import { DemoFontIconComponent } from './app/components/demo-font-icon/demo-font-icon.component';
 import { DemoSwitchComponent } from './app/components/demo-switch/demo-switch.component';
 import { Routes } from '@angular/router';
 import { DemosComponent } from './app/components/demos/demos.component';
@@ -6,6 +8,8 @@ import { CheckboxApiComponent } from './app/components/checkbox-api/checkbox-api
 import { InterfacesApiComponent } from './app/components/interfaces-api/interfaces-api.component';
 import { EnumsApiComponent } from './app/components/enums-api/enums-api.component';
 import { DemoColorComponent } from './app/components/demo-color/demo-color.component';
+import { DemoImageComponent } from './app/components/demo-image/demo-image.component';
+import { DemoAnimationComponent } from './app/components/demo-animation/demo-animation.component';
 
 export const routes: Routes = [
 
@@ -25,6 +29,18 @@ export const routes: Routes = [
   }, {
     path: 'demo/colors',
     component : DemoColorComponent
+  }, {
+    path: 'demo/font-icons',
+    component : DemoFontIconComponent
+  }, {
+    path: 'demo/svg',
+    component : DemoSvgComponent
+  }, {
+    path: 'demo/image',
+    component : DemoImageComponent
+  }, {
+    path: 'demo/animations',
+    component : DemoAnimationComponent
   }, {
     path: 'api/checkbox',
     component: CheckboxApiComponent
