@@ -5,7 +5,7 @@
   <!-- Agree -->
   <div class="content__row">
     <div class="content__demo">
-      <p-checkbox shape="round">
+      <p-checkbox plain="true">
         <img src="https://lokesh-coder.github.io/pretty-checkbox/img/checked/001.png" p-image>
         Agree
       </p-checkbox>
@@ -13,7 +13,7 @@
 
     <div class="content__code">
         <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox shape="round">
+<p-checkbox plain="true">
   <img src="https://lokesh-coder.github.io/pretty-checkbox/img/checked/001.png" p-image>
   Agree
 </p-checkbox>
@@ -27,7 +27,7 @@
   <div class="content__row">
 
     <div class="content__demo">
-      <p-checkbox shape="curve">
+      <p-checkbox plain="true">
         <img src="https://lokesh-coder.github.io/pretty-checkbox/img/checked/002.png" p-image>
         Subscribe
       </p-checkbox>
@@ -35,7 +35,7 @@
 
     <div class="content__code">
         <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox shape="curve">
+<p-checkbox plain="true">
   <img src="https://lokesh-coder.github.io/pretty-checkbox/img/checked/002.png" p-image>
   Subscribe
 </p-checkbox>
@@ -49,7 +49,7 @@
   <div class="content__row">
 
     <div class="content__demo">
-        <p-checkbox>
+        <p-checkbox plain="true">
           <img src="https://lokesh-coder.github.io/pretty-checkbox/img/checked/003.png" p-image>
             Cancel
         </p-checkbox>
@@ -57,7 +57,7 @@
 
     <div class="content__code">
         <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox>
+<p-checkbox plain="true">
   <img src="https://lokesh-coder.github.io/pretty-checkbox/img/checked/003.png" p-image>
   Cancel
 </p-checkbox>
@@ -71,7 +71,7 @@
   <div class="content__row">
 
     <div class="content__demo">
-        <p-checkbox>
+        <p-checkbox plain="true">
           <img src="https://lokesh-coder.github.io/pretty-checkbox/img/checked/004.png" p-image>
           Yes
         </p-checkbox>
@@ -79,7 +79,7 @@
 
     <div class="content__code">
         <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox>
+<p-checkbox plain="true">
   <img src="https://lokesh-coder.github.io/pretty-checkbox/img/checked/004.png" p-image>
   Yes
 </p-checkbox>
@@ -90,48 +90,3 @@
 
 
 </div>
-
-
-<!-- 
-<h5 class="content__header--secondary">Run-Time change</h5>
-
-<div class="content__body">
-
-  <div class="content__row">
-
-    <div class="content__demo flex__column">
-      
-      <div class="content__demo--action">
-        <span class="content__demo--action-text">Stroke:</span>
-        <select [(ngModel)]="stroke">
-          <option>Default</option>
-          <option value="fill">Fill</option>
-          <option value="thick">Thick</option>
-          <option value="slim">Slim</option>
-        </select>
-      </div>
-
-      <p-checkbox will-change [stroke]="stroke">
-          Run-time changeable
-      </p-checkbox>
-      
-    </div>
-
-    <div class="content__code">
-        <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox will-change [stroke]="stroke">
-    Label text
-</p-checkbox>
-          </textarea>
-
-          <textarea highlight-js [options]="{}" lang="typescript">
-@Component({ ... })
-export class ... {
-  stroke: PrettyCheckboxStroke;
-}
-          </textarea>
-    </div>
-
-  </div>
-
-</div> -->

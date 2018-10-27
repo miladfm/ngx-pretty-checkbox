@@ -4,9 +4,6 @@ import { DemoSwitchComponent } from './app/components/demo-switch/demo-switch.co
 import { Routes } from '@angular/router';
 import { DemosComponent } from './app/components/demos/demos.component';
 import { DemoBasicCheckboxComponent } from './app/components/demo-basic-checkbox/demo-basic-checkbox.component';
-import { CheckboxApiComponent } from './app/components/checkbox-api/checkbox-api.component';
-import { InterfacesApiComponent } from './app/components/interfaces-api/interfaces-api.component';
-import { EnumsApiComponent } from './app/components/enums-api/enums-api.component';
 import { DemoColorComponent } from './app/components/demo-color/demo-color.component';
 import { DemoImageComponent } from './app/components/demo-image/demo-image.component';
 import { DemoAnimationComponent } from './app/components/demo-animation/demo-animation.component';
@@ -16,7 +13,6 @@ import { MixedOutlineComponent } from './app/components/demo-mixed-outline/demo-
 import { MixedSquareFillComponent } from './app/components/demo-mixed-square-fill/demo-mixed-square-fill.component';
 import { MixedSquareFillOutlineComponent } from './app/components/demo-mixed-square-fill-outline/demo-mixed-square-fill-outline.component';
 import { MixedSquareThickComponent } from './app/components/demo-mixed-square-thick/demo-mixed-square-thick.component';
-import { MixedSquareThickOutlineComponent } from './app/components/demo-mixed-square-thick-outline/demo-mixed-square-thick-outline.component';
 import { MixedCurveComponent } from './app/components/demo-mixed-curve/demo-mixed-curve.component';
 import { MixedCurveOutlineComponent } from './app/components/demo-mixed-curve-outline/demo-mixed-curve-outline.component';
 import { MixedCurveFillComponent } from './app/components/demo-mixed-curve-fill/demo-mixed-curve-fill.component';
@@ -30,10 +26,23 @@ import { MixedRoundFillOutlineComponent } from './app/components/demo-mixed-roun
 import { MixedRoundThickComponent } from './app/components/demo-mixed-round-thick/demo-mixed-round-thick.component';
 import { MixedRoundThickOutlineComponent } from './app/components/demo-mixed-round-thick-outline/demo-mixed-round-thick-outline.component';
 import { MixedSwitchComponent } from './app/components/demo-mixed-switch/demo-mixed-switch.component';
-import { CheckboxWillChangeApiComponent } from './app/components/checkbox-will-change-api/checkbox-will-change-api.component';
-import { RadioGroupApiComponent } from './app/components/checkbox-will-change-api/components/radio-group-api/radio-group-api.component';
-import { RadioApiComponent } from './app/components/checkbox-will-change-api/components/radio-api/radio-api.component';
-import { RadioWillChangeApiComponent } from './app/components/checkbox-will-change-api/components/radio-will-change-api/radio-will-change-api.component';
+import { MixedSquareThickOutlineComponent } from './app/components/demo-mixed-square-thick-outline/demo-mixed-square-thick-outline.component';
+import { ApiCheckboxComponent } from './app/components/api-checkbox/api-checkbox.component';
+import { ApiCheckboxWillChangeComponent } from './app/components/api-checkbox-will-change/api-checkbox-will-change.component';
+import { ApiRadioGroupComponent } from './app/components/api-radio-group/api-radio-group.component';
+import { ApiRadioComponent } from './app/components/api-radio/api-radio.component';
+import { RadioWillChangeApiComponent } from './app/components/api-radio-will-change/api-radio-will-change.component';
+import { ApiToggleComponent } from './app/components/api-toggle/api-toggle.component';
+import { ApiToggleWillChangeComponent } from './app/components/api-toggle-will-change/api-toggle-will-change.component';
+import { ApiHoverComponent } from './app/components/api-hover/api-hover.component';
+import { ApiHoverWillChangeComponent } from './app/components/api-hover-will-change/api-hover-will-change.component';
+import { ApiIndeterminateComponent } from './app/components/api-indeterminate/api-indeterminate.component';
+import { ApiIndeterminateWillChangeComponent } from './app/components/api-indeterminate-will-change/api-indeterminate-will-change.component';
+import { ApiIconComponent } from './app/components/api-icon/api-icon.component';
+import { ApiSvgComponent } from './app/components/api-svg/api-svg.component';
+import { ApiImageComponent } from './app/components/api-image/api-image.component';
+import { ApiInterfacesComponent } from './app/components/api-interfaces/api-interfaces.component';
+import { ApiEnumsComponent } from './app/components/api-enums/api-enums.component';
 
 export const routes: Routes = [
 
@@ -175,27 +184,25 @@ export const routes: Routes = [
     path: `${MainRouteName.Demo}/${DemoRouteName.Animations}`,
     component : DemoAnimationComponent
 
-
-
   }, {
     // api/checkbox
     path: `${MainRouteName.API}/${ApiRouteName.Checkbox}`,
-    component: CheckboxApiComponent
+    component: ApiCheckboxComponent
 
   }, {
     // api/checkbox-will-change
     path: `${MainRouteName.API}/${ApiRouteName.CheckboxWillChange}`,
-    component: CheckboxWillChangeApiComponent
+    component: ApiCheckboxWillChangeComponent
 
   }, {
     // api/radio-group
     path: `${MainRouteName.API}/${ApiRouteName.RadioGroup}`,
-    component: RadioGroupApiComponent
+    component: ApiRadioGroupComponent
 
   }, {
     // api/radio
     path: `${MainRouteName.API}/${ApiRouteName.Radio}`,
-    component: RadioApiComponent
+    component: ApiRadioComponent
 
   }, {
     // api/radio-will-change
@@ -203,14 +210,59 @@ export const routes: Routes = [
     component: RadioWillChangeApiComponent
 
   }, {
+    // api/toggle
+    path: `${MainRouteName.API}/${ApiRouteName.Toggle}`,
+    component: ApiToggleComponent
+
+  }, {
+    // api/toggle-will-change'
+    path: `${MainRouteName.API}/${ApiRouteName.ToggleWillChange}`,
+    component: ApiToggleWillChangeComponent
+
+  }, {
+    // api/hover
+    path: `${MainRouteName.API}/${ApiRouteName.Hover}`,
+    component: ApiHoverComponent
+
+  }, {
+    // api/hover-will-change'
+    path: `${MainRouteName.API}/${ApiRouteName.HoverWillChange}`,
+    component: ApiHoverWillChangeComponent
+
+  }, {
+    // api/indeterminate
+    path: `${MainRouteName.API}/${ApiRouteName.Indeterminate}`,
+    component: ApiIndeterminateComponent
+
+  }, {
+    // api/indeterminate-will-change'
+    path: `${MainRouteName.API}/${ApiRouteName.IndeterminateWillChange}`,
+    component: ApiIndeterminateWillChangeComponent
+
+  }, {
+    // api/icon
+    path: `${MainRouteName.API}/${ApiRouteName.Icon}`,
+    component: ApiIconComponent
+
+  }, {
+    // api/svg
+    path: `${MainRouteName.API}/${ApiRouteName.Svg}`,
+    component: ApiSvgComponent
+
+  }, {
+    // api/image
+    path: `${MainRouteName.API}/${ApiRouteName.Image}`,
+    component: ApiImageComponent
+
+  }, {
     // api/interfaces
     path: `${MainRouteName.API}/${ApiRouteName.Interfaces}`,
-    component: InterfacesApiComponent
+    component: ApiInterfacesComponent
 
   }, {
     // api/enums
     path: `${MainRouteName.API}/${ApiRouteName.Enums}`,
-    component: EnumsApiComponent
+    component: ApiEnumsComponent
 
   }, {
     path: '**',

@@ -41,5 +41,15 @@ export enum ApiRouteName {
   Radio = 'radio',
   RadioWillChange = 'radio-will-change',
   Interfaces = 'interfaces',
-  Enums = 'enums'
+  Enums = 'enums',
+  Toggle = 'toggle',
+
+  ToggleWillChange = 'toggle-will-change',
+  Hover = 'hover',
+  HoverWillChange = 'hover-will-change',
+  Indeterminate = 'indeterminate',
+  IndeterminateWillChange = 'indeterminate-will-change',
+  Icon = 'icon',
+  Svg = 'svg',
+  Image = 'image'
 }
