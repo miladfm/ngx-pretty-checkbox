@@ -13,6 +13,8 @@ export class AppComponent {
   public readonly DemoRouteName = DemoRouteName;
   public readonly ApiRouteName = ApiRouteName;
 
+  public isAccordingMixedOpen = false;
+
   constructor(private navigation: NavigationService) {}
 
   goToDemo(page?: DemoRouteName) {
@@ -21,6 +23,10 @@ export class AppComponent {
 
   goToApi(page?: ApiRouteName) {
     this.navigation.goToApi(page);
+  }
+
+  setMixedAccording(isOpen: boolean) {
+    this.isAccordingMixedOpen = isOpen;
   }
 
 }

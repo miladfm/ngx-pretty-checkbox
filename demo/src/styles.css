@@ -103,6 +103,7 @@ select:focus {
   align-items: flex-start;
   flex-direction: column;
   width: 200px;
+  min-width: 200px;
   padding-right: 20px;
   border-right: 1px solid #ccc;
 }

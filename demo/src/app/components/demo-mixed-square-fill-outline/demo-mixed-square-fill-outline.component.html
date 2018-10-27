@@ -1,4 +1,5 @@
-<h4 class="content__header">Colors</h4>
+<h5 class="content__header--secondary">Mixed: Square, Fill, Outline</h5>
+
 
 <div class="content__body">
 
@@ -6,14 +7,14 @@
   <div class="content__row">
 
     <div class="content__demo">
-      <p-checkbox color="primary">
+      <p-checkbox outline="true" stroke="fill" color="primary">
         Primary
       </p-checkbox>
     </div>
 
     <div class="content__code">
         <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox color="primary">
+<p-checkbox outline="true" stroke="fill" color="primary">
   Primary
 </p-checkbox>
           </textarea>
@@ -26,14 +27,14 @@
   <div class="content__row">
 
     <div class="content__demo">
-      <p-checkbox color="success">
+      <p-checkbox outline="true" stroke="fill" color="success">
         Success
       </p-checkbox>
     </div>
 
     <div class="content__code">
         <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox color="success">
+<p-checkbox outline="true" stroke="fill" color="success">
   Success
 </p-checkbox>
           </textarea>
@@ -46,14 +47,14 @@
   <div class="content__row">
 
     <div class="content__demo">
-        <p-checkbox color="info">
+        <p-checkbox outline="true" stroke="fill" color="info">
           Info
         </p-checkbox>
     </div>
 
     <div class="content__code">
         <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox color="info">
+<p-checkbox outline="true" stroke="fill" color="info">
   Info
 </p-checkbox>
           </textarea>
@@ -66,14 +67,14 @@
   <div class="content__row">
 
     <div class="content__demo">
-        <p-checkbox color="warning">
+        <p-checkbox outline="true" stroke="fill" color="warning">
           Warning
         </p-checkbox>
     </div>
 
     <div class="content__code">
         <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox color="warning">
+<p-checkbox outline="true" stroke="fill" color="warning">
   Warning
 </p-checkbox>
           </textarea>
@@ -86,14 +87,14 @@
   <div class="content__row">
 
     <div class="content__demo">
-        <p-checkbox color="danger">
+        <p-checkbox outline="true" stroke="fill" color="danger">
           Danger
         </p-checkbox>
     </div>
 
     <div class="content__code">
         <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox color="danger">
+<p-checkbox outline="true" stroke="fill" color="danger">
   Danger
 </p-checkbox>
           </textarea>
@@ -101,51 +102,5 @@
 
   </div>
 
-
-</div>
-
-
-<h5 class="content__header--secondary">Run-Time change</h5>
-
-<div class="content__body">
-
-  <!-- run-time -->
-  <div class="content__row">
-
-    <div class="content__demo flex__column">
-      
-      <div class="content__demo--action">
-        <span class="content__demo--action-text">Color:</span>
-        <select [(ngModel)]="color">
-          <option value="primary">Primary</option>
-          <option value="success">Success</option>
-          <option value="info">Info</option>
-          <option value="warning">Warning</option>
-          <option value="danger">Danger</option>
-        </select>
-      </div>
-
-      <p-checkbox will-change [color]="color">
-          Run-time changeable
-      </p-checkbox>
-      
-    </div>
-
-    <div class="content__code">
-        <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox will-change [color]="color">
-    Label text
-</p-checkbox>
-          </textarea>
-
-          <textarea highlight-js [options]="{}" lang="typescript">
-@Component({ ... })
-export class ... {
-  color: PrettyCheckboxColor;
-}
-          </textarea>
-    </div>
-
-  </div>
 
 </div>

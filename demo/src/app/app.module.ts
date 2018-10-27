@@ -18,29 +18,29 @@ import { InterfacesApiComponent } from './components/interfaces-api/interfaces-a
 import { EnumsApiComponent } from './components/enums-api/enums-api.component';
 import { DemoSwitchComponent } from './components/demo-switch/demo-switch.component';
 import { DemoColorComponent } from './components/demo-color/demo-color.component';
-import { MixedColorComponent } from './components/demo-color/mixed-color/mixed-color.component';
-import { OutlineColorComponent } from './components/demo-color/outline-color/outline-color.component';
-import { SquareFillColorComponent } from './components/demo-color/square-fill-color/square-fill-color.component';
-import { SquareFillOutlineColorComponent } from './components/demo-color/square-fill-outline-color/square-fill-outline-color.component';
-import { SquareThickOutlineColorComponent } from './components/demo-color/square-thick-outline-color/square-thick-outline-color.component';
-import { SquareThickColorComponent } from './components/demo-color/square-thick-color/square-thick-color.component';
-import { CurveColorComponent } from './components/demo-color/curve-color/curve-color.component';
-import { CurveOutlineColorComponent } from './components/demo-color/curve-outline-color/curve-outline-color.component';
-import { CurveFillOutlineColorComponent } from './components/demo-color/curve-fill-outline-color/curve-fill-outline-color.component';
-import { CurveFillColorComponent } from './components/demo-color/curve-fill-color/curve-fill-color.component';
-import { CurveThickColorComponent } from './components/demo-color/curve-thick-color/curve-thick-color.component';
-import { CurveThickOutlineColorComponent } from './components/demo-color/curve-thick-outline-color/curve-thick-outline-color.component';
-import { RoundOutlineColorComponent } from './components/demo-color/round-outline-color/round-outline-color.component';
-import { RoundColorComponent } from './components/demo-color/round-color/round-color.component';
-import { RoundFillColorComponent } from './components/demo-color/round-fill-color/round-fill-color.component';
-import { RoundFillOutlineColorComponent } from './components/demo-color/round-fill-outline-color/round-fill-outline-color.component';
-import { RoundThickOutlineColorComponent } from './components/demo-color/round-thick-outline-color/round-thick-outline-color.component';
-import { RoundThickColorComponent } from './components/demo-color/round-thick-color/round-thick-color.component';
-import { SwitchColorComponent } from './components/demo-color/switch-color/switch-color.component';
 import { DemoFontIconComponent } from './components/demo-font-icon/demo-font-icon.component';
 import { DemoSvgComponent } from './components/demo-svg/demo-svg.component';
 import { DemoImageComponent } from './components/demo-image/demo-image.component';
 import { DemoAnimationComponent } from './components/demo-animation/demo-animation.component';
+import { MixedColorComponent } from './components/demo-mixed-color/demo-mixed-color.component';
+import { MixedOutlineComponent } from './components/demo-mixed-outline/demo-mixed-outline.component';
+import { MixedSquareFillComponent } from './components/demo-mixed-square-fill/demo-mixed-square-fill.component';
+import { MixedSquareFillOutlineComponent } from './components/demo-mixed-square-fill-outline/demo-mixed-square-fill-outline.component';
+import { MixedSquareThickComponent } from './components/demo-mixed-square-thick/demo-mixed-square-thick.component';
+import { MixedSquareThickOutlineComponent } from './components/demo-mixed-square-thick-outline/demo-mixed-square-thick-outline.component';
+import { MixedCurveComponent } from './components/demo-mixed-curve/demo-mixed-curve.component';
+import { MixedCurveOutlineComponent } from './components/demo-mixed-curve-outline/demo-mixed-curve-outline.component';
+import { MixedCurveFillComponent } from './components/demo-mixed-curve-fill/demo-mixed-curve-fill.component';
+import { MixedCurveFillOutlineComponent } from './components/demo-mixed-curve-fill-outline/demo-mixed-curve-fill-outline.component';
+import { MixedCurveThickComponent } from './components/demo-mixed-curve-thick/demo-mixed-curve-thick.component';
+import { MixedCurveThickOutlineComponent } from './components/demo-mixed-curve-thick-outline/demo-mixed-curve-thick-outline.component';
+import { MixedRoundComponent } from './components/demo-mixed-round/demo-mixed-round.component';
+import { MixedRoundOutlineComponent } from './components/demo-mixed-round-outline/demo-mixed-round-outline.component';
+import { MixedRoundFillComponent } from './components/demo-mixed-round-fill/demo-mixed-round-fill.component';
+import { MixedRoundFillOutlineComponent } from './components/demo-mixed-round-fill-outline/demo-mixed-round-fill-outline.component';
+import { MixedRoundThickComponent } from './components/demo-mixed-round-thick/demo-mixed-round-thick.component';
+import { MixedRoundThickOutlineComponent } from './components/demo-mixed-round-thick-outline/demo-mixed-round-thick-outline.component';
+import { MixedSwitchComponent } from './components/demo-mixed-switch/demo-mixed-switch.component';
 
 
 @NgModule({
@@ -55,25 +55,27 @@ import { DemoAnimationComponent } from './components/demo-animation/demo-animati
     CodeComponent,
     DemoSwitchComponent,
     DemoColorComponent,
+
     MixedColorComponent,
-    OutlineColorComponent,
-    SquareFillColorComponent,
-    SquareFillOutlineColorComponent,
-    SquareThickOutlineColorComponent,
-    SquareThickColorComponent,
-    CurveColorComponent,
-    CurveOutlineColorComponent,
-    CurveFillOutlineColorComponent,
-    CurveFillColorComponent,
-    CurveThickColorComponent,
-    CurveThickOutlineColorComponent,
-    RoundOutlineColorComponent,
-    RoundColorComponent,
-    RoundFillColorComponent,
-    RoundFillOutlineColorComponent,
-    RoundThickOutlineColorComponent,
-    RoundThickColorComponent,
-    SwitchColorComponent,
+    MixedOutlineComponent,
+    MixedSquareFillComponent,
+    MixedSquareFillOutlineComponent,
+    MixedSquareThickComponent,
+    MixedSquareThickOutlineComponent,
+    MixedCurveComponent,
+    MixedCurveOutlineComponent,
+    MixedCurveFillComponent,
+    MixedCurveFillOutlineComponent,
+    MixedCurveThickComponent,
+    MixedCurveThickOutlineComponent,
+    MixedRoundComponent,
+    MixedRoundOutlineComponent,
+    MixedRoundFillComponent,
+    MixedRoundFillOutlineComponent,
+    MixedRoundThickComponent,
+    MixedRoundThickOutlineComponent,
+    MixedSwitchComponent,
+
     DemoFontIconComponent,
     DemoSvgComponent,
     DemoImageComponent,
