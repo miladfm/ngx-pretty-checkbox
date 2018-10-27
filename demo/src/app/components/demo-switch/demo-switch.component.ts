@@ -9,6 +9,7 @@ import { PrettyCheckboxStroke } from 'ngx-pretty-checkbox';
 export class DemoSwitchComponent implements OnInit {
 
   stroke: PrettyCheckboxStroke;
+  isSwitch = true;
 
   constructor() { }
 

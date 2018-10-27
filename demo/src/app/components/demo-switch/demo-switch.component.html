@@ -75,16 +75,26 @@
 
     <div class="content__demo flex__column">
       
+      <!-- IS_SWITCH -->
+      <div class="content__demo--action">
+        <span class="content__demo--action-text">is switch:</span>
+        <p-checkbox animation="smooth" [checked]="isSwitch" (change)="isSwitch = $event.checked">
+            <i p-icon class="material-icons">check</i>
+        </p-checkbox>
+      </div>
+
+      <!-- STROKE DROPDOWN  -->
       <div class="content__demo--action">
         <span class="content__demo--action-text">Stroke:</span>
         <select [(ngModel)]="stroke">
+          <option value="hidden" class="hidden-option">HIDDEN</option>
           <option>Default - Outline</option>
           <option value="fill">Fill</option>
           <option value="slim">Slim</option>
         </select>
       </div>
 
-      <p-checkbox will-change isSwitch="true" [stroke]="stroke">
+      <p-checkbox will-change [isSwitch]="isSwitch" [stroke]="stroke">
           Run-time changeable
       </p-checkbox>
       
@@ -92,7 +102,7 @@
 
     <div class="content__code">
         <textarea highlight-js [options]="{}" lang="html">
-<p-checkbox will-change isSwitch="true" [stroke]="stroke">
+<p-checkbox will-change [isSwitch]="isSwitch" [stroke]="stroke">
     Label text
 </p-checkbox>
           </textarea>
@@ -101,6 +111,7 @@
 @Component({ ... })
 export class ... {
   stroke: PrettyCheckboxStroke;
+  isSwitch: boolean = true;
 }
           </textarea>
     </div>

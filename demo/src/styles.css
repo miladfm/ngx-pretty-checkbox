@@ -23,6 +23,7 @@ html, body {
 body {
   background-color: #eee;
   color: #444;
+  font-size: 1rem;
 }
 
 h5 {
@@ -30,14 +31,28 @@ h5 {
 }
 
 select {
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  flex: 1;
+  font-size: 0.85rem;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid #aaa;
+  line-height: 1;
+  outline: none;
+  color: #666;
+  border-color: #aaa;
+  padding: 0.65em 2.5em 0.55em 0.75em;
+  border-radius: 3px;
+  background: linear-gradient(#aaa, #aaa) no-repeat, linear-gradient(-135deg, rgba(255,255,255,0) 50%, white 50%) no-repeat, linear-gradient(-225deg, rgba(255,255,255,0) 50%, white 50%) no-repeat, linear-gradient(#aaa, #aaa) no-repeat;
+  background-color: white;
+  background-size: 1px 100%, 20px 20px, 20px 20px, 20px 60%;
+  background-position: right 20px center, right bottom, right bottom, right bottom;
 }
 
 select:focus {
   outline: none;
+}
+
+.hidden-option {
+  display: none;
 }
 
 .flex__column {
@@ -167,4 +182,9 @@ select:focus {
 
 .table__text--code {
   font-weight: 100;
+}
+
+.check-icon-style {
+  color: #039BE5;
+  transform: scale(1.5);
 }
