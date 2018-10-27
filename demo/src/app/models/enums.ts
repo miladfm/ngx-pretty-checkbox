@@ -1,6 +1,11 @@
 export enum MainRouteName {
   Demo = 'demo',
-  API = 'api'
+  API = 'api',
+  Install = 'install'
+}
+
+export enum InstallRouteName {
+  Lib = 'lib'
 }
 
 export enum DemoRouteName {

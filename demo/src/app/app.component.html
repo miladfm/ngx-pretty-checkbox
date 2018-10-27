@@ -22,7 +22,7 @@
           class="side-nav__accordion"
           (transitionend)="onTransitionEnd(isAccordingInstallOpen, installAccordingElem)">
 
-            <div class="side-nav__item">Sub-install</div>
+            <div class="side-nav__item" (click)="goToInstall(InstallRouteName.Lib)">Install library</div>
         </div>
         
 

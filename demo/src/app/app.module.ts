@@ -53,6 +53,7 @@ import { ApiIconComponent } from './components/api-icon/api-icon.component';
 import { ApiSvgComponent } from './components/api-svg/api-svg.component';
 import { ApiImageComponent } from './components/api-image/api-image.component';
 import { ContentSetIndeterminateComponent } from './components/content-set-indeterminate/content-set-indeterminate.component';
+import { InstallLibComponent } from './components/install-lib/install-lib.component';
 
 
 
@@ -114,6 +115,7 @@ import { ContentSetIndeterminateComponent } from './components/content-set-indet
     MixedRoundThickComponent,
     MixedRoundThickOutlineComponent,
     MixedSwitchComponent,
+    InstallLibComponent,
 
   ],
   imports: [

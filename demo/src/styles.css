@@ -311,3 +311,27 @@ input[type=range].slider:focus::-ms-fill-lower {
 input[type=range].slider:focus::-ms-fill-upper {
   background: hsla(201,9%,55%,.32)
 }
+
+
+/* Install */
+.install__step {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.install__step--header {
+  white-space: pre;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0px 10px;
+}
+
+.install__step--sub-header {
+  font-weight: 500;
+  margin: 0px 10px;
+}
+
+.install__row {
+  display: flex;
+}

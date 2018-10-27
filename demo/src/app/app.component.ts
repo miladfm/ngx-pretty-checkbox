@@ -1,5 +1,5 @@
 import { Component, ChangeDetectionStrategy, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { DemoRouteName, ApiRouteName } from './models/enums';
+import { DemoRouteName, ApiRouteName, InstallRouteName } from './models/enums';
 import { NavigationService } from './services/navigation.service';
 import { AotCompiler } from '@angular/compiler';
 
@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
 
   public readonly DemoRouteName = DemoRouteName;
   public readonly ApiRouteName = ApiRouteName;
+  public readonly InstallRouteName = InstallRouteName;
 
   public isAccordingInstallOpen = true;
   public isAccordingDemosOpen = false;
@@ -35,6 +36,10 @@ export class AppComponent implements OnInit {
 
   goToDemo(page?: DemoRouteName) {
     this.navigation.goToDemo(page);
+  }
+
+  goToInstall(page?: InstallRouteName) {
+    this.navigation.goToInstall(page);
   }
 
   goToApi(page?: ApiRouteName) {

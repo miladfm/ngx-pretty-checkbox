@@ -7,7 +7,7 @@ import { DemoBasicCheckboxComponent } from './app/components/demo-basic-checkbox
 import { DemoColorComponent } from './app/components/demo-color/demo-color.component';
 import { DemoImageComponent } from './app/components/demo-image/demo-image.component';
 import { DemoAnimationComponent } from './app/components/demo-animation/demo-animation.component';
-import { DemoRouteName, MainRouteName, ApiRouteName } from './app/models/enums';
+import { DemoRouteName, MainRouteName, ApiRouteName, InstallRouteName } from './app/models/enums';
 import { MixedColorComponent } from './app/components/demo-mixed-color/demo-mixed-color.component';
 import { MixedOutlineComponent } from './app/components/demo-mixed-outline/demo-mixed-outline.component';
 import { MixedSquareFillComponent } from './app/components/demo-mixed-square-fill/demo-mixed-square-fill.component';
@@ -43,12 +43,18 @@ import { ApiSvgComponent } from './app/components/api-svg/api-svg.component';
 import { ApiImageComponent } from './app/components/api-image/api-image.component';
 import { ApiInterfacesComponent } from './app/components/api-interfaces/api-interfaces.component';
 import { ApiEnumsComponent } from './app/components/api-enums/api-enums.component';
+import { InstallLibComponent } from './app/components/install-lib/install-lib.component';
 
 export const routes: Routes = [
 
   // { path: '', redirectTo: '/main', pathMatch: 'full' },
 
   {
+    // install/lib
+    path: `${MainRouteName.Install}/${InstallRouteName.Lib}`,
+    component: InstallLibComponent
+
+  }, {
     // demo
     path: `${MainRouteName.Demo}`,
     component: DemosComponent

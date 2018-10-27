@@ -6,17 +6,17 @@
 |    1   |  Milad      |  SCSS Customize                                                                             |️️ ⏳ 
 |    1   |  Milad      |  States                                                                                     |️️ ⏳ 
 |    1   |  Milad      |  Demo -Toggle                                                                               |️️ ⏳ 
-|    1   |  Milad      |  API -Toggle                                                                                |️️ ⏳ 
 |    1   |  Milad      |  Demo - Hover                                                                               |️️ ⏳ 
-|    1   |  Milad      |  API - Hover                                                                                |️️ ⏳ 
 |    1   |  Milad      |  Demo - Indeterminate                                                                       |️️ ⏳ 
-|    1   |  Milad      |  API - Indeterminate                                                                        |️️ ⏳ 
-|    1   |  Milad      |  API - Directive icon                                                                       |️️ ⏳ 
-|    1   |  Milad      |  API - Directive image                                                                      |️️ ⏳ 
-|    1   |  Milad      |  API - Directive svg                                                                        |️️ ⏳ 
-|    1   |  Milad      |  Install                                                                                    |️️ ⏳ 
+|    1   |  Milad      |  API -Toggle                                                                                |️️ ✔️
+|    1   |  Milad      |  API - Hover                                                                                |️️ ✔️
+|    1   |  Milad      |  API - Indeterminate                                                                        |️️ ✔️ 
+|    1   |  Milad      |  API - Directive icon                                                                       |️️ ✔️
+|    1   |  Milad      |  API - Directive image                                                                      |️️ ✔️
+|    1   |  Milad      |  API - Directive svg                                                                        |️️ ✔️
+|    1   |  Milad      |  Install                                                                                    |️️ ✔️
 |    1   |  Milad      |  setIndeterminate method                                                                    |️️ ✔️
-|    1   |  Milad      |  sub menu for main Route                                                                    |️️ ⏳ 
+|    1   |  Milad      |  sub menu for main Route                                                                    |️️ ✔️
 |    1   |  Milad      |  Dynamic Demo for all components with Scalability                                           |️️ ⏳ 
 |    1   |  Milad      |  Rename name of API components to api-XXX                                                   |️️ ✔️
 |    2   |  Mohammad   |  Animations - Smooth                                                                        | ⏳

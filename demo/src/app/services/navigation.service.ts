@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { DemoRouteName, MainRouteName, ApiRouteName } from '../models/enums';
+import { DemoRouteName, MainRouteName, ApiRouteName, InstallRouteName } from '../models/enums';
 
 @Injectable({
   providedIn: 'root'
@@ -24,6 +24,15 @@ export class NavigationService {
 
     } else {
       this.route.navigate([MainRouteName.API]);
+    }
+  }
+
+  goToInstall(page?: InstallRouteName) {
+    if (page) {
+      this.route.navigate([MainRouteName.Install, page]);
+
+    } else {
+      this.route.navigate([MainRouteName.Install]);
     }
   }
 
