@@ -5,7 +5,8 @@ export enum MainRouteName {
 }
 
 export enum InstallRouteName {
-  Lib = 'lib'
+  Lib = 'lib',
+  ScssCustomize = 'scss-customize'
 }
 
 export enum DemoRouteName {
@@ -36,7 +37,11 @@ export enum DemoRouteName {
   FontIcons = 'font-icons',
   Svg = 'svg',
   Image = 'image',
-  Animations = 'animations'
+  Animations = 'animations',
+
+  Toggle = 'toggle',
+  Scalability = 'scalability',
+  States = 'states'
 }
 
 export enum ApiRouteName {

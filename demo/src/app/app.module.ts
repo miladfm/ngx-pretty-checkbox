@@ -54,6 +54,9 @@ import { ApiSvgComponent } from './components/api-svg/api-svg.component';
 import { ApiImageComponent } from './components/api-image/api-image.component';
 import { ContentSetIndeterminateComponent } from './components/content-set-indeterminate/content-set-indeterminate.component';
 import { InstallLibComponent } from './components/install-lib/install-lib.component';
+import { InstallScssCustomizeComponent } from './components/install-scss-customize/install-scss-customize.component';
+import { DemoScalabilityComponent } from './components/demo-scalability/demo-scalability.component';
+import { DemoStatesComponent } from './components/demo-states/demo-states.component';
 
 
 
@@ -67,6 +70,9 @@ import { InstallLibComponent } from './components/install-lib/install-lib.compon
     CodeComponent,
     ContentSetIndeterminateComponent,
 
+    InstallLibComponent,
+    InstallScssCustomizeComponent,
+
     DemosComponent,
     DemoBasicCheckboxComponent,
     DemoSwitchComponent,
@@ -75,8 +81,9 @@ import { InstallLibComponent } from './components/install-lib/install-lib.compon
     DemoSvgComponent,
     DemoImageComponent,
     DemoAnimationComponent,
-
     DemoToggleComponent,
+    DemoScalabilityComponent,
+    DemoStatesComponent,
 
     ApiCheckboxComponent,
     ApiInterfacesComponent,
@@ -85,7 +92,6 @@ import { InstallLibComponent } from './components/install-lib/install-lib.compon
     ApiRadioGroupComponent,
     ApiRadioComponent,
     RadioWillChangeApiComponent,
-
     ApiToggleComponent,
     ApiToggleWillChangeComponent,
     ApiHoverComponent,
@@ -115,7 +121,6 @@ import { InstallLibComponent } from './components/install-lib/install-lib.compon
     MixedRoundThickComponent,
     MixedRoundThickOutlineComponent,
     MixedSwitchComponent,
-    InstallLibComponent,
 
   ],
   imports: [

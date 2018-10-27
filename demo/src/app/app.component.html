@@ -23,6 +23,7 @@
           (transitionend)="onTransitionEnd(isAccordingInstallOpen, installAccordingElem)">
 
             <div class="side-nav__item" (click)="goToInstall(InstallRouteName.Lib)">Install library</div>
+            <div class="side-nav__item" (click)="goToInstall(InstallRouteName.ScssCustomize)">SCSS Customized</div>
         </div>
         
 
@@ -77,6 +78,10 @@
           <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Svg)">Svg</div>
           <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Image)">Image</div>
           <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Animations)">Animations</div>
+
+          <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Toggle)">Toggle</div>
+          <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Scalability)">Scalability</div>
+          <div class="side-nav__item" (click)="goToDemo(DemoRouteName.States)">States</div>
 
         </div>
         

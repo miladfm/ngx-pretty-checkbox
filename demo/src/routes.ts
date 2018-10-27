@@ -44,15 +44,26 @@ import { ApiImageComponent } from './app/components/api-image/api-image.componen
 import { ApiInterfacesComponent } from './app/components/api-interfaces/api-interfaces.component';
 import { ApiEnumsComponent } from './app/components/api-enums/api-enums.component';
 import { InstallLibComponent } from './app/components/install-lib/install-lib.component';
+import { InstallScssCustomizeComponent } from './app/components/install-scss-customize/install-scss-customize.component';
+import { DemoToggleComponent } from './app/components/demo-toggle/demo-toggle.component';
+import { DemoScalabilityComponent } from './app/components/demo-scalability/demo-scalability.component';
+import { DemoStatesComponent } from './app/components/demo-states/demo-states.component';
+
+const MAIN_PAGE = `${MainRouteName.Install}/${InstallRouteName.Lib}`;
 
 export const routes: Routes = [
 
-  // { path: '', redirectTo: '/main', pathMatch: 'full' },
+  { path: '', redirectTo: MAIN_PAGE, pathMatch: 'full' },
 
   {
     // install/lib
     path: `${MainRouteName.Install}/${InstallRouteName.Lib}`,
     component: InstallLibComponent
+
+  }, {
+    // install/scss-customize
+    path: `${MainRouteName.Install}/${InstallRouteName.ScssCustomize}`,
+    component: InstallScssCustomizeComponent
 
   }, {
     // demo
@@ -186,6 +197,21 @@ export const routes: Routes = [
     component : DemoImageComponent
 
   }, {
+    // demo/toggle
+    path: `${MainRouteName.Demo}/${DemoRouteName.Toggle}`,
+    component : DemoToggleComponent
+
+  }, {
+    // demo/indeterminate
+    path: `${MainRouteName.Demo}/${DemoRouteName.States}`,
+    component : DemoStatesComponent
+
+  }, {
+    // demo/scalability
+    path: `${MainRouteName.Demo}/${DemoRouteName.Scalability}`,
+    component : DemoScalabilityComponent
+
+  }, {
     // demo/animations
     path: `${MainRouteName.Demo}/${DemoRouteName.Animations}`,
     component : DemoAnimationComponent
@@ -272,7 +298,7 @@ export const routes: Routes = [
 
   }, {
     path: '**',
-    redirectTo: '/'
+    redirectTo: MAIN_PAGE
   }
 
 ];
