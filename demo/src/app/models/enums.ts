@@ -48,12 +48,12 @@ export enum DemoRouteName {
   Toggle = 'toggle',
   Scalability = 'scalability',
   States = 'states',
-  CheckboxAll = 'checkbox-all'
+  CheckboxAll = 'checkbox-all',
 
   Plain = 'plain',
   Disable = 'disable',
   Lock = 'lock',
-  Size = 'size',
+  Size = 'size'
 }
 
 export enum ApiRouteName {
