@@ -37,12 +37,23 @@ export enum DemoRouteName {
   FontIcons = 'font-icons',
   Svg = 'svg',
   Image = 'image',
+
   Animations = 'animations',
+  AnimationSmooth = 'animation-smooth',
+  AnimationJelly = 'animation-jelly',
+  AnimationTada = 'animation-tada',
+  AnimationRotate = 'animation-rotate',
+  AnimationPulse = 'animation-pulse',
 
   Toggle = 'toggle',
   Scalability = 'scalability',
   States = 'states',
   CheckboxAll = 'checkbox-all'
+
+  Plain = 'plain',
+  Disable = 'disable',
+  Lock = 'lock',
+  Size = 'size',
 }
 
 export enum ApiRouteName {

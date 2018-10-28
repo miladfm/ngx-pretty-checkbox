@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgxPrettyCheckboxComponent } from 'ngx-pretty-checkbox';
 
 @Component({
   selector: 'app-demo-states',
@@ -10,6 +11,10 @@ export class DemoStatesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  setIndeterminate( prettyCheckbox: NgxPrettyCheckboxComponent) {
+    prettyCheckbox.setIndeterminate();
   }
 
 }
