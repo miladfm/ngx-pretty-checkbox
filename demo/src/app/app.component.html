@@ -77,7 +77,30 @@
           <div class="side-nav__item" (click)="goToDemo(DemoRouteName.FontIcons)">Font Icons</div>
           <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Svg)">Svg</div>
           <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Image)">Image</div>
-          <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Animations)">Animations</div>
+
+          <div class="side-nav__item" (click)="  onAnimationClick()">
+              Animations
+              <i *ngIf="!isAccordingAnimationOpen" class="side-nav__accordion-icon material-icons">arrow_drop_down</i>
+              <i *ngIf="isAccordingAnimationOpen" class="side-nav__accordion-icon material-icons">arrow_drop_up</i>
+            </div>
+            <div #animationAccordingElem
+              class="side-nav__accordion"
+              (transitionend)="onTransitionEnd(isAccordingAnimationOpen, animationAccordingElem)">
+
+                <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.AnimationSmooth)">Smooth</div>
+                <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.AnimationJelly)">Jelly</div>
+                <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.AnimationTada)">Tada</div>
+                <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.AnimationRotate)">Rotate</div>
+                <div class="side-nav__sub-item" (click)="goToDemo(DemoRouteName.AnimationPulse)">Pulse</div>
+
+            </div>
+    
+
+          <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Plain)">Plain</div>
+          <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Disable)">Disable</div>
+          <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Lock)">Lock</div>
+          <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Size)">Size</div>
+          
 
           <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Toggle)">Toggle</div>
           <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Scalability)">Scalability</div>

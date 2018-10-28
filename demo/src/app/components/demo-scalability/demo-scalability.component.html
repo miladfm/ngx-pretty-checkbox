@@ -1,3 +1,33 @@
 <h4 class="content__header">Scalability</h4>
 
-<input class="slider" type="range" value="14" min="14" max="100" step="1">
+
+<div class="content__body">
+
+
+    <div class="content__row">
+
+        <div class="content__demo">
+            <input class="slider" type="range" value="14" min="14" max="100" step="1" #slider (input)="0">
+
+            <br>
+
+            <p-checkbox [style.fontSize.px]="slider.value"></p-checkbox>
+            <p-checkbox [style.fontSize.px]="slider.value" shape="round"></p-checkbox>
+            <p-checkbox [style.fontSize.px]="slider.value" shape="curve"></p-checkbox>
+        </div>
+
+        <div class="content__code">
+            <textarea highlight-js [options]="{}" lang="html">
+
+<input class="slider" type="range" value="14" min="14" max="100" step="1" #slider (input)="0">
+
+<p-checkbox [style.fontSize.px]="slider.value"></p-checkbox>
+<p-checkbox [style.fontSize.px]="slider.value" shape="round"></p-checkbox>
+<p-checkbox [style.fontSize.px]="slider.value" shape="curve"></p-checkbox>
+
+            </textarea>
+        </div>
+
+    </div>
+
+</div>

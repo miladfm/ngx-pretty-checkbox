@@ -57,6 +57,15 @@ import { InstallLibComponent } from './components/install-lib/install-lib.compon
 import { InstallScssCustomizeComponent } from './components/install-scss-customize/install-scss-customize.component';
 import { DemoScalabilityComponent } from './components/demo-scalability/demo-scalability.component';
 import { DemoStatesComponent } from './components/demo-states/demo-states.component';
+import { DemoPlainComponent } from './components/demo-plain/demo-plain.component';
+import { DemoDisableComponent } from './components/demo-disable/demo-disable.component';
+import { DemoLockComponent } from './components/demo-lock/demo-lock.component';
+import { DemoSizeComponent } from './components/demo-size/demo-size.component';
+import { DemoAnimationSmoothComponent } from './components/demo-animation-smooth/demo-animation-smooth.component';
+import { DemoAnimationJellyComponent } from './components/demo-animation-jelly/demo-animation-jelly.component';
+import { DemoAnimationTadaComponent } from './components/demo-animation-tada/demo-animation-tada.component';
+import { DemoAnimationRotateComponent } from './components/demo-animation-rotate/demo-animation-rotate.component';
+import { DemoAnimationPulseComponent } from './components/demo-animation-pulse/demo-animation-pulse.component';
 
 
 
@@ -121,6 +130,15 @@ import { DemoStatesComponent } from './components/demo-states/demo-states.compon
     MixedRoundThickComponent,
     MixedRoundThickOutlineComponent,
     MixedSwitchComponent,
+    DemoPlainComponent,
+    DemoDisableComponent,
+    DemoLockComponent,
+    DemoSizeComponent,
+    DemoAnimationSmoothComponent,
+    DemoAnimationJellyComponent,
+    DemoAnimationTadaComponent,
+    DemoAnimationRotateComponent,
+    DemoAnimationPulseComponent,
 
   ],
   imports: [

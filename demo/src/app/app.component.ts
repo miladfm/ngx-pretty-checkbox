@@ -18,11 +18,13 @@ export class AppComponent implements OnInit {
   public isAccordingInstallOpen = true;
   public isAccordingDemosOpen = false;
   public isAccordingMixedOpen = false;
+  public isAccordingAnimationOpen = false;
   public isAccordingApiOpen = false;
 
   @ViewChild('installAccordingElem') installAccordingElem: ElementRef<HTMLElement>;
   @ViewChild('demosAccordingElem') demosAccordingElem: ElementRef<HTMLElement>;
   @ViewChild('mixedAccordingElem') mixedAccordingElem: ElementRef<HTMLElement>;
+  @ViewChild('animationAccordingElem') animationAccordingElem: ElementRef<HTMLElement>;
   @ViewChild('apiAccordingElem') apiAccordingElem: ElementRef<HTMLElement>;
 
   constructor(private navigation: NavigationService) {}
@@ -31,6 +33,7 @@ export class AppComponent implements OnInit {
     this.updateAccordingLayout(this.isAccordingInstallOpen, this.installAccordingElem.nativeElement, false);
     this.updateAccordingLayout(this.isAccordingDemosOpen, this.demosAccordingElem.nativeElement, false);
     this.updateAccordingLayout(this.isAccordingMixedOpen, this.mixedAccordingElem.nativeElement, false);
+    this.updateAccordingLayout(this.isAccordingAnimationOpen, this.animationAccordingElem.nativeElement, false);
     this.updateAccordingLayout(this.isAccordingApiOpen, this.apiAccordingElem.nativeElement, false);
   }
 
@@ -51,9 +54,19 @@ export class AppComponent implements OnInit {
     this.goToDemo();
   }
 
+  onAnimationClick() {
+    this.toggleAnimationAccording();
+    this.goToDemo(DemoRouteName.Animations);
+  }
+
   toggleMixedAccording() {
     this.isAccordingMixedOpen = !this.isAccordingMixedOpen;
     this.updateAccordingLayout(this.isAccordingMixedOpen, this.mixedAccordingElem.nativeElement);
+  }
+
+  toggleAnimationAccording() {
+    this.isAccordingAnimationOpen = !this.isAccordingAnimationOpen;
+    this.updateAccordingLayout(this.isAccordingAnimationOpen, this.animationAccordingElem.nativeElement);
   }
 
   toggleInstallAccording() {

@@ -1,3 +1,10 @@
+import { DemoAnimationRotateComponent } from './app/components/demo-animation-rotate/demo-animation-rotate.component';
+import { DemoAnimationTadaComponent } from './app/components/demo-animation-tada/demo-animation-tada.component';
+import { DemoAnimationJellyComponent } from './app/components/demo-animation-jelly/demo-animation-jelly.component';
+import { DemoAnimationSmoothComponent } from './app/components/demo-animation-smooth/demo-animation-smooth.component';
+import { DemoSizeComponent } from './app/components/demo-size/demo-size.component';
+import { DemoLockComponent } from './app/components/demo-lock/demo-lock.component';
+import { DemoDisableComponent } from './app/components/demo-disable/demo-disable.component';
 import { DemoSvgComponent } from './app/components/demo-svg/demo-svg.component';
 import { DemoFontIconComponent } from './app/components/demo-font-icon/demo-font-icon.component';
 import { DemoSwitchComponent } from './app/components/demo-switch/demo-switch.component';
@@ -48,6 +55,8 @@ import { InstallScssCustomizeComponent } from './app/components/install-scss-cus
 import { DemoToggleComponent } from './app/components/demo-toggle/demo-toggle.component';
 import { DemoScalabilityComponent } from './app/components/demo-scalability/demo-scalability.component';
 import { DemoStatesComponent } from './app/components/demo-states/demo-states.component';
+import { DemoPlainComponent } from './app/components/demo-plain/demo-plain.component';
+import { DemoAnimationPulseComponent } from './app/components/demo-animation-pulse/demo-animation-pulse.component';
 
 const MAIN_PAGE = `${MainRouteName.Install}/${InstallRouteName.Lib}`;
 
@@ -210,11 +219,48 @@ export const routes: Routes = [
     // demo/scalability
     path: `${MainRouteName.Demo}/${DemoRouteName.Scalability}`,
     component : DemoScalabilityComponent
-
   }, {
     // demo/animations
     path: `${MainRouteName.Demo}/${DemoRouteName.Animations}`,
     component : DemoAnimationComponent
+  }, {
+    // demo/animation-smooth
+    path: `${MainRouteName.Demo}/${DemoRouteName.AnimationSmooth}`,
+    component : DemoAnimationSmoothComponent
+  }, {
+    // demo/animation-jelly
+    path: `${MainRouteName.Demo}/${DemoRouteName.AnimationJelly}`,
+    component : DemoAnimationJellyComponent
+  }, {
+    // demo/animation-tada
+    path: `${MainRouteName.Demo}/${DemoRouteName.AnimationTada}`,
+    component : DemoAnimationTadaComponent
+  }, {
+    // demo/animation-rotate
+    path: `${MainRouteName.Demo}/${DemoRouteName.AnimationRotate}`,
+    component : DemoAnimationRotateComponent
+  }, {
+    // demo/animation-pulse
+    path: `${MainRouteName.Demo}/${DemoRouteName.AnimationPulse}`,
+    component : DemoAnimationPulseComponent
+  }, {
+    // demo/plain
+    path: `${MainRouteName.Demo}/${DemoRouteName.Plain}`,
+    component : DemoPlainComponent
+
+  }, {
+    // demo/disable
+    path: `${MainRouteName.Demo}/${DemoRouteName.Disable}`,
+    component : DemoDisableComponent
+  }, {
+    // demo/lock
+    path: `${MainRouteName.Demo}/${DemoRouteName.Lock}`,
+    component : DemoLockComponent
+
+  }, {
+    // demo/size
+    path: `${MainRouteName.Demo}/${DemoRouteName.Size}`,
+    component : DemoSizeComponent
 
   }, {
     // api/checkbox
