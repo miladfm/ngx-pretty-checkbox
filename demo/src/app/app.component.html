@@ -39,6 +39,7 @@
           class="side-nav__accordion"
           (transitionend)="onTransitionEnd(isAccordingDemosOpen, demosAccordingElem)">
 
+          <div class="side-nav__item" (click)="goToDemo(DemoRouteName.CheckboxAll)">Checkbox All Feature</div>
           <div class="side-nav__item" (click)="goToDemo(DemoRouteName.BasicCheckbox)">Basic Checkbox</div>
           <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Switch)">Switch</div>
   

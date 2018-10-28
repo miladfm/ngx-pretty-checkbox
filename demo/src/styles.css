@@ -51,9 +51,6 @@ select:focus {
   outline: none;
 }
 
-.hidden-option {
-  display: none;
-}
 
 .flex__column {
   display: flex;
@@ -334,4 +331,10 @@ input[type=range].slider:focus::-ms-fill-upper {
 
 .install__row {
   display: flex;
+}
+
+
+iframe {
+  width: 100%;
+  height: 100%;
 }

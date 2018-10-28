@@ -48,6 +48,7 @@ import { InstallScssCustomizeComponent } from './app/components/install-scss-cus
 import { DemoToggleComponent } from './app/components/demo-toggle/demo-toggle.component';
 import { DemoScalabilityComponent } from './app/components/demo-scalability/demo-scalability.component';
 import { DemoStatesComponent } from './app/components/demo-states/demo-states.component';
+import { DemoCheckboxAllComponent } from './app/components/demo-checkbox-all/demo-checkbox-all.component';
 
 const MAIN_PAGE = `${MainRouteName.Install}/${InstallRouteName.Lib}`;
 
@@ -69,6 +70,11 @@ export const routes: Routes = [
     // demo
     path: `${MainRouteName.Demo}`,
     component: DemosComponent
+
+  }, {
+    // demo/checkbox-all
+    path: `${MainRouteName.Demo}/${DemoRouteName.CheckboxAll}`,
+    component: DemoCheckboxAllComponent
 
   }, {
     // demo/mixed-color

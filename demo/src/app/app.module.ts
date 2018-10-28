@@ -57,6 +57,7 @@ import { InstallLibComponent } from './components/install-lib/install-lib.compon
 import { InstallScssCustomizeComponent } from './components/install-scss-customize/install-scss-customize.component';
 import { DemoScalabilityComponent } from './components/demo-scalability/demo-scalability.component';
 import { DemoStatesComponent } from './components/demo-states/demo-states.component';
+import { DemoCheckboxAllComponent } from './components/demo-checkbox-all/demo-checkbox-all.component';
 
 
 
@@ -121,13 +122,14 @@ import { DemoStatesComponent } from './components/demo-states/demo-states.compon
     MixedRoundThickComponent,
     MixedRoundThickOutlineComponent,
     MixedSwitchComponent,
+    DemoCheckboxAllComponent,
 
   ],
   imports: [
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(routes, {
-      // useHash: true,
+      useHash: true,
     }),
     NgxPrettyCheckboxModule,
     HighlightJsModule
