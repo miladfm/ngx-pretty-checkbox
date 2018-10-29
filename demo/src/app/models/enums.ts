@@ -53,7 +53,15 @@ export enum DemoRouteName {
   Plain = 'plain',
   Disable = 'disable',
   Lock = 'lock',
-  Size = 'size'
+  Size = 'size',
+
+  DemoRadio = 'demo-radio',
+  DemoRadioAnimations = 'demo-radio-animations',
+  DemoRadioColor = 'demo-radio-color',
+  DemoRadioColorOutlineIcon = 'demo-radio-color-outline-icon',
+  DemoRadioColorIcon = 'demo-radio-color-icon',
+  DemoRadioPlain = 'demo-radio-plain',
+  DemoRadioSwitch = 'demo-radio-switch',
 }
 
 export enum ApiRouteName {

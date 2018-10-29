@@ -79,7 +79,7 @@
           <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Svg)">Svg</div>
           <div class="side-nav__item" (click)="goToDemo(DemoRouteName.Image)">Image</div>
 
-          <div class="side-nav__item" (click)="  onAnimationClick()">
+          <div class="side-nav__item" (click)="onAnimationClick()">
               Animations
               <i *ngIf="!isAccordingAnimationOpen" class="side-nav__accordion-icon material-icons">arrow_drop_down</i>
               <i *ngIf="isAccordingAnimationOpen" class="side-nav__accordion-icon material-icons">arrow_drop_up</i>
@@ -108,7 +108,26 @@
           <div class="side-nav__item" (click)="goToDemo(DemoRouteName.States)">States</div>
 
         </div>
-        
+        <!-- Demo Radio -->
+          
+        <div class="side-nav__header side-nav__header--item" (click)="onRadioClick()">
+            Demo Radio Button
+            <i *ngIf="!isAccordingRadioOpen" class="side-nav__accordion-icon material-icons">arrow_drop_down</i>
+            <i *ngIf="isAccordingRadioOpen" class="side-nav__accordion-icon material-icons">arrow_drop_up</i>
+          </div>
+          <div #radioAccordingElem
+            class="side-nav__accordion"
+            (transitionend)="onTransitionEnd(isAccordingRadioOpen, radioAccordingElem)">
+
+              <div class="side-nav__item" (click)="goToDemo(DemoRouteName.DemoRadioAnimations)">Animations</div>
+              <div class="side-nav__item" (click)="goToDemo(DemoRouteName.DemoRadioColor)">Color</div>
+              <div class="side-nav__item" (click)="goToDemo(DemoRouteName.DemoRadioColorIcon)">Color and Icon</div>
+              <div class="side-nav__item" (click)="goToDemo(DemoRouteName.DemoRadioColorOutlineIcon)">Outline and icon</div>
+              <div class="side-nav__item" (click)="goToDemo(DemoRouteName.DemoRadioPlain)">Plain</div>
+              <div class="side-nav__item" (click)="goToDemo(DemoRouteName.DemoRadioSwitch)">Switch</div>
+
+          </div>
+
         <!-- API -->
 
         <div class="side-nav__header side-nav__header--item" (click)="toggleApiAccording()">

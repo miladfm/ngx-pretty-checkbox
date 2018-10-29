@@ -26,13 +26,13 @@
 |    2   |  Mohammad   |  Disable                                                                                    | ✔️
 |    2   |  Mohammad   |  Lock                                                                                       | ✔️
 |    2   |  Mohammad   |  Size                                                                                       | ✔️
-|    2   |  Mohammad   |  Radio button - Basic                                                                       | ⏳
-|    2   |  Mohammad   |  Radio button - Color                                                                       | ⏳
-|    2   |  Mohammad   |  Radio button - Solid color and icons                                                       | ⏳
-|    2   |  Mohammad   |  Radio button - Outline colors                                                              | ⏳
-|    2   |  Mohammad   |  Radio button - Animations                                                                  | ⏳
-|    2   |  Mohammad   |  Radio button - Plain                                                                       | ⏳
-|    2   |  Mohammad   |  Radio button - Switch                                                                      | ⏳
-|    2   |  Mohammad   |  All components with change detection on push                                               | ⏳
+|    2   |  Mohammad   |  Radio button - Basic                                                                       | ✔️
+|    2   |  Mohammad   |  Radio button - Color                                                                       | ✔️
+|    2   |  Mohammad   |  Radio button - Solid color and icons                                                       | ✔️
+|    2   |  Mohammad   |  Radio button - Outline colors                                                              | ✔️
+|    2   |  Mohammad   |  Radio button - Animations                                                                  | ✔️
+|    2   |  Mohammad   |  Radio button - Plain                                                                       | ✔️
+|    2   |  Mohammad   |  Radio button - Switch                                                                      | ✔️
+|    2   |  Mohammad   |  All components with change detection on push                                               | ✔️
 |    2   |  Mohammad   |  Update demos component                                                                     | ✔️
 

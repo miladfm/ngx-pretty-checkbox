@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-demo-mixed-curve-thick-outline',
   templateUrl: './demo-mixed-curve-thick-outline.component.html',
-  styleUrls: ['./demo-mixed-curve-thick-outline.component.css']
+  styleUrls: ['./demo-mixed-curve-thick-outline.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MixedCurveThickOutlineComponent implements OnInit {
 

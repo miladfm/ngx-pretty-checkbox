@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-demo-lock',
   templateUrl: './demo-lock.component.html',
-  styleUrls: ['./demo-lock.component.css']
+  styleUrls: ['./demo-lock.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DemoLockComponent implements OnInit {
 

@@ -1,3 +1,7 @@
+import { DemoRadioButtonColorIconComponent } from './app/components/demo-radio-button-color-icon/demo-radio-button-color-icon.component';
+import { DemoRadioButtonColorOutlineIconComponent } from './app/components/demo-radio-button-color-outline-icon/demo-radio-button-color-outline-icon.component';
+import { DemoRadioButtonColorComponent } from './app/components/demo-radio-button-color/demo-radio-button-color.component';
+import { DemoRadioButtonComponent } from './app/components/demo-radio-button/demo-radio-button.component';
 import { DemoAnimationRotateComponent } from './app/components/demo-animation-rotate/demo-animation-rotate.component';
 import { DemoAnimationTadaComponent } from './app/components/demo-animation-tada/demo-animation-tada.component';
 import { DemoAnimationJellyComponent } from './app/components/demo-animation-jelly/demo-animation-jelly.component';
@@ -58,6 +62,9 @@ import { DemoStatesComponent } from './app/components/demo-states/demo-states.co
 import { DemoCheckboxAllComponent } from './app/components/demo-checkbox-all/demo-checkbox-all.component';
 import { DemoPlainComponent } from './app/components/demo-plain/demo-plain.component';
 import { DemoAnimationPulseComponent } from './app/components/demo-animation-pulse/demo-animation-pulse.component';
+import { DemoRadioButtonAnimationComponent } from './app/components/demo-radio-button-animation/demo-radio-button-animation.component';
+import { DemoRadioButtonPlainComponent } from './app/components/demo-radio-button-plain/demo-radio-button-plain.component';
+import { DemoRadioButtonSwitchComponent } from './app/components/demo-radio-button-switch/demo-radio-button-switch.component';
 
 const MAIN_PAGE = `${MainRouteName.Install}/${InstallRouteName.Lib}`;
 
@@ -267,6 +274,41 @@ export const routes: Routes = [
     // demo/size
     path: `${MainRouteName.Demo}/${DemoRouteName.Size}`,
     component : DemoSizeComponent
+
+  }, {
+    // demo/demo-radio
+    path: `${MainRouteName.Demo}/${DemoRouteName.DemoRadio}`,
+    component : DemoRadioButtonComponent
+
+  }, {
+    // demo/demo-radio-animations
+    path: `${MainRouteName.Demo}/${DemoRouteName.DemoRadioAnimations}`,
+    component : DemoRadioButtonAnimationComponent
+
+  }, {
+    // demo/demo-radio-color
+    path: `${MainRouteName.Demo}/${DemoRouteName.DemoRadioColor}`,
+    component : DemoRadioButtonColorComponent
+
+  }, {
+    // demo/demo-radio-color-outline-icon
+    path: `${MainRouteName.Demo}/${DemoRouteName.DemoRadioColorOutlineIcon}`,
+    component : DemoRadioButtonColorOutlineIconComponent
+
+  }, {
+    // demo/demo-radio-color-icon
+    path: `${MainRouteName.Demo}/${DemoRouteName.DemoRadioColorIcon}`,
+    component : DemoRadioButtonColorIconComponent
+
+  }, {
+    // demo/demo-radio-plain
+    path: `${MainRouteName.Demo}/${DemoRouteName.DemoRadioPlain}`,
+    component : DemoRadioButtonPlainComponent
+
+  }, {
+    // demo/demo-radio-switch
+    path: `${MainRouteName.Demo}/${DemoRouteName.DemoRadioSwitch}`,
+    component : DemoRadioButtonSwitchComponent
 
   }, {
     // api/checkbox

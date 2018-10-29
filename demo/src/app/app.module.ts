@@ -67,6 +67,13 @@ import { DemoAnimationJellyComponent } from './components/demo-animation-jelly/d
 import { DemoAnimationTadaComponent } from './components/demo-animation-tada/demo-animation-tada.component';
 import { DemoAnimationRotateComponent } from './components/demo-animation-rotate/demo-animation-rotate.component';
 import { DemoAnimationPulseComponent } from './components/demo-animation-pulse/demo-animation-pulse.component';
+import { DemoRadioButtonComponent } from './components/demo-radio-button/demo-radio-button.component';
+import { DemoRadioButtonColorComponent } from './components/demo-radio-button-color/demo-radio-button-color.component';
+import { DemoRadioButtonColorIconComponent } from './components/demo-radio-button-color-icon/demo-radio-button-color-icon.component';
+import { DemoRadioButtonColorOutlineIconComponent } from './components/demo-radio-button-color-outline-icon/demo-radio-button-color-outline-icon.component';
+import { DemoRadioButtonAnimationComponent } from './components/demo-radio-button-animation/demo-radio-button-animation.component';
+import { DemoRadioButtonPlainComponent } from './components/demo-radio-button-plain/demo-radio-button-plain.component';
+import { DemoRadioButtonSwitchComponent } from './components/demo-radio-button-switch/demo-radio-button-switch.component';
 
 
 
@@ -141,6 +148,13 @@ import { DemoAnimationPulseComponent } from './components/demo-animation-pulse/d
     DemoAnimationTadaComponent,
     DemoAnimationRotateComponent,
     DemoAnimationPulseComponent,
+    DemoRadioButtonComponent,
+    DemoRadioButtonColorComponent,
+    DemoRadioButtonColorIconComponent,
+    DemoRadioButtonColorOutlineIconComponent,
+    DemoRadioButtonAnimationComponent,
+    DemoRadioButtonPlainComponent,
+    DemoRadioButtonSwitchComponent,
 
   ],
   imports: [

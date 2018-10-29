@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { PrettyCheckBoxChange } from 'ngx-pretty-checkbox';
 import { DemoRouteName } from 'src/app/models/enums';
 import { NavigationService } from 'src/app/services/navigation.service';
@@ -6,7 +6,8 @@ import { NavigationService } from 'src/app/services/navigation.service';
 @Component({
   selector: 'app-demos',
   templateUrl: './demos.component.html',
-  styleUrls: ['./demos.component.css']
+  styleUrls: ['./demos.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DemosComponent implements OnInit {
 

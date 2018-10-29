@@ -19,12 +19,14 @@ export class AppComponent implements OnInit {
   public isAccordingDemosOpen = false;
   public isAccordingMixedOpen = false;
   public isAccordingAnimationOpen = false;
+  public isAccordingRadioOpen = false;
   public isAccordingApiOpen = false;
 
   @ViewChild('installAccordingElem') installAccordingElem: ElementRef<HTMLElement>;
   @ViewChild('demosAccordingElem') demosAccordingElem: ElementRef<HTMLElement>;
   @ViewChild('mixedAccordingElem') mixedAccordingElem: ElementRef<HTMLElement>;
   @ViewChild('animationAccordingElem') animationAccordingElem: ElementRef<HTMLElement>;
+  @ViewChild('radioAccordingElem') radioAccordingElem: ElementRef<HTMLElement>;
   @ViewChild('apiAccordingElem') apiAccordingElem: ElementRef<HTMLElement>;
 
   constructor(private navigation: NavigationService) {}
@@ -34,6 +36,7 @@ export class AppComponent implements OnInit {
     this.updateAccordingLayout(this.isAccordingDemosOpen, this.demosAccordingElem.nativeElement, false);
     this.updateAccordingLayout(this.isAccordingMixedOpen, this.mixedAccordingElem.nativeElement, false);
     this.updateAccordingLayout(this.isAccordingAnimationOpen, this.animationAccordingElem.nativeElement, false);
+    this.updateAccordingLayout(this.isAccordingRadioOpen, this.radioAccordingElem.nativeElement, false);
     this.updateAccordingLayout(this.isAccordingApiOpen, this.apiAccordingElem.nativeElement, false);
   }
 
@@ -59,6 +62,11 @@ export class AppComponent implements OnInit {
     this.goToDemo(DemoRouteName.Animations);
   }
 
+  onRadioClick() {
+    this.toggleRadioAccording();
+    this.goToDemo(DemoRouteName.DemoRadio);
+  }
+
   toggleMixedAccording() {
     this.isAccordingMixedOpen = !this.isAccordingMixedOpen;
     this.updateAccordingLayout(this.isAccordingMixedOpen, this.mixedAccordingElem.nativeElement);
@@ -67,6 +75,11 @@ export class AppComponent implements OnInit {
   toggleAnimationAccording() {
     this.isAccordingAnimationOpen = !this.isAccordingAnimationOpen;
     this.updateAccordingLayout(this.isAccordingAnimationOpen, this.animationAccordingElem.nativeElement);
+  }
+
+  toggleRadioAccording() {
+    this.isAccordingRadioOpen = !this.isAccordingRadioOpen;
+    this.updateAccordingLayout(this.isAccordingRadioOpen, this.radioAccordingElem.nativeElement);
   }
 
   toggleInstallAccording() {
@@ -89,6 +102,7 @@ export class AppComponent implements OnInit {
       elem.style.height = null;
     }
   }
+
 
   private updateAccordingLayout(isOpen: boolean, accordingElem: HTMLElement, closeWithAnimation = true) {
     if (isOpen) {
