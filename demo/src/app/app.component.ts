@@ -1,7 +1,6 @@
 import { Component, ChangeDetectionStrategy, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { DemoRouteName, ApiRouteName, InstallRouteName } from './models/enums';
+import { DemoCheckboxesRouteName, ApiRouteName, InstallRouteName, DemoRadioRouteName } from './models/enums';
 import { NavigationService } from './services/navigation.service';
-import { AotCompiler } from '@angular/compiler';
 
 @Component({
   selector: 'app-root',
@@ -11,37 +10,42 @@ import { AotCompiler } from '@angular/compiler';
 })
 export class AppComponent implements OnInit {
 
-  public readonly DemoRouteName = DemoRouteName;
+  public readonly DemoCheckboxesRouteName = DemoCheckboxesRouteName;
+  public readonly DemoRadioRouteName = DemoRadioRouteName;
   public readonly ApiRouteName = ApiRouteName;
   public readonly InstallRouteName = InstallRouteName;
 
   public isAccordingInstallOpen = true;
-  public isAccordingDemosOpen = false;
-  public isAccordingMixedOpen = false;
-  public isAccordingAnimationOpen = false;
-  public isAccordingRadioOpen = false;
+  public isAccordingDemoCheckboxOpen = false;
+  public isAccordingDemoCheckboxMixedOpen = false;
+  public isAccordingDemoCheckboxAnimationOpen = false;
+  public isAccordingDemoRadioOpen = false;
   public isAccordingApiOpen = false;
 
   @ViewChild('installAccordingElem') installAccordingElem: ElementRef<HTMLElement>;
-  @ViewChild('demosAccordingElem') demosAccordingElem: ElementRef<HTMLElement>;
-  @ViewChild('mixedAccordingElem') mixedAccordingElem: ElementRef<HTMLElement>;
-  @ViewChild('animationAccordingElem') animationAccordingElem: ElementRef<HTMLElement>;
-  @ViewChild('radioAccordingElem') radioAccordingElem: ElementRef<HTMLElement>;
+  @ViewChild('demoCheckboxAccordingElem') demoCheckboxAccordingElem: ElementRef<HTMLElement>;
+  @ViewChild('demoCheckboxMixedAccordingElem') demoCheckboxMixedAccordingElem: ElementRef<HTMLElement>;
+  @ViewChild('demoCheckboxAnimationAccordingElem') demoCheckboxAnimationAccordingElem: ElementRef<HTMLElement>;
+  @ViewChild('demoRadioAccordingElem') demoRadioAccordingElem: ElementRef<HTMLElement>;
   @ViewChild('apiAccordingElem') apiAccordingElem: ElementRef<HTMLElement>;
 
   constructor(private navigation: NavigationService) {}
 
   ngOnInit() {
     this.updateAccordingLayout(this.isAccordingInstallOpen, this.installAccordingElem.nativeElement, false);
-    this.updateAccordingLayout(this.isAccordingDemosOpen, this.demosAccordingElem.nativeElement, false);
-    this.updateAccordingLayout(this.isAccordingMixedOpen, this.mixedAccordingElem.nativeElement, false);
-    this.updateAccordingLayout(this.isAccordingAnimationOpen, this.animationAccordingElem.nativeElement, false);
-    this.updateAccordingLayout(this.isAccordingRadioOpen, this.radioAccordingElem.nativeElement, false);
+    this.updateAccordingLayout(this.isAccordingDemoCheckboxOpen, this.demoCheckboxAccordingElem.nativeElement, false);
+    this.updateAccordingLayout(this.isAccordingDemoCheckboxMixedOpen, this.demoCheckboxMixedAccordingElem.nativeElement, false);
+    this.updateAccordingLayout(this.isAccordingDemoCheckboxAnimationOpen, this.demoCheckboxAnimationAccordingElem.nativeElement, false);
+    this.updateAccordingLayout(this.isAccordingDemoRadioOpen, this.demoRadioAccordingElem.nativeElement, false);
     this.updateAccordingLayout(this.isAccordingApiOpen, this.apiAccordingElem.nativeElement, false);
   }
 
-  goToDemo(page?: DemoRouteName) {
-    this.navigation.goToDemo(page);
+  goToDemoCheckbox(page?: DemoCheckboxesRouteName) {
+    this.navigation.goToDemoCheckbox(page);
+  }
+
+  goToDemoRadio(page?: DemoRadioRouteName) {
+    this.navigation.goToDemoRadio(page);
   }
 
   goToInstall(page?: InstallRouteName) {
@@ -52,34 +56,34 @@ export class AppComponent implements OnInit {
     this.navigation.goToApi(page);
   }
 
-  onDemosClick() {
-    this.toggleDemosAccording();
-    this.goToDemo();
+  onDemosCheckboxClick() {
+    this.toggleDemosCheckboxAccording();
+    this.goToDemoCheckbox();
   }
 
-  onAnimationClick() {
-    this.toggleAnimationAccording();
-    this.goToDemo(DemoRouteName.Animations);
+  onDemoCheckboxAnimationClick() {
+    this.toggleDemoCheckboxAnimationAccording();
+    this.goToDemoCheckbox(DemoCheckboxesRouteName.Animations);
   }
 
-  onRadioClick() {
-    this.toggleRadioAccording();
-    this.goToDemo(DemoRouteName.DemoRadio);
+  onDemoRadioClick() {
+    this.toggleDemoRadioAccording();
+    this.goToDemoRadio();
   }
 
-  toggleMixedAccording() {
-    this.isAccordingMixedOpen = !this.isAccordingMixedOpen;
-    this.updateAccordingLayout(this.isAccordingMixedOpen, this.mixedAccordingElem.nativeElement);
+  toggleDemoCheckboxMixedAccording() {
+    this.isAccordingDemoCheckboxMixedOpen = !this.isAccordingDemoCheckboxMixedOpen;
+    this.updateAccordingLayout(this.isAccordingDemoCheckboxMixedOpen, this.demoCheckboxMixedAccordingElem.nativeElement);
   }
 
-  toggleAnimationAccording() {
-    this.isAccordingAnimationOpen = !this.isAccordingAnimationOpen;
-    this.updateAccordingLayout(this.isAccordingAnimationOpen, this.animationAccordingElem.nativeElement);
+  toggleDemoCheckboxAnimationAccording() {
+    this.isAccordingDemoCheckboxAnimationOpen = !this.isAccordingDemoCheckboxAnimationOpen;
+    this.updateAccordingLayout(this.isAccordingDemoCheckboxAnimationOpen, this.demoCheckboxAnimationAccordingElem.nativeElement);
   }
 
-  toggleRadioAccording() {
-    this.isAccordingRadioOpen = !this.isAccordingRadioOpen;
-    this.updateAccordingLayout(this.isAccordingRadioOpen, this.radioAccordingElem.nativeElement);
+  toggleDemoRadioAccording() {
+    this.isAccordingDemoRadioOpen = !this.isAccordingDemoRadioOpen;
+    this.updateAccordingLayout(this.isAccordingDemoRadioOpen, this.demoRadioAccordingElem.nativeElement);
   }
 
   toggleInstallAccording() {
@@ -87,9 +91,9 @@ export class AppComponent implements OnInit {
     this.updateAccordingLayout(this.isAccordingInstallOpen, this.installAccordingElem.nativeElement);
   }
 
-  toggleDemosAccording() {
-    this.isAccordingDemosOpen = !this.isAccordingDemosOpen;
-    this.updateAccordingLayout(this.isAccordingDemosOpen, this.demosAccordingElem.nativeElement);
+  toggleDemosCheckboxAccording() {
+    this.isAccordingDemoCheckboxOpen = !this.isAccordingDemoCheckboxOpen;
+    this.updateAccordingLayout(this.isAccordingDemoCheckboxOpen, this.demoCheckboxAccordingElem.nativeElement);
   }
 
   toggleApiAccording() {

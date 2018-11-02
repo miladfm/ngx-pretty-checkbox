@@ -1,6 +1,6 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { PrettyCheckBoxChange } from 'ngx-pretty-checkbox';
-import { DemoRouteName } from 'src/app/models/enums';
+import { DemoCheckboxesRouteName } from 'src/app/models/enums';
 import { NavigationService } from 'src/app/services/navigation.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { NavigationService } from 'src/app/services/navigation.service';
 })
 export class DemosComponent implements OnInit {
 
-  public readonly DemoRouteName = DemoRouteName;
+  public readonly DemoCheckboxesRouteName = DemoCheckboxesRouteName;
 
   constructor(private navigation: NavigationService) { }
 
@@ -22,7 +22,7 @@ export class DemosComponent implements OnInit {
     console.log('event', event);
   }
 
-  goToDemo(page?: DemoRouteName) {
-    this.navigation.goToDemo(page);
+  goToDemoCheckbox(page?: DemoCheckboxesRouteName) {
+    this.navigation.goToDemoCheckbox(page);
   }
 }

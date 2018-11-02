@@ -96,7 +96,7 @@ select:focus {
 
 .content__demo {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   width: 200px;

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { DemoRouteName, MainRouteName, ApiRouteName, InstallRouteName } from '../models/enums';
+import { DemoCheckboxesRouteName, MainRouteName, ApiRouteName, InstallRouteName, DemoRadioRouteName } from '../models/enums';
 
 @Injectable({
   providedIn: 'root'
@@ -9,12 +9,21 @@ export class NavigationService {
 
   constructor(private route: Router) { }
 
-  goToDemo(page?: DemoRouteName) {
+  goToDemoCheckbox(page?: DemoCheckboxesRouteName) {
     if (page) {
-      this.route.navigate([MainRouteName.Demo, page]);
+      this.route.navigate([MainRouteName.DemoCheckbox, page]);
 
     } else {
-      this.route.navigate([MainRouteName.Demo]);
+      this.route.navigate([MainRouteName.DemoCheckbox]);
+    }
+  }
+
+  goToDemoRadio(page?: DemoRadioRouteName) {
+    if (page) {
+      this.route.navigate([MainRouteName.DemoRadio, page]);
+
+    } else {
+      this.route.navigate([MainRouteName.DemoRadio]);
     }
   }
 
