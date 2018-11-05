@@ -1,3 +1,4 @@
+import { DemosRadioButtonComponent } from './app/components/demos-radio-button/demos-radio-button.component';
 import { ApiCheckboxComponent } from './app/components/api-checkbox/api-checkbox.component';
 import { ApiCheckboxWillChangeComponent } from './app/components/api-checkbox-will-change/api-checkbox-will-change.component';
 import { ApiEnumsComponent } from './app/components/api-enums/api-enums.component';
@@ -20,7 +21,7 @@ import {
 import { ApiSvgComponent } from './app/components/api-svg/api-svg.component';
 import { ApiToggleComponent } from './app/components/api-toggle/api-toggle.component';
 import { ApiToggleWillChangeComponent } from './app/components/api-toggle-will-change/api-toggle-will-change.component';
-import { DemoAnimationComponent } from './app/components/demo-animation/demo-animation.component';
+import { DemoAnimationComponent } from './app/components/demo-checkbox-animation/demo-animation.component';
 import { DemoAnimationJellyComponent } from './app/components/demo-animation-jelly/demo-animation-jelly.component';
 import { DemoAnimationPulseComponent } from './app/components/demo-animation-pulse/demo-animation-pulse.component';
 import { DemoAnimationRotateComponent } from './app/components/demo-animation-rotate/demo-animation-rotate.component';
@@ -71,6 +72,7 @@ import { MixedSquareThickOutlineComponent } from './app/components/demo-mixed-sq
 import { MixedSwitchComponent } from './app/components/demo-mixed-switch/demo-mixed-switch.component';
 import { RadioWillChangeApiComponent } from './app/components/api-radio-will-change/api-radio-will-change.component';
 import { Routes } from '@angular/router';
+import { DemoRadioButtonAllComponent } from './app/components/demo-radio-button-all/demo-radio-button-all.component';
 
 const MAIN_PAGE = `${MainRouteName.Install}/${InstallRouteName.Lib}`;
 
@@ -280,6 +282,16 @@ export const routes: Routes = [
     // demo-checkbox/size
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.Size}`,
     component : DemoSizeComponent
+
+  }, {
+    // demo-radio
+    path: `${MainRouteName.DemoRadio}`,
+    component: DemosRadioButtonComponent
+
+  }, {
+    // demo-radio/all
+    path: `${MainRouteName.DemoRadio}/${DemoRadioRouteName.All}`,
+    component : DemoRadioButtonAllComponent
 
   }, {
     // demo-radio/radio

@@ -36,7 +36,7 @@
 |    2   |  Mohammad   |  All components with change detection on push                                               | ✔️
 |    2   |  Mohammad   |  Update demos component                                                                     | ✔️
 |    2   |  Mohammad   |  Remove Radio button text in header for each radio demo component                           | ⏳
-|    2   |  Mohammad   |  Create stackblitz project for radio button will-change (copy all code from my stackblitz)    | ⏳
+|    2   |  Mohammad   |  Create stackblitz project for radio button will-change (copy all code from my stackblitz)    | ✔️
 |    2   |  Mohammad   |  Highlight selected side nav item (angular route has solution. FIND IT)                     | ⏳
 |    2   |  Mohammad   |  Create new component for `Demo Radio` item on side nav to show all demos as card next to each other (like `Demo checkbox`)    | ⏳
 |    2   |  Mohammad   |  Update `Demo Checkbox` (in side nav as header)                                             | ⏳

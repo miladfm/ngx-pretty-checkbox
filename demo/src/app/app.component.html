@@ -121,8 +121,9 @@
             class="side-nav__accordion"
             (transitionend)="onTransitionEnd(isAccordingDemoRadioOpen, demoRadioAccordingElem)">
 
-              <div class="side-nav__item" (click)="goToDemoRadio(DemoRadioRouteName.Basic)">Basic</div>
-              <div class="side-nav__item" (click)="goToDemoRadio(DemoRadioRouteName.Animations)">Animations</div>
+              <div class="side-nav__item" routerLinkActive="side-nav-active" (click)="goToDemoRadio(DemoRadioRouteName.All)">All Feature</div>
+              <div class="side-nav__item" routerLinkActive="side-nav-active" (click)="goToDemoRadio(DemoRadioRouteName.Basic)">Basic</div>
+              <div class="side-nav__item" routerLinkActive="side-nav-active" (click)="goToDemoRadio(DemoRadioRouteName.Animations)">Animations</div>
               <div class="side-nav__item" (click)="goToDemoRadio(DemoRadioRouteName.Color)">Color</div>
               <div class="side-nav__item" (click)="goToDemoRadio(DemoRadioRouteName.ColorOutlineIcon)">Color and Icon</div>
               <div class="side-nav__item" (click)="goToDemoRadio(DemoRadioRouteName.ColorIcon)">Outline and icon</div>

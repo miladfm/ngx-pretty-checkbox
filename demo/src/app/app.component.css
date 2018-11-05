@@ -102,3 +102,7 @@
   flex: 1;
   overflow: auto;
 }
+
+.side-nav-active {
+  background: #000;
+}

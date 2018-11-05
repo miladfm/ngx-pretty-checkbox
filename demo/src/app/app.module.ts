@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CardComponent } from './components/card/card.component';
 import { CodeComponent } from './components/code/code.component';
 import { NgModule } from '@angular/core';
-import { DemoAnimationComponent } from './components/demo-animation/demo-animation.component';
+import { DemoAnimationComponent } from './components/demo-checkbox-animation/demo-animation.component';
 import { DemoBasicCheckboxComponent } from './components/demo-basic-checkbox/demo-basic-checkbox.component';
 import { DemoColorComponent } from './components/demo-color/demo-color.component';
 import { DemoFontIconComponent } from './components/demo-font-icon/demo-font-icon.component';
@@ -74,7 +74,8 @@ import { DemoRadioButtonColorOutlineIconComponent } from './components/demo-radi
 import { DemoRadioButtonAnimationComponent } from './components/demo-radio-button-animation/demo-radio-button-animation.component';
 import { DemoRadioButtonPlainComponent } from './components/demo-radio-button-plain/demo-radio-button-plain.component';
 import { DemoRadioButtonSwitchComponent } from './components/demo-radio-button-switch/demo-radio-button-switch.component';
-
+import { DemoRadioButtonAllComponent } from './components/demo-radio-button-all/demo-radio-button-all.component';
+import { DemosRadioButtonComponent } from './components/demos-radio-button/demos-radio-button.component';
 
 
 
@@ -155,6 +156,8 @@ import { DemoRadioButtonSwitchComponent } from './components/demo-radio-button-s
     DemoRadioButtonAnimationComponent,
     DemoRadioButtonPlainComponent,
     DemoRadioButtonSwitchComponent,
+    DemoRadioButtonAllComponent,
+    DemosRadioButtonComponent,
 
   ],
   imports: [
