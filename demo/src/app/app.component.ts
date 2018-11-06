@@ -39,7 +39,6 @@ export class AppComponent implements OnInit {
     this.updateAccordingLayout(this.isAccordingDemoRadioOpen, this.demoRadioAccordingElem.nativeElement, false);
     this.updateAccordingLayout(this.isAccordingApiOpen, this.apiAccordingElem.nativeElement, false);
   }
-
   goToDemoCheckbox(page?: DemoCheckboxesRouteName) {
     this.navigation.goToDemoCheckbox(page);
   }

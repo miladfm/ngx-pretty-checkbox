@@ -21,20 +21,20 @@ import {
 import { ApiSvgComponent } from './app/components/api-svg/api-svg.component';
 import { ApiToggleComponent } from './app/components/api-toggle/api-toggle.component';
 import { ApiToggleWillChangeComponent } from './app/components/api-toggle-will-change/api-toggle-will-change.component';
-import { DemoAnimationComponent } from './app/components/demo-checkbox-animation/demo-animation.component';
-import { DemoAnimationJellyComponent } from './app/components/demo-animation-jelly/demo-animation-jelly.component';
-import { DemoAnimationPulseComponent } from './app/components/demo-animation-pulse/demo-animation-pulse.component';
-import { DemoAnimationRotateComponent } from './app/components/demo-animation-rotate/demo-animation-rotate.component';
-import { DemoAnimationSmoothComponent } from './app/components/demo-animation-smooth/demo-animation-smooth.component';
-import { DemoAnimationTadaComponent } from './app/components/demo-animation-tada/demo-animation-tada.component';
-import { DemoBasicCheckboxComponent } from './app/components/demo-basic-checkbox/demo-basic-checkbox.component';
+import { DemoCheckboxAnimationComponent } from './app/components/demo-checkbox-animation/demo-checkbox-animation.component';
+import { DemoCheckboxAnimationJellyComponent } from './app/components/demo-checkbox-animation-jelly/demo-checkbox-animation-jelly.component';
+import { DemoAnimationCheckboxPulseComponent } from './app/components/demo-checkbox-animation-pulse/demo-checkbox-animation-pulse.component';
+import { DemoCheckboxAnimationRotateComponent } from './app/components/demo-checkbox-animation-rotate/demo-checkbox-animation-rotate.component';
+import { DemoCheckboxAnimationSmoothComponent } from './app/components/demo-checkbox-animation-smooth/demo-checkbox-animation-smooth.component';
+import { DemoCheckboxAnimationTadaComponent } from './app/components/demo-checkbox-animation-tada/demo-checkbox-animation-tada.component';
+import { DemoCheckboxBasicComponent } from './app/components/demo-checkbox-basic/demo-checkbox-basic.component';
 import { DemoCheckboxAllComponent } from './app/components/demo-checkbox-all/demo-checkbox-all.component';
-import { DemoColorComponent } from './app/components/demo-color/demo-color.component';
-import { DemoDisableComponent } from './app/components/demo-disable/demo-disable.component';
-import { DemoFontIconComponent } from './app/components/demo-font-icon/demo-font-icon.component';
-import { DemoImageComponent } from './app/components/demo-image/demo-image.component';
-import { DemoLockComponent } from './app/components/demo-lock/demo-lock.component';
-import { DemoPlainComponent } from './app/components/demo-plain/demo-plain.component';
+import { DemoCheckboxColorComponent } from './app/components/demo-checkbox-color/demo-checkbox-color.component';
+import { DemoCheckboxDisableComponent } from './app/components/demo-checkbox-disable/demo-checkbox-disable.component';
+import { DemoCheckboxFontIconComponent } from './app/components/demo-checkbox-font-icon/demo-checkbox-font-icon.component';
+import { DemoCheckboxImageComponent } from './app/components/demo-checkbox-image/demo-checkbox-image.component';
+import { DemoCheckboxLockComponent } from './app/components/demo-checkbox-lock/demo-checkbox-lock.component';
+import { DemoCheckboxPlainComponent } from './app/components/demo-checkbox-plain/demo-checkbox-plain.component';
 import { DemoRadioButtonAnimationComponent } from './app/components/demo-radio-button-animation/demo-radio-button-animation.component';
 import { DemoRadioButtonColorComponent } from './app/components/demo-radio-button-color/demo-radio-button-color.component';
 import { DemoRadioButtonColorIconComponent } from './app/components/demo-radio-button-color-icon/demo-radio-button-color-icon.component';
@@ -42,34 +42,35 @@ import { DemoRadioButtonColorOutlineIconComponent } from './app/components/demo-
 import { DemoRadioButtonComponent } from './app/components/demo-radio-button/demo-radio-button.component';
 import { DemoRadioButtonPlainComponent } from './app/components/demo-radio-button-plain/demo-radio-button-plain.component';
 import { DemoRadioButtonSwitchComponent } from './app/components/demo-radio-button-switch/demo-radio-button-switch.component';
-import { DemoScalabilityComponent } from './app/components/demo-scalability/demo-scalability.component';
-import { DemosComponent } from './app/components/demos/demos.component';
-import { DemoSizeComponent } from './app/components/demo-size/demo-size.component';
-import { DemoStatesComponent } from './app/components/demo-states/demo-states.component';
-import { DemoSvgComponent } from './app/components/demo-svg/demo-svg.component';
-import { DemoSwitchComponent } from './app/components/demo-switch/demo-switch.component';
-import { DemoToggleComponent } from './app/components/demo-toggle/demo-toggle.component';
+import { DemoCheckboxScalabilityComponent } from './app/components/demo-checkbox-scalability/demo-checkbox-scalability.component';
+import { DemosCheckboxComponent } from './app/components/demos-checkbox/demos-checkbox.component';
+import { DemoCheckboxSizeComponent } from './app/components/demo-checkbox-size/demo-checkbox-size.component';
+import { DemoCheckboxStatesComponent } from './app/components/demo-checkbox-states/demo-checkbox-states.component';
+import { DemoCheckboxSvgComponent } from './app/components/demo-checkbox-svg/demo-checkbox-svg.component';
+import { DemoCheckboxSwitchComponent } from './app/components/demo-checkbox-switch/demo-checkbox-switch.component';
+import { DemoCheckboxToggleComponent } from './app/components/demo-checkbox-toggle/demo-checkbox-toggle.component';
 import { InstallLibComponent } from './app/components/install-lib/install-lib.component';
 import { InstallScssCustomizeComponent } from './app/components/install-scss-customize/install-scss-customize.component';
-import { MixedColorComponent } from './app/components/demo-mixed-color/demo-mixed-color.component';
-import { MixedCurveComponent } from './app/components/demo-mixed-curve/demo-mixed-curve.component';
-import { MixedCurveFillComponent } from './app/components/demo-mixed-curve-fill/demo-mixed-curve-fill.component';
-import { MixedCurveFillOutlineComponent } from './app/components/demo-mixed-curve-fill-outline/demo-mixed-curve-fill-outline.component';
-import { MixedCurveOutlineComponent } from './app/components/demo-mixed-curve-outline/demo-mixed-curve-outline.component';
-import { MixedCurveThickComponent } from './app/components/demo-mixed-curve-thick/demo-mixed-curve-thick.component';
-import { MixedCurveThickOutlineComponent } from './app/components/demo-mixed-curve-thick-outline/demo-mixed-curve-thick-outline.component';
-import { MixedOutlineComponent } from './app/components/demo-mixed-outline/demo-mixed-outline.component';
-import { MixedRoundComponent } from './app/components/demo-mixed-round/demo-mixed-round.component';
-import { MixedRoundFillComponent } from './app/components/demo-mixed-round-fill/demo-mixed-round-fill.component';
-import { MixedRoundFillOutlineComponent } from './app/components/demo-mixed-round-fill-outline/demo-mixed-round-fill-outline.component';
-import { MixedRoundOutlineComponent } from './app/components/demo-mixed-round-outline/demo-mixed-round-outline.component';
-import { MixedRoundThickComponent } from './app/components/demo-mixed-round-thick/demo-mixed-round-thick.component';
-import { MixedRoundThickOutlineComponent } from './app/components/demo-mixed-round-thick-outline/demo-mixed-round-thick-outline.component';
-import { MixedSquareFillComponent } from './app/components/demo-mixed-square-fill/demo-mixed-square-fill.component';
-import { MixedSquareFillOutlineComponent } from './app/components/demo-mixed-square-fill-outline/demo-mixed-square-fill-outline.component';
-import { MixedSquareThickComponent } from './app/components/demo-mixed-square-thick/demo-mixed-square-thick.component';
-import { MixedSquareThickOutlineComponent } from './app/components/demo-mixed-square-thick-outline/demo-mixed-square-thick-outline.component';
-import { MixedSwitchComponent } from './app/components/demo-mixed-switch/demo-mixed-switch.component';
+import { MixedCheckboxColorComponent } from './app/components/demo-checkbox-mixed-color/demo-checkbox-mixed-color.component';
+import { MixedCheckboxCurveComponent } from './app/components/demo-checkbox-mixed-curve/demo-checkbox-mixed-curve.component';
+import { MixedCheckboxCurveFillComponent } from './app/components/demo-checkbox-mixed-curve-fill/demo-checkbox-mixed-curve-fill.component';
+import { MixedCheckboxCurveFillOutlineComponent } from './app/components/demo-checkbox-mixed-curve-fill-outline/demo-checkbox-mixed-curve-fill-outline.component';
+import { MixedCheckboxCurveOutlineComponent } from './app/components/demo-checkbox-mixed-curve-outline/demo-checkbox-mixed-curve-outline.component';
+import { MixedCheckboxCurveThickComponent } from './app/components/demo-checkbox-mixed-curve-thick/demo-checkbox-mixed-curve-thick.component';
+import { MixedCheckboxCurveThickOutlineComponent } from './app/components/demo-checkbox-mixed-curve-thick-outline/demo-checkbox-mixed-curve-thick-outline.component';
+import { MixedCheckboxOutlineComponent } from './app/components/demo-checkbox-mixed-outline/demo-checkbox-mixed-outline.component';
+import { MixedCheckboxRoundComponent } from './app/components/demo-checkbox-mixed-round/demo-checkbox-mixed-round.component';
+import { MixedCheckboxRoundFillComponent } from './app/components/demo-checkbox-mixed-round-fill/demo-checkbox-mixed-round-fill.component';
+import { MixedCheckboxRoundFillOutlineComponent } from './app/components/demo-checkbox-mixed-round-fill-outline/demo-checkbox-mixed-round-fill-outline.component';
+import { MixedCheckboxRoundOutlineComponent } from './app/components/demo-checkbox-mixed-round-outline/demo-checkbox-mixed-round-outline.component';
+import { MixedCheckboxRoundThickComponent } from './app/components/demo-checkbox-mixed-round-thick/demo-checkbox-mixed-round-thick.component';
+import { MixedCheckboxRoundThickOutlineComponent } from './app/components/demo-checkbox-mixed-round-thick-outline/demo-checkbox-mixed-round-thick-outline.component';
+import { MixedCheckboxSquareFillComponent } from './app/components/demo-checkbox-mixed-square-fill/demo-checkbox-mixed-square-fill.component';
+import { MixedCheckboxSquareFillOutlineComponent } from './app/components/demo-checkbox-mixed-square-fill-outline/demo-checkbox-mixed-square-fill-outline.component';
+import { MixedCheckboxSquareThickComponent } from './app/components/demo-checkbox-mixed-square-thick/demo-checkbox-mixed-square-thick.component';
+
+import { MixedCheckboxSquareThickOutlineComponent } from './app/components/demo-checkbox-mixed-square-thick-outline/demo-checkbox-mixed-square-thick-outline.component';
+import { MixedCheckboxSwitchComponent } from './app/components/demo-checkbox-mixed-switch/demo-checkbox-mixed-switch.component';
 import { RadioWillChangeApiComponent } from './app/components/api-radio-will-change/api-radio-will-change.component';
 import { Routes } from '@angular/router';
 import { DemoRadioButtonAllComponent } from './app/components/demo-radio-button-all/demo-radio-button-all.component';
@@ -93,7 +94,7 @@ export const routes: Routes = [
   }, {
     // demo-checkbox
     path: `${MainRouteName.DemoCheckbox}`,
-    component: DemosComponent
+    component: DemosCheckboxComponent
 
   }, {
     // demo-checkbox/checkbox-all
@@ -103,185 +104,185 @@ export const routes: Routes = [
   }, {
     // demo-checkbox/mixed-color
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedColor}`,
-    component: MixedColorComponent
+    component: MixedCheckboxColorComponent
 
   }, {
     // demo-checkbox/mixed-outline
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedOutline}`,
-    component: MixedOutlineComponent
+    component: MixedCheckboxOutlineComponent
 
   }, {
     // demo-checkbox/mixed-square-fill
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedSquareFill}`,
-    component: MixedSquareFillComponent
+    component: MixedCheckboxSquareFillComponent
 
   }, {
     // demo-checkbox/mixed-square-fill-outline
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedSquareFillOutline}`,
-    component: MixedSquareFillOutlineComponent
+    component: MixedCheckboxSquareFillOutlineComponent
 
   }, {
     // demo-checkbox/mixed-square-thick
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedSquareThick}`,
-    component: MixedSquareThickComponent
+    component: MixedCheckboxSquareThickComponent
 
   }, {
     // demo-checkbox/mixed-square-thick-outline
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedSquareThickOutline}`,
-    component: MixedSquareThickOutlineComponent
+    component: MixedCheckboxSquareThickOutlineComponent
 
   }, {
     // demo-checkbox/mixed-curve
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedCurve}`,
-    component: MixedCurveComponent
+    component: MixedCheckboxCurveComponent
 
   }, {
     // demo-checkbox/mixed-curve-outline
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedCurveOutline}`,
-    component: MixedCurveOutlineComponent
+    component: MixedCheckboxCurveOutlineComponent
 
   }, {
     // demo-checkbox/mixed-curve-fill
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedCurveFill}`,
-    component: MixedCurveFillComponent
+    component: MixedCheckboxCurveFillComponent
 
   }, {
     // demo-checkbox/mixed-curve-fill-outline
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedCurveFillOutline}`,
-    component: MixedCurveFillOutlineComponent
+    component: MixedCheckboxCurveFillOutlineComponent
 
   }, {
     // demo-checkbox/mixed-curve-thick
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedCurveThick}`,
-    component: MixedCurveThickComponent
+    component: MixedCheckboxCurveThickComponent
 
   }, {
     // demo-checkbox/mixed-curve-thick-outline
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedCurveThickOutline}`,
-    component: MixedCurveThickOutlineComponent
+    component: MixedCheckboxCurveThickOutlineComponent
 
   }, {
     // demo-checkbox/mixed-round
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedRound}`,
-    component: MixedRoundComponent
+    component: MixedCheckboxRoundComponent
 
   }, {
     // demo-checkbox/mixed-round-outline
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedRoundOutline}`,
-    component: MixedRoundOutlineComponent
+    component: MixedCheckboxRoundOutlineComponent
 
   }, {
     // demo-checkbox/mixed-round-fill
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedRoundFill}`,
-    component: MixedRoundFillComponent
+    component: MixedCheckboxRoundFillComponent
 
   }, {
     // demo-checkbox/mixed-round-fill-outline
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedRoundFillOutline}`,
-    component: MixedRoundFillOutlineComponent
+    component: MixedCheckboxRoundFillOutlineComponent
 
   }, {
     // demo-checkbox/mixed-round-thick
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedRoundThick}`,
-    component: MixedRoundThickComponent
+    component: MixedCheckboxRoundThickComponent
 
   }, {
     // demo-checkbox/mixed-round-thick-outline
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedRoundThickOutline}`,
-    component: MixedRoundThickOutlineComponent
+    component: MixedCheckboxRoundThickOutlineComponent
 
   }, {
     // demo-checkbox/mixed-switch
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedSwitch}`,
-    component: MixedSwitchComponent
+    component: MixedCheckboxSwitchComponent
 
 
   }, {
     // demo-checkbox/basic
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.Basic}`,
-    component: DemoBasicCheckboxComponent
+    component: DemoCheckboxBasicComponent
 
   }, {
     // demo-checkbox/switch
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.Switch}`,
-    component : DemoSwitchComponent
+    component : DemoCheckboxSwitchComponent
 
   }, {
     // demo-checkbox/colors
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.Colors}`,
-    component : DemoColorComponent
+    component : DemoCheckboxColorComponent
 
   }, {
     // demo-checkbox/font-icons
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.FontIcons}`,
-    component : DemoFontIconComponent
+    component : DemoCheckboxFontIconComponent
 
   }, {
     // demo-checkbox/svg
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.Svg}`,
-    component : DemoSvgComponent
+    component : DemoCheckboxSvgComponent
 
   }, {
     // demo-checkbox/image
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.Image}`,
-    component : DemoImageComponent
+    component : DemoCheckboxImageComponent
 
   }, {
     // demo-checkbox/toggle
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.Toggle}`,
-    component : DemoToggleComponent
+    component : DemoCheckboxToggleComponent
 
   }, {
     // demo-checkbox/indeterminate
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.States}`,
-    component : DemoStatesComponent
+    component : DemoCheckboxStatesComponent
 
   }, {
     // demo-checkbox/scalability
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.Scalability}`,
-    component : DemoScalabilityComponent
+    component : DemoCheckboxScalabilityComponent
   }, {
     // demo-checkbox/animations
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.Animations}`,
-    component : DemoAnimationComponent
+    component : DemoCheckboxAnimationComponent
   }, {
     // demo-checkbox/animation-smooth
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.AnimationSmooth}`,
-    component : DemoAnimationSmoothComponent
+    component : DemoCheckboxAnimationSmoothComponent
   }, {
     // demo-checkbox/animation-jelly
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.AnimationJelly}`,
-    component : DemoAnimationJellyComponent
+    component : DemoCheckboxAnimationJellyComponent
   }, {
     // demo-checkbox/animation-tada
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.AnimationTada}`,
-    component : DemoAnimationTadaComponent
+    component : DemoCheckboxAnimationTadaComponent
   }, {
     // demo-checkbox/animation-rotate
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.AnimationRotate}`,
-    component : DemoAnimationRotateComponent
+    component : DemoCheckboxAnimationRotateComponent
   }, {
     // demo-checkbox/animation-pulse
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.AnimationPulse}`,
-    component : DemoAnimationPulseComponent
+    component : DemoAnimationCheckboxPulseComponent
   }, {
     // demo-checkbox/plain
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.Plain}`,
-    component : DemoPlainComponent
+    component : DemoCheckboxPlainComponent
 
   }, {
     // demo-checkbox/disable
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.Disable}`,
-    component : DemoDisableComponent
+    component : DemoCheckboxDisableComponent
   }, {
     // demo-checkbox/lock
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.Lock}`,
-    component : DemoLockComponent
+    component : DemoCheckboxLockComponent
 
   }, {
     // demo-checkbox/size
     path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.Size}`,
-    component : DemoSizeComponent
+    component : DemoCheckboxSizeComponent
 
   }, {
     // demo-radio
