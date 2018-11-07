@@ -22,24 +22,24 @@
           class="side-nav__accordion"
           (transitionend)="onTransitionEnd(isAccordingInstallOpen, installAccordingElem)">
 
-            <div class="side-nav__item" (click)="goToInstall(InstallRouteName.Lib)">Install library</div>
-            <div class="side-nav__item" (click)="goToInstall(InstallRouteName.ScssCustomize)">SCSS Customized</div>
+            <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.InstallLib">Install library</a>
+            <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.InstallScssCustomize">SCSS Customized</a>
         </div>
 
 
 
         <!-- DEMO CHECKBOX -->
-        <div class="side-nav__header side-nav__header--item" (click)="onDemosCheckboxClick()">
+        <a class="side-nav__header side-nav__header--item" [routerLink]="RoutePath.DemoCheckbox" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" (click)="onDemosCheckboxClick()">
           Demos Checkbox
           <i *ngIf="!isAccordingDemoCheckboxOpen" class="side-nav__accordion-icon material-icons">arrow_drop_down</i>
           <i *ngIf="isAccordingDemoCheckboxOpen" class="side-nav__accordion-icon material-icons">arrow_drop_up</i>
-        </div>
+        </a>
 
         <div #demoCheckboxAccordingElem
           class="side-nav__accordion"
           (transitionend)="onTransitionEnd(isAccordingDemoCheckboxOpen, demoCheckboxAccordingElem)">
 
-          <div class="side-nav__item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.All)">All Feature</div>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxAll">All Feature</a>
           <div class="side-nav__item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.Basic)">Basic</div>
           <div class="side-nav__item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.Switch)">Switch</div>
 

@@ -74,8 +74,12 @@
   transition: background-color 0.3s;
   cursor: pointer;
 }
+.active-link  {
+  border-left: 5px solid rgba(3, 155, 299, 0.8);
+  background-color: rgba(3, 155, 299, 0.15);
+}
 
-.side-nav__item:hover, .side-nav__sub-item:hover {
+.side-nav__item:not(.active-link):hover, .side-nav__sub-item:not(.active-link):hover {
   background-color: #e0e0e0;
 }
 .side-nav__item {

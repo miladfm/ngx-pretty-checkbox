@@ -1,6 +1,7 @@
 import { Component, ChangeDetectionStrategy, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { DemoCheckboxesRouteName, ApiRouteName, InstallRouteName, DemoRadioRouteName } from './models/enums';
 import { NavigationService } from './services/navigation.service';
+import { RoutePath } from 'src/routes-path';
 
 @Component({
   selector: 'app-root',
@@ -10,10 +11,12 @@ import { NavigationService } from './services/navigation.service';
 })
 export class AppComponent implements OnInit {
 
-  public readonly DemoCheckboxesRouteName = DemoCheckboxesRouteName;
-  public readonly DemoRadioRouteName = DemoRadioRouteName;
-  public readonly ApiRouteName = ApiRouteName;
-  public readonly InstallRouteName = InstallRouteName;
+  public readonly DemoCheckboxesRouteName = DemoCheckboxesRouteName; // TODO: remove after routes
+  public readonly DemoRadioRouteName = DemoRadioRouteName; // TODO: remove after routes
+  public readonly ApiRouteName = ApiRouteName; // TODO: remove after routes
+  public readonly InstallRouteName = InstallRouteName; // TODO: remove after routes
+
+  public readonly RoutePath = RoutePath;
 
   public isAccordingInstallOpen = true;
   public isAccordingDemoCheckboxOpen = false;
@@ -39,18 +42,23 @@ export class AppComponent implements OnInit {
     this.updateAccordingLayout(this.isAccordingDemoRadioOpen, this.demoRadioAccordingElem.nativeElement, false);
     this.updateAccordingLayout(this.isAccordingApiOpen, this.apiAccordingElem.nativeElement, false);
   }
+
+   // TODO: remove after routes
   goToDemoCheckbox(page?: DemoCheckboxesRouteName) {
     this.navigation.goToDemoCheckbox(page);
   }
 
+   // TODO: remove after routes
   goToDemoRadio(page?: DemoRadioRouteName) {
     this.navigation.goToDemoRadio(page);
   }
 
+ // TODO: remove after routes
   goToInstall(page?: InstallRouteName) {
     this.navigation.goToInstall(page);
   }
 
+ // TODO: remove after routes
   goToApi(page?: ApiRouteName) {
     this.navigation.goToApi(page);
   }

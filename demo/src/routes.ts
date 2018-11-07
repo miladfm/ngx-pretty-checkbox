@@ -74,6 +74,7 @@ import { MixedCheckboxSwitchComponent } from './app/components/demo-checkbox-mix
 import { RadioWillChangeApiComponent } from './app/components/api-radio-will-change/api-radio-will-change.component';
 import { Routes } from '@angular/router';
 import { DemoRadioButtonAllComponent } from './app/components/demo-radio-button-all/demo-radio-button-all.component';
+import { RoutePath } from './routes-path';
 
 const MAIN_PAGE = `${MainRouteName.Install}/${InstallRouteName.Lib}`;
 
@@ -82,23 +83,19 @@ export const routes: Routes = [
   { path: '', redirectTo: MAIN_PAGE, pathMatch: 'full' },
 
   {
-    // install/lib
-    path: `${MainRouteName.Install}/${InstallRouteName.Lib}`,
+    path: RoutePath.InstallLib,
     component: InstallLibComponent
 
   }, {
-    // install/scss-customize
-    path: `${MainRouteName.Install}/${InstallRouteName.ScssCustomize}`,
+    path: RoutePath.InstallScssCustomize,
     component: InstallScssCustomizeComponent
 
   }, {
-    // demo-checkbox
-    path: `${MainRouteName.DemoCheckbox}`,
+    path: RoutePath.DemoCheckbox,
     component: DemosCheckboxComponent
 
   }, {
-    // demo-checkbox/checkbox-all
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.All}`,
+    path: RoutePath.DemoCheckboxAll,
     component: DemoCheckboxAllComponent
 
   }, {
