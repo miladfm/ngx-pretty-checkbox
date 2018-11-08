@@ -11,6 +11,7 @@ export enum InstallRouteName {
 }
 
 export enum DemoRadioRouteName {
+  All = 'all',
   Basic = 'basic',
   Animations = 'animations',
   Color = 'color',

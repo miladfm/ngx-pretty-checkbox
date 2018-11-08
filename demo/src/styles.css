@@ -10,7 +10,12 @@
 * {
   box-sizing: border-box;
 }
-
+body a {
+  color: inherit;
+  text-decoration: inherit;
+  width: 100%;
+  height: 100%;
+}
 html, body {
   width: 100%;
   height: 100%;
@@ -96,13 +101,17 @@ select:focus {
 
 .content__demo {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   flex-direction: column;
   width: 200px;
   min-width: 200px;
   padding-right: 20px;
   border-right: 1px solid #ccc;
+}
+
+.content__demo.content__demo--justify-start {
+  justify-content: flex-start;
 }
 
 .content__demo--action {
@@ -114,6 +123,10 @@ select:focus {
 
 .content__demo--action-text {
   margin-right: 10px;
+}
+
+.content__demo--radio {
+  margin: 10px 0;
 }
 
 .content__text {
@@ -200,10 +213,6 @@ select:focus {
 .svg-icon-green {
   color: #fff;
   stroke: #fff;
-}
-
-.method {
-
 }
 
 
