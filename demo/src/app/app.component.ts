@@ -65,17 +65,14 @@ export class AppComponent implements OnInit {
 
   onDemosCheckboxClick() {
     this.toggleDemosCheckboxAccording();
-    this.goToDemoCheckbox();
   }
 
   onDemoCheckboxAnimationClick() {
     this.toggleDemoCheckboxAnimationAccording();
-    this.goToDemoCheckbox(DemoCheckboxesRouteName.Animations);
   }
 
   onDemoRadioClick() {
     this.toggleDemoRadioAccording();
-    this.goToDemoRadio();
   }
 
   toggleDemoCheckboxMixedAccording() {

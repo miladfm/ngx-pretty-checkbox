@@ -12,11 +12,11 @@
 
 
         <!-- Install -->
-        <div class="side-nav__header side-nav__header--item" (click)="toggleInstallAccording()">
+        <a class="side-nav__header side-nav__header--item" (click)="toggleInstallAccording()">
             Install
           <i *ngIf="!isAccordingInstallOpen" class="side-nav__accordion-icon material-icons">arrow_drop_down</i>
           <i *ngIf="isAccordingInstallOpen" class="side-nav__accordion-icon material-icons">arrow_drop_up</i>
-        </div>
+        </a>
 
         <div #installAccordingElem
           class="side-nav__accordion"
@@ -40,8 +40,8 @@
           (transitionend)="onTransitionEnd(isAccordingDemoCheckboxOpen, demoCheckboxAccordingElem)">
 
           <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxAll">All Feature</a>
-          <div class="side-nav__item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.Basic)">Basic</div>
-          <div class="side-nav__item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.Switch)">Switch</div>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxBasic">Basic</a>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxSwitch">Switch</a>
 
           <div class="side-nav__item" (click)="  toggleDemoCheckboxMixedAccording()">
             Mixed
@@ -52,119 +52,119 @@
             class="side-nav__accordion"
             (transitionend)="onTransitionEnd(isAccordingDemoCheckboxMixedOpen, demoCheckboxMixedAccordingElem)">
 
-              <div class="side-nav__sub-item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.MixedColor)">Color</div>
-              <div class="side-nav__sub-item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.MixedOutline)">Outline</div>
-              <div class="side-nav__sub-item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.MixedSquareFill)">Square Fill</div>
-              <div class="side-nav__sub-item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.MixedSquareFillOutline)">Square Fill Outline</div>
-              <div class="side-nav__sub-item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.MixedSquareThick)">Square Thick</div>
-              <div class="side-nav__sub-item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.MixedSquareThickOutline)">Square Thick Outline</div>
-              <div class="side-nav__sub-item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.MixedCurve)">Curve</div>
-              <div class="side-nav__sub-item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.MixedCurveOutline)">Curve Outline</div>
-              <div class="side-nav__sub-item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.MixedCurveFill)">Curve Fill</div>
-              <div class="side-nav__sub-item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.MixedCurveFillOutline)">Curve Fill Outline</div>
-              <div class="side-nav__sub-item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.MixedCurveThick)">Curve Thick</div>
-              <div class="side-nav__sub-item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.MixedCurveThickOutline)">Curve Thick Outline</div>
-              <div class="side-nav__sub-item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.MixedRound)">Round</div>
-              <div class="side-nav__sub-item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.MixedRoundOutline)">Round Outline</div>
-              <div class="side-nav__sub-item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.MixedRoundFill)">Round Fill</div>
-              <div class="side-nav__sub-item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.MixedRoundFillOutline)">Round Fill Outline</div>
-              <div class="side-nav__sub-item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.MixedRoundThick)">Round Thick</div>
-              <div class="side-nav__sub-item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.MixedRoundThickOutline)">Round Thick Outline</div>
-              <div class="side-nav__sub-item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.MixedSwitch)">Switch</div>
-          </div>
+              <a class="side-nav__sub-item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxMixedColor">Color</a>
+              <a class="side-nav__sub-item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxMixedOutline">Outline</a>
+              <a class="side-nav__sub-item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxMixedSquareFill">Square Fill</a>
+              <a class="side-nav__sub-item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxMixedSquareFillOutline">Square Fill Outline</a>
+              <a class="side-nav__sub-item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxMixedSquareThick">Square Thick</a>
+              <a class="side-nav__sub-item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxMixedSquareThickOutline">Square Thick Outline</a>
+              <a class="side-nav__sub-item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxMixedCurve">Curve</a>
+              <a class="side-nav__sub-item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxMixedCurveOutline">Curve Outline</a>
+              <a class="side-nav__sub-item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxMixedCurveFill">Curve Fill</a>
+              <a class="side-nav__sub-item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxMixedCurveFillOutline">Curve Fill Outline</a>
+              <a class="side-nav__sub-item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxMixedCurveThick">Curve Thick</a>
+              <a class="side-nav__sub-item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxMixedCurveThickOutline">Curve Thick Outline</a>
+              <a class="side-nav__sub-item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxMixedRound">Round</a>
+              <a class="side-nav__sub-item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxMixedRoundOutline">Round Outline</a>
+              <a class="side-nav__sub-item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxMixedRoundFill">Round Fill</a>
+              <a class="side-nav__sub-item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxMixedRoundFillOutline">Round Fill Outline</a>
+              <a class="side-nav__sub-item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxMixedRoundThick">Round Thick</a>
+              <a class="side-nav__sub-item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxMixedRoundThickOutline">Round Thick Outline</a>
+              <a class="side-nav__sub-item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxMixedSwitch">Switch</a>
+            </div>
 
-          <div class="side-nav__item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.Colors)">Colors</div>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxColors">Colors</a>
 
-          <div class="side-nav__item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.FontIcons)">Font Icons</div>
-          <div class="side-nav__item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.Svg)">Svg</div>
-          <div class="side-nav__item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.Image)">Image</div>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxFontIcons">Font Icons</a>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxSvg">Svg</a>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxImage">Image</a>
 
-          <div class="side-nav__item" (click)="onDemoCheckboxAnimationClick()">
+          <a class="side-nav__item" [routerLink]="RoutePath.DemoCheckboxAnimations" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}"  (click)="onDemoCheckboxAnimationClick()">
               Animations
               <i *ngIf="!isAccordingDemoCheckboxAnimationOpen" class="side-nav__accordion-icon material-icons">arrow_drop_down</i>
               <i *ngIf="isAccordingDemoCheckboxAnimationOpen" class="side-nav__accordion-icon material-icons">arrow_drop_up</i>
-            </div>
+          </a>
             <div #demoCheckboxAnimationAccordingElem
               class="side-nav__accordion"
               (transitionend)="onTransitionEnd(isAccordingDemoCheckboxAnimationOpen, demoCheckboxAnimationAccordingElem)">
 
-                <div class="side-nav__sub-item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.AnimationSmooth)">Smooth</div>
-                <div class="side-nav__sub-item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.AnimationJelly)">Jelly</div>
-                <div class="side-nav__sub-item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.AnimationTada)">Tada</div>
-                <div class="side-nav__sub-item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.AnimationRotate)">Rotate</div>
-                <div class="side-nav__sub-item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.AnimationPulse)">Pulse</div>
+                <a class="side-nav__sub-item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxAnimationSmooth">Smooth</a>
+                <a class="side-nav__sub-item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxAnimationJelly">Jelly</a>
+                <a class="side-nav__sub-item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxAnimationTada">Tada</a>
+                <a class="side-nav__sub-item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxAnimationRotate">Rotate</a>
+                <a class="side-nav__sub-item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxAnimationPulse">Pulse</a>
 
             </div>
 
 
-          <div class="side-nav__item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.Plain)">Plain</div>
-          <div class="side-nav__item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.Disable)">Disable</div>
-          <div class="side-nav__item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.Lock)">Lock</div>
-          <div class="side-nav__item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.Size)">Size</div>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxPlain">Plain</a>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxDisable">Disable</a>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxLock">Lock</a>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxSize">Size</a>
 
 
-          <div class="side-nav__item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.Toggle)">Toggle</div>
-          <div class="side-nav__item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.Scalability)">Scalability</div>
-          <div class="side-nav__item" (click)="goToDemoCheckbox(DemoCheckboxesRouteName.States)">States</div>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxToggle">Toggle</a>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxScalability">Scalability</a>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.DemoCheckboxStates">States</a>
 
         </div>
 
 
         <!-- Demo Radio -->
 
-        <div class="side-nav__header side-nav__header--item" (click)="onDemoRadioClick()">
+        <a class="side-nav__header side-nav__header--item" [routerLink]="RoutePath.DemoRadio" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" (click)="onDemoRadioClick()">
             Demo Radio
             <i *ngIf="!isAccordingDemoRadioOpen" class="side-nav__accordion-icon material-icons">arrow_drop_down</i>
             <i *ngIf="isAccordingDemoRadioOpen" class="side-nav__accordion-icon material-icons">arrow_drop_up</i>
-          </div>
+          </a>
           <div #demoRadioAccordingElem
             class="side-nav__accordion"
             (transitionend)="onTransitionEnd(isAccordingDemoRadioOpen, demoRadioAccordingElem)">
 
-              <div class="side-nav__item" (click)="goToDemoRadio(DemoRadioRouteName.All)">All Feature</div>
-              <div class="side-nav__item" (click)="goToDemoRadio(DemoRadioRouteName.Basic)">Basic</div>
-              <div class="side-nav__item" (click)="goToDemoRadio(DemoRadioRouteName.Animations)">Animations</div>
-              <div class="side-nav__item" (click)="goToDemoRadio(DemoRadioRouteName.Color)">Color</div>
-              <div class="side-nav__item" (click)="goToDemoRadio(DemoRadioRouteName.ColorIcon)">Color and Icon</div>
-              <div class="side-nav__item" (click)="goToDemoRadio(DemoRadioRouteName.ColorOutlineIcon)">Outline and icon</div>
-              <div class="side-nav__item" (click)="goToDemoRadio(DemoRadioRouteName.Plain)">Plain</div>
-              <div class="side-nav__item" (click)="goToDemoRadio(DemoRadioRouteName.Switch)">Switch</div>
+              <a class="side-nav__item"  routerLinkActive="active-link" [routerLink]="RoutePath.DemoRadioAll">All Feature</a>
+              <a class="side-nav__item"  routerLinkActive="active-link" [routerLink]="RoutePath.DemoRadioBasic">Basic</a>
+              <a class="side-nav__item"  routerLinkActive="active-link" [routerLink]="RoutePath.DemoRadioAnimations">Animations</a>
+              <a class="side-nav__item"  routerLinkActive="active-link" [routerLink]="RoutePath.DemoRadioColor">Color</a>
+              <a class="side-nav__item"  routerLinkActive="active-link" [routerLink]="RoutePath.DemoRadioColorIcon">Color and Icon</a>
+              <a class="side-nav__item"  routerLinkActive="active-link" [routerLink]="RoutePath.DemoRadioColorOutlineIcon">Outline and icon</a>
+              <a class="side-nav__item"  routerLinkActive="active-link" [routerLink]="RoutePath.DemoRadioPlain">Plain</a>
+              <a class="side-nav__item"  routerLinkActive="active-link" [routerLink]="RoutePath.DemoRadioSwitch">Switch</a>
 
-          </div>
+        </div>
 
         <!-- API -->
 
-        <div class="side-nav__header side-nav__header--item" (click)="toggleApiAccording()">
+        <a class="side-nav__header side-nav__header--item" (click)="toggleApiAccording()">
             API
           <i *ngIf="!isAccordingApiOpen" class="side-nav__accordion-icon material-icons">arrow_drop_down</i>
           <i *ngIf="isAccordingApiOpen" class="side-nav__accordion-icon material-icons">arrow_drop_up</i>
-        </div>
+        </a>
 
         <div #apiAccordingElem
           class="side-nav__accordion"
           (transitionend)="onTransitionEnd(isAccordingApiOpen, apiAccordingElem)">
 
-          <div class="side-nav__item" (click)="goToApi(ApiRouteName.Checkbox)">Checkbox</div>
-          <div class="side-nav__item" (click)="goToApi(ApiRouteName.CheckboxWillChange)">Checkbox will-change</div>
-          <div class="side-nav__item" (click)="goToApi(ApiRouteName.RadioGroup)">Radio Group</div>
-          <div class="side-nav__item" (click)="goToApi(ApiRouteName.Radio)">Radio</div>
-          <div class="side-nav__item" (click)="goToApi(ApiRouteName.RadioWillChange)">Radio will-change</div>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.ApiCheckbox">Checkbox</a>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.ApiCheckboxWillChange">Checkbox will-change</a>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.ApiRadioGroup">Radio Group</a>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.ApiRadio">Radio</a>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.ApiRadioWillChange">Radio will-change</a>
 
-          <div class="side-nav__item" (click)="goToApi(ApiRouteName.Toggle)">Toggle</div>
-          <div class="side-nav__item" (click)="goToApi(ApiRouteName.ToggleWillChange)">Toggle will-change</div>
-          <div class="side-nav__item" (click)="goToApi(ApiRouteName.Hover)">Hover</div>
-          <div class="side-nav__item" (click)="goToApi(ApiRouteName.HoverWillChange)">Hover will-change</div>
-          <div class="side-nav__item" (click)="goToApi(ApiRouteName.Indeterminate)">Indeterminate</div>
-          <div class="side-nav__item" (click)="goToApi(ApiRouteName.IndeterminateWillChange)">Indeterminate will-change</div>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.ApiToggle">Toggle</a>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.ApiToggleWillChange">Toggle will-change</a>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.ApiHover">Hover</a>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.ApiHoverWillChange">Hover will-change</a>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.ApiIndeterminate">Indeterminate</a>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.ApiIndeterminateWillChange">Indeterminate will-change</a>
 
-          <div class="side-nav__item" (click)="goToApi(ApiRouteName.Interfaces)">Interfaces</div>
-          <div class="side-nav__item" (click)="goToApi(ApiRouteName.Enums)">Enums</div>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.ApiInterfaces">Interfaces</a>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.ApiEnums">Enums</a>
 
-          <div class="side-nav__item" (click)="goToApi(ApiRouteName.Svg)">Svg</div>
-          <div class="side-nav__item" (click)="goToApi(ApiRouteName.Image)">Image</div>
-          <div class="side-nav__item" (click)="goToApi(ApiRouteName.Icon)">Icon</div>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.ApiSvg">Svg</a>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.ApiImage">Image</a>
+          <a class="side-nav__item" routerLinkActive="active-link" [routerLink]="RoutePath.ApiIcon">Icon</a>
 
-        </div>
+      </div>
 
 
 
