@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://github.com/miladfm/ngx-pretty-checkbox/releases">
-    <img src="https://img.shields.io/badge/release-v1.0.0-blue.svg">
+    <img src="https://img.shields.io/badge/release-v1.0.1-blue.svg">
   </a>
 
   <a href="https://github.com/angular/angular">
