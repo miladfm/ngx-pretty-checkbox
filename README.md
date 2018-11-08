@@ -7,15 +7,18 @@
 <h4 align="center">Quickly integrate pretty checkbox Components (checkbox, switch, radio button) with Angular </h4>
 
 <p align="center">
-  <a href="https://lokesh-coder.github.io/pretty-checkbox/">
+  <a href="https://github.com/miladfm/ngx-pretty-checkbox/releases">
     <img src="https://img.shields.io/badge/release-v1.0.0-blue.svg">
   </a>
+
   <a href="https://github.com/angular/angular">
     <img src="https://img.shields.io/badge/angular-6.x-blue.svg">
   </a>
-  <a href="https://github.com/miladfm/ngx-pretty-checkbox/releases">
+
+  <a href="https://lokesh-coder.github.io/pretty-checkbox/">
     <img src="https://img.shields.io/badge/pretty--checbox-3.x-blue.svg" alt="Github Release">
   </a>
+
    <a href="LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="Licence">
   </a>
@@ -98,7 +101,7 @@ Use it in your angular application
 </p-checkbox>
 ```
 <br><br><br>
-## More Demos and document
+## More demos and document
 
 There are more features like  ***Radio buttons*** , ***Toggle*** , ***States*** , ***Animations*** , ***Border less*** , ***Lock*** , ***Scale***, ***SCSS Settings***. 
 
