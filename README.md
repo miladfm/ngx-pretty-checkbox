@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://github.com/miladfm/ngx-pretty-checkbox/releases">
-    <img src="https://img.shields.io/badge/release-v1.0.1-blue.svg">
+    <img src="https://img.shields.io/badge/release-v1.0.2-blue.svg">
   </a>
 
   <a href="https://github.com/angular/angular">
@@ -105,7 +105,7 @@ Use it in your angular application
 
 There are more features like  ***Radio buttons*** , ***Toggle*** , ***States*** , ***Animations*** , ***Border less*** , ***Lock*** , ***Scale***, ***SCSS Settings***. 
 
-Please refer the [documentation](https://www.npmjs.com/package/pretty-checkbox) to know about them.
+Please refer the [documentation](https://miladfm.github.io/ngx-pretty-checkbox/) to know about them.
 
 <br><br>
 
