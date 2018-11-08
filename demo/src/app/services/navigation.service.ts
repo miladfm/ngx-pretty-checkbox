@@ -44,5 +44,4 @@ export class NavigationService {
       this.route.navigate([MainRouteName.Install]);
     }
   }
-
 }

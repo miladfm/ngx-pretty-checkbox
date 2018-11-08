@@ -99,311 +99,248 @@ export const routes: Routes = [
     component: DemoCheckboxAllComponent
 
   }, {
-    // demo-checkbox/mixed-color
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedColor}`,
+    path: RoutePath.DemoCheckboxMixedColor,
     component: MixedCheckboxColorComponent
 
   }, {
-    // demo-checkbox/mixed-outline
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedOutline}`,
+    path: RoutePath.DemoCheckboxMixedOutline,
     component: MixedCheckboxOutlineComponent
 
   }, {
-    // demo-checkbox/mixed-square-fill
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedSquareFill}`,
+    path: RoutePath.DemoCheckboxMixedSquareFill,
     component: MixedCheckboxSquareFillComponent
 
   }, {
-    // demo-checkbox/mixed-square-fill-outline
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedSquareFillOutline}`,
+    path: RoutePath.DemoCheckboxMixedSquareFillOutline ,
     component: MixedCheckboxSquareFillOutlineComponent
 
   }, {
-    // demo-checkbox/mixed-square-thick
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedSquareThick}`,
+    path: RoutePath.DemoCheckboxMixedSquareThick,
     component: MixedCheckboxSquareThickComponent
 
   }, {
-    // demo-checkbox/mixed-square-thick-outline
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedSquareThickOutline}`,
+    path: RoutePath.DemoCheckboxMixedSquareThickOutline,
     component: MixedCheckboxSquareThickOutlineComponent
 
   }, {
-    // demo-checkbox/mixed-curve
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedCurve}`,
+    path: RoutePath.DemoCheckboxMixedCurve,
     component: MixedCheckboxCurveComponent
 
   }, {
-    // demo-checkbox/mixed-curve-outline
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedCurveOutline}`,
+    path: RoutePath.DemoCheckboxMixedCurveOutline,
     component: MixedCheckboxCurveOutlineComponent
 
   }, {
-    // demo-checkbox/mixed-curve-fill
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedCurveFill}`,
+    path: RoutePath.DemoCheckboxMixedCurveFill,
     component: MixedCheckboxCurveFillComponent
 
   }, {
-    // demo-checkbox/mixed-curve-fill-outline
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedCurveFillOutline}`,
+    path: RoutePath.DemoCheckboxMixedCurveFillOutline,
     component: MixedCheckboxCurveFillOutlineComponent
 
   }, {
-    // demo-checkbox/mixed-curve-thick
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedCurveThick}`,
+    path: RoutePath.DemoCheckboxMixedCurveThick,
     component: MixedCheckboxCurveThickComponent
 
   }, {
-    // demo-checkbox/mixed-curve-thick-outline
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedCurveThickOutline}`,
+    path: RoutePath.DemoCheckboxMixedCurveThickOutline,
     component: MixedCheckboxCurveThickOutlineComponent
 
   }, {
-    // demo-checkbox/mixed-round
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedRound}`,
+    path: RoutePath.DemoCheckboxMixedRound,
     component: MixedCheckboxRoundComponent
 
   }, {
-    // demo-checkbox/mixed-round-outline
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedRoundOutline}`,
+    path: RoutePath.DemoCheckboxMixedRoundOutline,
     component: MixedCheckboxRoundOutlineComponent
 
   }, {
-    // demo-checkbox/mixed-round-fill
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedRoundFill}`,
+    path: RoutePath.DemoCheckboxMixedRoundFill,
     component: MixedCheckboxRoundFillComponent
 
   }, {
-    // demo-checkbox/mixed-round-fill-outline
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedRoundFillOutline}`,
+    path: RoutePath.DemoCheckboxMixedRoundFillOutline,
     component: MixedCheckboxRoundFillOutlineComponent
 
   }, {
-    // demo-checkbox/mixed-round-thick
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedRoundThick}`,
+    path: RoutePath.DemoCheckboxMixedRoundThick,
     component: MixedCheckboxRoundThickComponent
 
   }, {
-    // demo-checkbox/mixed-round-thick-outline
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedRoundThickOutline}`,
+    path: RoutePath.DemoCheckboxMixedRoundThickOutline,
     component: MixedCheckboxRoundThickOutlineComponent
 
   }, {
-    // demo-checkbox/mixed-switch
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedSwitch}`,
+    path: RoutePath.DemoCheckboxMixedSwitch,
     component: MixedCheckboxSwitchComponent
 
 
   }, {
-    // demo-checkbox/basic
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.Basic}`,
+    path: RoutePath.DemoCheckboxBasic,
     component: DemoCheckboxBasicComponent
 
   }, {
-    // demo-checkbox/switch
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.Switch}`,
+    path: RoutePath.DemoCheckboxSwitch,
     component : DemoCheckboxSwitchComponent
 
   }, {
-    // demo-checkbox/colors
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.Colors}`,
+    path: RoutePath.DemoCheckboxColors,
     component : DemoCheckboxColorComponent
 
   }, {
-    // demo-checkbox/font-icons
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.FontIcons}`,
+    path: RoutePath.DemoCheckboxFontIcons,
     component : DemoCheckboxFontIconComponent
 
   }, {
-    // demo-checkbox/svg
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.Svg}`,
+    path: RoutePath.DemoCheckboxSvg,
     component : DemoCheckboxSvgComponent
 
   }, {
-    // demo-checkbox/image
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.Image}`,
+    path: RoutePath.DemoCheckboxImage,
     component : DemoCheckboxImageComponent
 
   }, {
-    // demo-checkbox/toggle
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.Toggle}`,
+    path: RoutePath.DemoCheckboxToggle,
     component : DemoCheckboxToggleComponent
 
   }, {
-    // demo-checkbox/indeterminate
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.States}`,
+    path: RoutePath.DemoCheckboxStates,
     component : DemoCheckboxStatesComponent
 
   }, {
-    // demo-checkbox/scalability
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.Scalability}`,
+    path: RoutePath.DemoCheckboxScalability,
     component : DemoCheckboxScalabilityComponent
   }, {
-    // demo-checkbox/animations
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.Animations}`,
+    path: RoutePath.DemoCheckboxAnimations,
     component : DemoCheckboxAnimationComponent
   }, {
-    // demo-checkbox/animation-smooth
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.AnimationSmooth}`,
+    path: RoutePath.DemoCheckboxAnimationSmooth,
     component : DemoCheckboxAnimationSmoothComponent
   }, {
-    // demo-checkbox/animation-jelly
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.AnimationJelly}`,
+    path: RoutePath.DemoCheckboxAnimationJelly,
     component : DemoCheckboxAnimationJellyComponent
   }, {
-    // demo-checkbox/animation-tada
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.AnimationTada}`,
+    path: RoutePath.DemoCheckboxAnimationTada,
     component : DemoCheckboxAnimationTadaComponent
   }, {
-    // demo-checkbox/animation-rotate
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.AnimationRotate}`,
+    path: RoutePath.DemoCheckboxAnimationRotate,
     component : DemoCheckboxAnimationRotateComponent
   }, {
-    // demo-checkbox/animation-pulse
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.AnimationPulse}`,
+    path: RoutePath.DemoCheckboxAnimationPulse,
     component : DemoAnimationCheckboxPulseComponent
   }, {
-    // demo-checkbox/plain
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.Plain}`,
+    path: RoutePath.DemoCheckboxPlain,
     component : DemoCheckboxPlainComponent
 
   }, {
-    // demo-checkbox/disable
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.Disable}`,
+    path: RoutePath.DemoCheckboxDisable,
     component : DemoCheckboxDisableComponent
   }, {
-    // demo-checkbox/lock
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.Lock}`,
+    path: RoutePath.DemoCheckboxLock,
     component : DemoCheckboxLockComponent
 
   }, {
-    // demo-checkbox/size
-    path: `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.Size}`,
+    path: RoutePath.DemoCheckboxSize,
     component : DemoCheckboxSizeComponent
 
   }, {
-    // demo-radio
-    path: `${MainRouteName.DemoRadio}`,
+    path: RoutePath.DemoRadio,
     component: DemosRadioButtonComponent
 
   }, {
-    // demo-radio/all
-    path: `${MainRouteName.DemoRadio}/${DemoRadioRouteName.All}`,
+    path: RoutePath.DemoRadioAll,
     component : DemoRadioButtonAllComponent
 
   }, {
-    // demo-radio/radio
-    path: `${MainRouteName.DemoRadio}/${DemoRadioRouteName.Basic}`,
+    path: RoutePath.DemoRadioBasic,
     component : DemoRadioButtonComponent
 
   }, {
-    // demo-radio/animations
-    path: `${MainRouteName.DemoRadio}/${DemoRadioRouteName.Animations}`,
+    path: RoutePath.DemoRadioAnimations,
     component : DemoRadioButtonAnimationComponent
 
   }, {
-    // demo-radio/color
-    path: `${MainRouteName.DemoRadio}/${DemoRadioRouteName.Color}`,
+    path: RoutePath.DemoRadioColor,
     component : DemoRadioButtonColorComponent
 
   }, {
-    // demo-radio/color-outline-icon
-    path: `${MainRouteName.DemoRadio}/${DemoRadioRouteName.ColorOutlineIcon}`,
+    path: RoutePath.DemoRadioColorOutlineIcon,
     component : DemoRadioButtonColorOutlineIconComponent
 
   }, {
-    // demo-radio/color-icon
-    path: `${MainRouteName.DemoRadio}/${DemoRadioRouteName.ColorIcon}`,
+    path: RoutePath.DemoRadioColorIcon,
     component : DemoRadioButtonColorIconComponent
 
   }, {
-    // demo-radio/plain
-    path: `${MainRouteName.DemoRadio}/${DemoRadioRouteName.Plain}`,
+    path: RoutePath.DemoRadioPlain,
     component : DemoRadioButtonPlainComponent
 
   }, {
-    // demo-radio/switch
-    path: `${MainRouteName.DemoRadio}/${DemoRadioRouteName.Switch}`,
+    path: RoutePath.DemoRadioSwitch,
     component : DemoRadioButtonSwitchComponent
 
   }, {
-    // api/checkbox
-    path: `${MainRouteName.API}/${ApiRouteName.Checkbox}`,
+    path: RoutePath.ApiCheckbox,
     component: ApiCheckboxComponent
 
   }, {
-    // api/checkbox-will-change
-    path: `${MainRouteName.API}/${ApiRouteName.CheckboxWillChange}`,
+    path: RoutePath.ApiCheckboxWillChange,
     component: ApiCheckboxWillChangeComponent
 
   }, {
-    // api/radio-group
-    path: `${MainRouteName.API}/${ApiRouteName.RadioGroup}`,
+    path: RoutePath.ApiRadioGroup,
     component: ApiRadioGroupComponent
 
   }, {
-    // api/radio
-    path: `${MainRouteName.API}/${ApiRouteName.Radio}`,
+    path: RoutePath.ApiRadio,
     component: ApiRadioComponent
 
   }, {
-    // api/radio-will-change
-    path: `${MainRouteName.API}/${ApiRouteName.RadioWillChange}`,
+    path: RoutePath.ApiRadioWillChange,
     component: RadioWillChangeApiComponent
 
   }, {
-    // api/toggle
-    path: `${MainRouteName.API}/${ApiRouteName.Toggle}`,
+    path: RoutePath.ApiToggle,
     component: ApiToggleComponent
 
   }, {
-    // api/toggle-will-change'
-    path: `${MainRouteName.API}/${ApiRouteName.ToggleWillChange}`,
+    path: RoutePath.ApiToggleWillChange,
     component: ApiToggleWillChangeComponent
 
   }, {
-    // api/hover
-    path: `${MainRouteName.API}/${ApiRouteName.Hover}`,
+    path: RoutePath.ApiHover,
     component: ApiHoverComponent
 
   }, {
-    // api/hover-will-change'
-    path: `${MainRouteName.API}/${ApiRouteName.HoverWillChange}`,
+    path: RoutePath.ApiHoverWillChange,
     component: ApiHoverWillChangeComponent
 
   }, {
-    // api/indeterminate
-    path: `${MainRouteName.API}/${ApiRouteName.Indeterminate}`,
+    path: RoutePath.ApiIndeterminate,
     component: ApiIndeterminateComponent
 
   }, {
-    // api/indeterminate-will-change'
-    path: `${MainRouteName.API}/${ApiRouteName.IndeterminateWillChange}`,
+    path: RoutePath.ApiIndeterminateWillChange,
     component: ApiIndeterminateWillChangeComponent
 
   }, {
-    // api/icon
-    path: `${MainRouteName.API}/${ApiRouteName.Icon}`,
+    path: RoutePath.ApiIcon,
     component: ApiIconComponent
 
   }, {
-    // api/svg
-    path: `${MainRouteName.API}/${ApiRouteName.Svg}`,
+    path: RoutePath.ApiSvg,
     component: ApiSvgComponent
 
   }, {
-    // api/image
-    path: `${MainRouteName.API}/${ApiRouteName.Image}`,
+    path: RoutePath.ApiImage,
     component: ApiImageComponent
 
   }, {
-    // api/interfaces
-    path: `${MainRouteName.API}/${ApiRouteName.Interfaces}`,
+    path: RoutePath.ApiInterfaces,
     component: ApiInterfacesComponent
 
   }, {
-    // api/enums
-    path: `${MainRouteName.API}/${ApiRouteName.Enums}`,
+    path: RoutePath.ApiEnums,
     component: ApiEnumsComponent
 
   }, {
