@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://miladfm.github.io/ngx-pretty-checkbox/"><img src="logo.png" alt="Pretty checkbox angular" width="100"></a>
+  <a href="https://miladfm.github.io/ngx-pretty-checkbox/"><img src="logo.gif" alt="Pretty checkbox angular" width="100"></a>
   <br> <br> NgxPrettyCheckbox <br>
 </h1>
 
@@ -38,7 +38,7 @@
 ### Installation
 - **Step 1** 
 
-Install the pretty-checkbox from [`npm`](https://www.npmjs.com/package/pretty-checkbox) or [`yarn`](https://yarnpkg.com/en/package/pretty-checkbox) package manager
+Install the pretty-checkbox from npm or yarn package manager
 ```sh
 > npm install pretty-checkbox // or
 > yarn add pretty-checkbox
@@ -52,7 +52,7 @@ https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css
 
 - **Step 2** 
 
-Download pretty-checkbox angular module from npm
+Download pretty-checkbox angular module from [`npm`](https://www.npmjs.com/package/ngx-pretty-checkbox) package manager
 ```sh
 > npm install ngx-pretty-checkbox
 ```
