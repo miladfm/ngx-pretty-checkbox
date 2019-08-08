@@ -38,6 +38,15 @@
 
 <br><br><br><br>
 
+
+### Dependencies
+
+Latest version available for each version of Angular
+| ngx-pretty-checkbox | angular |
+|--|--|
+| 1.0.4 | 6.x 7.x |
+| 1.1.0 | >8 |
+
 ### Installation
 - **Step 1** 
 
