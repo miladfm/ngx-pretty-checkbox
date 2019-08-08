@@ -42,6 +42,7 @@
 ### Dependencies
 
 Latest version available for each version of Angular
+
 | ngx-pretty-checkbox | angular |
 |--|--|
 | 1.0.4 | 6.x 7.x |
