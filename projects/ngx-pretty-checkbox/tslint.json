@@ -1,0 +1,11 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": false,
+    "component-selector": false,
+    "no-output-native": false,
+    "typedef": false,
+    "object-literal-key-quotes": false,
+    "max-line-length": false
+  }
+}

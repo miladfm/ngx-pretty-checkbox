@@ -1,0 +1,22 @@
+<input
+  #inputElem
+  type="checkbox"
+  [value]="value"
+  [checked]="checked"
+  [disabled]="disabled"
+  (change)="_onChange($event, inputElem.checked, inputElem.value)"/>
+
+<div
+  *ngIf="!_isToggle"
+  class="state"
+  [ngClass]="[ color ? _prefix + color + (outline ? _outlinePrefix : '') : '' ]">
+
+    <ng-content select="[pIcon], [p-icon], [pSvg], [p-svg], [pImage], [p-image]"></ng-content>
+
+    <label><ng-content></ng-content></label>
+
+</div>
+
+<ng-content
+  select="ngx-p-indeterminate, p-indeterminate, ngx-p-hover, p-hover, ngx-p-toggle, p-toggle">
+</ng-content>
