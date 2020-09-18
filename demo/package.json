@@ -22,7 +22,7 @@
     "core-js": "^2.5.4",
     "material-design-lite": "^1.3.0",
     "ngx-highlight-js": "^10.0.3",
-    "ngx-pretty-checkbox": "^1.1.0",
+    "ngx-pretty-checkbox": "../src/dist/ngx-pretty-checkbox",
     "pretty-checkbox": "^3.0.3",
     "rxjs": "^6.6.3",
     "tslib": "^1.10.0",
