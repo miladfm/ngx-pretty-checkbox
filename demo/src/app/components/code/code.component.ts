@@ -10,8 +10,6 @@ export class CodeComponent implements AfterViewInit {
 
   @Input() type = 'html';
 
-  @ViewChild('codeElem') codeElem: ElementRef;
-
   constructor() { }
 
   ngAfterViewInit() {
