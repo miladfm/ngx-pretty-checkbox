@@ -1,0 +1,9 @@
+:host {
+    margin: 20px;
+    display: block;
+  }
+
+.content__body p-checkbox {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

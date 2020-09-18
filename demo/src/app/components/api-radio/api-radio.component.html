@@ -1,0 +1,295 @@
+<h4 class="content__header">API - Radio</h4>
+
+<div class="content__body">
+
+  <span class="content__text">
+    For performance some values do not change at run time.
+    <br>
+    The values that can be changed are: <i>checked, disabled, lock, value</i>
+  </span>
+
+  <div class="content__row flex__column">
+
+    <h5 class="content__sub-header">NgxPrettyRadioComponent</h5>
+    <span class="content__text">selector: <span class="code__highlight">ngx-pretty-radio:not([will-change]), p-radio:not([will-change])</span></span>
+    <span class="content__text">exportAs: <span class="code__highlight">ngxPrettyRadio</span></span>
+
+    <span class="content__text--header">Properties</span>
+
+    <table class="content__table">
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+
+      <!-- CHECKED -->
+      <tr>
+        <td>
+          <p class="table__text">@Input()</p>
+          <p class="table__text">checked: boolean</p>
+        </td>
+
+        <td>
+            <p class="table__description">
+              <!-- Whether the first option should be highlighted when the autocomplete panel is opened. Can be configured globally through the
+              <span class="table__text--code">MAT_AUTOCOMPLETE_DEFAULT_OPTIONS</span> token. -->
+            </p>
+            <p class="table__description">
+              Default value: <span class="table__text--code">false</span>
+            <p>
+        </td>
+      </tr>
+
+
+      <!-- DISABLE -->
+      <tr>
+        <td>
+          <p class="table__text">@Input()</p>
+          <p class="table__text">disabled: boolean</p>
+        </td>
+
+        <td>
+            <p class="table__description">
+              <!-- Whether the first option should be highlighted when the autocomplete panel is opened. Can be configured globally through the
+              <span class="table__text--code">MAT_AUTOCOMPLETE_DEFAULT_OPTIONS</span> token. -->
+            </p>
+            <p class="table__description">
+              Default value: <span class="table__text--code">false</span>
+            <p>
+        </td>
+      </tr>
+
+
+      <!-- LOCK -->
+      <tr>
+        <td>
+          <p class="table__text">@Input()</p>
+          <p class="table__text">lock: boolean</p>
+        </td>
+
+        <td>
+            <p class="table__description">
+              <!-- Whether the first option should be highlighted when the autocomplete panel is opened. Can be configured globally through the
+              <span class="table__text--code">MAT_AUTOCOMPLETE_DEFAULT_OPTIONS</span> token. -->
+            </p>
+            <p class="table__description">
+              Default value: <span class="table__text--code">false</span>
+            <p>
+        </td>
+      </tr>
+
+
+      <!-- VALUE -->
+      <tr>
+        <td>
+          <p class="table__text">@Input()</p>
+          <p class="table__text">value: any</p>
+        </td>
+
+        <td>
+            <p class="table__description">
+              <!-- Whether the first option should be highlighted when the autocomplete panel is opened. Can be configured globally through the
+              <span class="table__text--code">MAT_AUTOCOMPLETE_DEFAULT_OPTIONS</span> token. -->
+            </p>
+        </td>
+      </tr>
+
+
+      <!-- NAME -->
+      <tr>
+        <td>
+          <p class="table__text">@Attribute('name')</p>
+          <p class="table__text">private _name: string</p>
+        </td>
+
+        <td>
+            <p class="table__description">
+              <!-- Whether the first option should be highlighted when the autocomplete panel is opened. Can be configured globally through the
+              <span class="table__text--code">MAT_AUTOCOMPLETE_DEFAULT_OPTIONS</span> token. -->
+            </p>
+        </td>
+      </tr>
+
+
+      <!-- STROKE -->
+      <tr>
+        <td>
+          <p class="table__text">@Attribute('stroke')</p>
+          <p class="table__text">private _stroke: PrettyCheckboxStroke</p>
+        </td>
+
+        <td>
+            <p class="table__description">
+              <!-- Whether the first option should be highlighted when the autocomplete panel is opened. Can be configured globally through the
+              <span class="table__text--code">MAT_AUTOCOMPLETE_DEFAULT_OPTIONS</span> token. -->
+            </p>
+        </td>
+      </tr>
+
+
+      <!-- SHAPE -->
+      <tr>
+        <td>
+          <p class="table__text">@Attribute('shape')</p>
+          <p class="table__text">private _shape: PrettyCheckboxShape</p>
+        </td>
+
+        <td>
+            <p class="table__description">
+              <!-- Whether the first option should be highlighted when the autocomplete panel is opened. Can be configured globally through the
+              <span class="table__text--code">MAT_AUTOCOMPLETE_DEFAULT_OPTIONS</span> token. -->
+            </p>
+            <p class="table__description">
+            <p>
+        </td>
+      </tr>
+
+      <!-- COLOR -->
+      <tr>
+          <td>
+            <p class="table__text">@Attribute('color')</p>
+            <p class="table__text">private _color: PrettyCheckboxColor</p>
+          </td>
+
+          <td>
+              <p class="table__description">
+                <!-- Whether the first option should be highlighted when the autocomplete panel is opened. Can be configured globally through the
+                <span class="table__text--code">MAT_AUTOCOMPLETE_DEFAULT_OPTIONS</span> token. -->
+              </p>
+          </td>
+        </tr>
+
+
+      <!-- ANIMATION -->
+      <tr>
+        <td>
+          <p class="table__text">@Attribute('animation')</p>
+          <p class="table__text">private _animation: PrettyCheckboxAnimation</p>
+        </td>
+
+        <td>
+            <p class="table__description">
+              <!-- Whether the first option should be highlighted when the autocomplete panel is opened. Can be configured globally through the
+              <span class="table__text--code">MAT_AUTOCOMPLETE_DEFAULT_OPTIONS</span> token. -->
+            </p>
+        </td>
+      </tr>
+
+
+      <!-- IS SWITCH -->
+      <tr>
+        <td>
+          <p class="table__text">@Attribute('isSwitch')</p>
+          <p class="table__text">private _isSwitch: boolean</p>
+        </td>
+
+        <td>
+            <p class="table__description">
+              <!-- Whether the first option should be highlighted when the autocomplete panel is opened. Can be configured globally through the
+              <span class="table__text--code">MAT_AUTOCOMPLETE_DEFAULT_OPTIONS</span> token. -->
+            </p>
+            <p class="table__description">
+              Default value: <span class="table__text--code">false</span>
+            <p>
+        </td>
+      </tr>
+
+
+      <!-- BIGGER -->
+      <tr>
+        <td>
+          <p class="table__text">@Attribute('bigger')</p>
+          <p class="table__text">private _bigger: boolean</p>
+        </td>
+
+        <td>
+            <p class="table__description">
+              <!-- Whether the first option should be highlighted when the autocomplete panel is opened. Can be configured globally through the
+              <span class="table__text--code">MAT_AUTOCOMPLETE_DEFAULT_OPTIONS</span> token. -->
+            </p>
+            <p class="table__description">
+              Default value: <span class="table__text--code">false</span>
+            <p>
+        </td>
+      </tr>
+
+
+      <!-- ENABLE FOCUS -->
+      <tr>
+        <td>
+          <p class="table__text">@Attribute('enableFocus')</p>
+          <p class="table__text">private _enableFocus: boolean</p>
+        </td>
+
+        <td>
+            <p class="table__description">
+              <!-- Whether the first option should be highlighted when the autocomplete panel is opened. Can be configured globally through the
+              <span class="table__text--code">MAT_AUTOCOMPLETE_DEFAULT_OPTIONS</span> token. -->
+            </p>
+            <p class="table__description">
+              Default value: <span class="table__text--code">false</span>
+            <p>
+        </td>
+      </tr>
+
+
+      <!-- PLAIN -->
+      <tr>
+        <td>
+          <p class="table__text">@Attribute('plain')</p>
+          <p class="table__text">private _plain: boolean</p>
+        </td>
+
+        <td>
+            <p class="table__description">
+              <!-- Whether the first option should be highlighted when the autocomplete panel is opened. Can be configured globally through the
+              <span class="table__text--code">MAT_AUTOCOMPLETE_DEFAULT_OPTIONS</span> token. -->
+            </p>
+            <p class="table__description">
+              Default value: <span class="table__text--code">false</span>
+            <p>
+        </td>
+      </tr>
+
+
+      <!-- OUTLINE -->
+      <tr>
+        <td>
+          <p class="table__text">@Attribute('outline')</p>
+          <p class="table__text">private _outline: boolean</p>
+        </td>
+
+        <td>
+            <p class="table__description">
+              <!-- Whether the first option should be highlighted when the autocomplete panel is opened. Can be configured globally through the
+              <span class="table__text--code">MAT_AUTOCOMPLETE_DEFAULT_OPTIONS</span> token. -->
+            </p>
+            <p class="table__description">
+              Default value: <span class="table__text--code">false</span>
+            <p>
+        </td>
+      </tr>
+
+
+      <!-- CHANGE -->
+      <tr>
+        <td>
+          <p class="table__text">@Output()</p>
+          <p class="table__text">change: EventEmitter&lt;PrettyRadioChange&gt;</p>
+        </td>
+
+        <td>
+            <p class="table__description">
+              <!-- Whether the first option should be highlighted when the autocomplete panel is opened. Can be configured globally through the
+              <span class="table__text--code">MAT_AUTOCOMPLETE_DEFAULT_OPTIONS</span> token. -->
+            </p>
+        </td>
+      </tr>
+
+
+
+
+    </table>
+
+  </div>
+</div>

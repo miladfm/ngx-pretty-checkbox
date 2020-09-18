@@ -1,20 +1,18 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-src/dist
-src/tmp
-src/out-tsc
-
-demo/dist
-demo/tmp
-demo/out-tsc
+/dist
+/tmp
+/out-tsc
+# Only exists if Bazel was run
+/bazel-out
 
 # dependencies
-src/node_modules
-src/package-lock.json
+/node_modules
 
-demo/node_modules
-demo/package-lock.json
+# profiling files
+chrome-profiler-events*.json
+speed-measure-plugin*.json
 
 # IDEs and editors
 /.idea
@@ -31,6 +29,7 @@ demo/package-lock.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+.history/*
 
 # misc
 /.sass-cache

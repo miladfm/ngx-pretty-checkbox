@@ -1,0 +1,92 @@
+<h4 class="content__header">Checkbox : State</h4>
+
+<div class="content__body">
+
+  <!-- Hover -->
+  <div class="content__row">
+
+    <div class="content__demo">
+        <p-checkbox shape="curve" color="success">
+            <p-hover>After Hover</p-hover>
+            Hover
+        </p-checkbox>
+    </div>
+
+    <div class="content__code">
+        <textarea highlight-js [options]="{}" lang="html">
+<p-checkbox shape="curve" color="success">
+    <p-hover>After Hover</p-hover>
+    Hover
+</p-checkbox>
+          </textarea>
+    </div>
+
+  </div>
+
+
+  <!-- Focus -->
+  <div class="content__row">
+
+    <div class="content__demo">
+      <p-checkbox enableFocus="true">
+            Focus
+      </p-checkbox>
+    </div>
+
+    <div class="content__code">
+        <textarea highlight-js [options]="{}" lang="html">
+<p-checkbox enableFocus="true">
+    Focus
+</p-checkbox>
+          </textarea>
+    </div>
+
+  </div>
+
+
+  <!-- Indeterminate -->
+  <div class="content__row">
+
+    <div class="content__demo">
+        <p-checkbox shape="curve" #prettyCheckboxComponent="ngxPrettyCheckbox">
+            <i p-icon class="material-icons">done</i>
+            <p-indeterminate>
+                <i p-icon class="material-icons">remove</i>
+                Changed
+            </p-indeterminate>
+            Indeterminate
+        </p-checkbox>
+        <br>
+        <button (click)="setIndeterminate(prettyCheckboxComponent)">Apply</button>
+    </div>
+
+    <div class="content__code">
+        <textarea highlight-js [options]="{}" lang="html">
+<p-checkbox shape="curve" #prettyCheckboxComponent="ngxPrettyCheckbox">
+    <i p-icon class="material-icons">done</i>
+    <p-indeterminate>
+        <i p-icon class="material-icons">remove</i>
+        Changed
+    </p-indeterminate>
+    Indeterminate
+</p-checkbox>
+
+<button (click)="setIndeterminate(prettyCheckboxComponent)">Apply</button>
+        </textarea>
+
+        <textarea highlight-js [options]="{}" lang="typescript">
+import { NgxPrettyCheckboxComponent } from 'ngx-pretty-checkbox';
+
+@Component({ ... })
+export class ... {
+    setIndeterminate( prettyCheckbox: NgxPrettyCheckboxComponent) {
+        prettyCheckbox.setIndeterminate();
+    }
+}
+        </textarea>
+    </div>
+
+  </div>
+
+
+</div>
