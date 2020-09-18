@@ -20,12 +20,12 @@ export class AppComponent implements OnInit {
   public isAccordingDemoRadioOpen = false;
   public isAccordingApiOpen = false;
 
-  @ViewChild('installAccordingElem') installAccordingElem: ElementRef<HTMLElement>;
-  @ViewChild('demoCheckboxAccordingElem') demoCheckboxAccordingElem: ElementRef<HTMLElement>;
-  @ViewChild('demoCheckboxMixedAccordingElem') demoCheckboxMixedAccordingElem: ElementRef<HTMLElement>;
-  @ViewChild('demoCheckboxAnimationAccordingElem') demoCheckboxAnimationAccordingElem: ElementRef<HTMLElement>;
-  @ViewChild('demoRadioAccordingElem') demoRadioAccordingElem: ElementRef<HTMLElement>;
-  @ViewChild('apiAccordingElem') apiAccordingElem: ElementRef<HTMLElement>;
+  @ViewChild('installAccordingElem', { static: true }) installAccordingElem: ElementRef<HTMLElement>;
+  @ViewChild('demoCheckboxAccordingElem', { static: true }) demoCheckboxAccordingElem: ElementRef<HTMLElement>;
+  @ViewChild('demoCheckboxMixedAccordingElem', { static: true }) demoCheckboxMixedAccordingElem: ElementRef<HTMLElement>;
+  @ViewChild('demoCheckboxAnimationAccordingElem', { static: true }) demoCheckboxAnimationAccordingElem: ElementRef<HTMLElement>;
+  @ViewChild('demoRadioAccordingElem', { static: true }) demoRadioAccordingElem: ElementRef<HTMLElement>;
+  @ViewChild('apiAccordingElem', { static: true }) apiAccordingElem: ElementRef<HTMLElement>;
 
   constructor(private navigation: NavigationService) {}
 
