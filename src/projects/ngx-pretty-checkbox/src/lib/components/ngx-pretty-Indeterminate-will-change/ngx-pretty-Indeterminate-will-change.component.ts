@@ -1,13 +1,12 @@
 import { Component, Input, ElementRef, Renderer2, SimpleChanges, OnChanges, ChangeDetectionStrategy } from '@angular/core';
 import { getColorClassName } from '../../utility';
-import { DEFAULT_PREFIX } from '../../model/params';
 import { PrettyCheckboxColor } from '../../model/interfaces';
 
 @Component({
   selector: 'ngx-p-indeterminate[will-change], p-indeterminate[will-change]',
   templateUrl: 'ngx-pretty-Indeterminate-will-change.component.html',
   host: {
-    class: `state ${DEFAULT_PREFIX}is-indeterminate`
+    class: `state p-is-indeterminate`
   },
   changeDetection: ChangeDetectionStrategy.OnPush
 })

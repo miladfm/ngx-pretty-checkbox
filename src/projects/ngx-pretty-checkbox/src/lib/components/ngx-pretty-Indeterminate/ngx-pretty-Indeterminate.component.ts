@@ -1,12 +1,11 @@
 import { Component, Input, ElementRef, Renderer2, AfterViewInit, ChangeDetectionStrategy, Attribute } from '@angular/core';
-import { DEFAULT_PREFIX, DEFAULT_OUTLINE_PREFIX } from '../../model/params';
 import { PrettyCheckboxColor } from '../../model/interfaces';
 
 @Component({
   selector: 'ngx-p-indeterminate:not([will-change]), p-indeterminate:not([will-change])',
   templateUrl: 'ngx-pretty-Indeterminate.component.html',
   host: {
-    class: `state ${DEFAULT_PREFIX}is-indeterminate`
+    class: `state p-is-indeterminate`
   },
   changeDetection: ChangeDetectionStrategy.OnPush
 })
@@ -22,7 +21,7 @@ export class NgxPrettyIndeterminateComponent implements AfterViewInit {
   ngAfterViewInit() {
     if (this._color) {
       this.renderer.addClass(this.el.nativeElement,
-        `${DEFAULT_PREFIX}${this._color}${this._outline ? DEFAULT_OUTLINE_PREFIX : ''}`
+        `p-${this._color}${this._outline ? '-o' : ''}`
       );
     }
   }

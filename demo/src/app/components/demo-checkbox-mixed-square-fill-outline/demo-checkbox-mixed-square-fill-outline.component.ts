@@ -14,3 +14,4 @@ export class MixedCheckboxSquareFillOutlineComponent implements OnInit {
   }
 
 }
+

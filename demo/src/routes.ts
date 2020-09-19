@@ -1,3 +1,4 @@
+// tslint:disable:max-line-length
 import { DemosRadioButtonComponent } from './app/components/demos-radio-button/demos-radio-button.component';
 import { ApiCheckboxComponent } from './app/components/api-checkbox/api-checkbox.component';
 import { ApiCheckboxWillChangeComponent } from './app/components/api-checkbox-will-change/api-checkbox-will-change.component';
@@ -11,13 +12,7 @@ import { ApiIndeterminateWillChangeComponent } from './app/components/api-indete
 import { ApiInterfacesComponent } from './app/components/api-interfaces/api-interfaces.component';
 import { ApiRadioComponent } from './app/components/api-radio/api-radio.component';
 import { ApiRadioGroupComponent } from './app/components/api-radio-group/api-radio-group.component';
-import {
-  ApiRouteName,
-  DemoCheckboxesRouteName,
-  InstallRouteName,
-  MainRouteName,
-  DemoRadioRouteName
-  } from './app/models/enums';
+import { InstallRouteName, MainRouteName } from './app/models/enums';
 import { ApiSvgComponent } from './app/components/api-svg/api-svg.component';
 import { ApiToggleComponent } from './app/components/api-toggle/api-toggle.component';
 import { ApiToggleWillChangeComponent } from './app/components/api-toggle-will-change/api-toggle-will-change.component';
@@ -54,19 +49,13 @@ import { InstallScssCustomizeComponent } from './app/components/install-scss-cus
 import { MixedCheckboxColorComponent } from './app/components/demo-checkbox-mixed-color/demo-checkbox-mixed-color.component';
 import { MixedCheckboxCurveComponent } from './app/components/demo-checkbox-mixed-curve/demo-checkbox-mixed-curve.component';
 import { MixedCheckboxCurveFillComponent } from './app/components/demo-checkbox-mixed-curve-fill/demo-checkbox-mixed-curve-fill.component';
-import { MixedCheckboxCurveFillOutlineComponent } from './app/components/demo-checkbox-mixed-curve-fill-outline/demo-checkbox-mixed-curve-fill-outline.component';
 import { MixedCheckboxCurveOutlineComponent } from './app/components/demo-checkbox-mixed-curve-outline/demo-checkbox-mixed-curve-outline.component';
 import { MixedCheckboxCurveThickComponent } from './app/components/demo-checkbox-mixed-curve-thick/demo-checkbox-mixed-curve-thick.component';
-import { MixedCheckboxCurveThickOutlineComponent } from './app/components/demo-checkbox-mixed-curve-thick-outline/demo-checkbox-mixed-curve-thick-outline.component';
 import { MixedCheckboxOutlineComponent } from './app/components/demo-checkbox-mixed-outline/demo-checkbox-mixed-outline.component';
 import { MixedCheckboxRoundComponent } from './app/components/demo-checkbox-mixed-round/demo-checkbox-mixed-round.component';
 import { MixedCheckboxRoundFillComponent } from './app/components/demo-checkbox-mixed-round-fill/demo-checkbox-mixed-round-fill.component';
-import { MixedCheckboxRoundFillOutlineComponent } from './app/components/demo-checkbox-mixed-round-fill-outline/demo-checkbox-mixed-round-fill-outline.component';
-import { MixedCheckboxRoundOutlineComponent } from './app/components/demo-checkbox-mixed-round-outline/demo-checkbox-mixed-round-outline.component';
 import { MixedCheckboxRoundThickComponent } from './app/components/demo-checkbox-mixed-round-thick/demo-checkbox-mixed-round-thick.component';
-import { MixedCheckboxRoundThickOutlineComponent } from './app/components/demo-checkbox-mixed-round-thick-outline/demo-checkbox-mixed-round-thick-outline.component';
 import { MixedCheckboxSquareFillComponent } from './app/components/demo-checkbox-mixed-square-fill/demo-checkbox-mixed-square-fill.component';
-import { MixedCheckboxSquareFillOutlineComponent } from './app/components/demo-checkbox-mixed-square-fill-outline/demo-checkbox-mixed-square-fill-outline.component';
 import { MixedCheckboxSquareThickComponent } from './app/components/demo-checkbox-mixed-square-thick/demo-checkbox-mixed-square-thick.component';
 
 import { MixedCheckboxSquareThickOutlineComponent } from './app/components/demo-checkbox-mixed-square-thick-outline/demo-checkbox-mixed-square-thick-outline.component';
@@ -75,14 +64,19 @@ import { RadioWillChangeApiComponent } from './app/components/api-radio-will-cha
 import { Routes } from '@angular/router';
 import { DemoRadioButtonAllComponent } from './app/components/demo-radio-button-all/demo-radio-button-all.component';
 import { RoutePath } from './routes-path';
+import { HomeComponent } from './app/home/home.component';
 
-const MAIN_PAGE = `${MainRouteName.Install}/${InstallRouteName.Lib}`;
+const MAIN_PAGE = `${MainRouteName.Home}`;
 
 export const routes: Routes = [
 
   { path: '', redirectTo: MAIN_PAGE, pathMatch: 'full' },
 
   {
+    path: RoutePath.Home,
+    component: HomeComponent
+
+  }, {
     path: RoutePath.InstallLib,
     component: InstallLibComponent
 
@@ -111,10 +105,6 @@ export const routes: Routes = [
     component: MixedCheckboxSquareFillComponent
 
   }, {
-    path: RoutePath.DemoCheckboxMixedSquareFillOutline ,
-    component: MixedCheckboxSquareFillOutlineComponent
-
-  }, {
     path: RoutePath.DemoCheckboxMixedSquareThick,
     component: MixedCheckboxSquareThickComponent
 
@@ -135,40 +125,20 @@ export const routes: Routes = [
     component: MixedCheckboxCurveFillComponent
 
   }, {
-    path: RoutePath.DemoCheckboxMixedCurveFillOutline,
-    component: MixedCheckboxCurveFillOutlineComponent
-
-  }, {
     path: RoutePath.DemoCheckboxMixedCurveThick,
     component: MixedCheckboxCurveThickComponent
-
-  }, {
-    path: RoutePath.DemoCheckboxMixedCurveThickOutline,
-    component: MixedCheckboxCurveThickOutlineComponent
 
   }, {
     path: RoutePath.DemoCheckboxMixedRound,
     component: MixedCheckboxRoundComponent
 
   }, {
-    path: RoutePath.DemoCheckboxMixedRoundOutline,
-    component: MixedCheckboxRoundOutlineComponent
-
-  }, {
     path: RoutePath.DemoCheckboxMixedRoundFill,
     component: MixedCheckboxRoundFillComponent
 
   }, {
-    path: RoutePath.DemoCheckboxMixedRoundFillOutline,
-    component: MixedCheckboxRoundFillOutlineComponent
-
-  }, {
     path: RoutePath.DemoCheckboxMixedRoundThick,
     component: MixedCheckboxRoundThickComponent
-
-  }, {
-    path: RoutePath.DemoCheckboxMixedRoundThickOutline,
-    component: MixedCheckboxRoundThickOutlineComponent
 
   }, {
     path: RoutePath.DemoCheckboxMixedSwitch,

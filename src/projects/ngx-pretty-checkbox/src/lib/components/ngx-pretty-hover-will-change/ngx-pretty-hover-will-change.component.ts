@@ -1,6 +1,5 @@
 import { Component, Input, ElementRef, Renderer2, SimpleChanges, OnChanges, ChangeDetectionStrategy } from '@angular/core';
 import { PrettyCheckboxColor } from '../../model/interfaces';
-import { DEFAULT_PREFIX } from '../../model/params';
 import { getColorClassName } from '../../utility';
 
 
@@ -8,7 +7,7 @@ import { getColorClassName } from '../../utility';
   selector: 'ngx-p-hover[will-change], p-hover[will-change]',
   templateUrl: './ngx-pretty-hover-will-change.component.html',
   host: {
-    class: `state ${DEFAULT_PREFIX}is-hover`
+    class: `state p-is-hover`
   },
   changeDetection: ChangeDetectionStrategy.OnPush
 })

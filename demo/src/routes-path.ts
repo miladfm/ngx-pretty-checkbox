@@ -1,8 +1,11 @@
 import { InstallRouteName, MainRouteName, DemoCheckboxesRouteName, DemoRadioRouteName, ApiRouteName } from './app/models/enums';
 
 export const RoutePath = {
-// Install
 
+  // Home
+  Home: `${MainRouteName.Home}`,
+
+  // Install
     // install/lib
   InstallLib: `${MainRouteName.Install}/${InstallRouteName.Lib}`,
     // install/scss-customize
@@ -21,8 +24,6 @@ export const RoutePath = {
   DemoCheckboxMixedOutline : `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedOutline}`,
     // demo-checkbox/mixed-square-fill
   DemoCheckboxMixedSquareFill : `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedSquareFill}`,
-    // demo-checkbox/mixed-square-fill-outline
-  DemoCheckboxMixedSquareFillOutline : `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedSquareFillOutline}`,
     // demo-checkbox/mixed-square-thick
   DemoCheckboxMixedSquareThick : `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedSquareThick}`,
     // demo-checkbox/mixed-square-thick-outline
@@ -33,24 +34,14 @@ export const RoutePath = {
   DemoCheckboxMixedCurveOutline : `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedCurveOutline}`,
     // demo-checkbox/mixed-curve-fill
   DemoCheckboxMixedCurveFill : `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedCurveFill}`,
-    // demo-checkbox/mixed-curve-fill-outline
-  DemoCheckboxMixedCurveFillOutline : `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedCurveFillOutline}`,
     // demo-checkbox/mixed-curve-thick
   DemoCheckboxMixedCurveThick : `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedCurveThick}`,
-    // demo-checkbox/mixed-curve-thick-outline
-  DemoCheckboxMixedCurveThickOutline : `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedCurveThickOutline}`,
     // demo-checkbox/mixed-round
   DemoCheckboxMixedRound : `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedRound}`,
-    // demo-checkbox/mixed-round-outline
-  DemoCheckboxMixedRoundOutline : `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedRoundOutline}`,
     // demo-checkbox/mixed-round-fill
   DemoCheckboxMixedRoundFill : `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedRoundFill}`,
-    // demo-checkbox/mixed-round-fill-outline
-  DemoCheckboxMixedRoundFillOutline : `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedRoundFillOutline}`,
     // demo-checkbox/mixed-round-thick
   DemoCheckboxMixedRoundThick : `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedRoundThick}`,
-    // demo-checkbox/mixed-round-thick-outline
-  DemoCheckboxMixedRoundThickOutline : `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedRoundThickOutline}`,
     // demo-checkbox/mixed-switch
   DemoCheckboxMixedSwitch : `${MainRouteName.DemoCheckbox}/${DemoCheckboxesRouteName.MixedSwitch}`,
     // demo-checkbox/basic

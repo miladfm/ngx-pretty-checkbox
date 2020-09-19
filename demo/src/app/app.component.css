@@ -46,6 +46,7 @@
 
 .side-nav__scroll {
   overflow: auto;
+  padding-top: 30px;
 }
 
 .side-nav__header {

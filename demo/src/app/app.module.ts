@@ -1,3 +1,4 @@
+// tslint:disable:max-line-length
 import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { CardComponent } from './components/card/card.component';
@@ -16,19 +17,13 @@ import { HighlightJsModule } from 'ngx-highlight-js';
 import { MixedCheckboxColorComponent } from './components/demo-checkbox-mixed-color/demo-checkbox-mixed-color.component';
 import { MixedCheckboxCurveComponent } from './components/demo-checkbox-mixed-curve/demo-checkbox-mixed-curve.component';
 import { MixedCheckboxCurveFillComponent } from './components/demo-checkbox-mixed-curve-fill/demo-checkbox-mixed-curve-fill.component';
-import { MixedCheckboxCurveFillOutlineComponent } from './components/demo-checkbox-mixed-curve-fill-outline/demo-checkbox-mixed-curve-fill-outline.component';
 import { MixedCheckboxCurveOutlineComponent } from './components/demo-checkbox-mixed-curve-outline/demo-checkbox-mixed-curve-outline.component';
 import { MixedCheckboxCurveThickComponent } from './components/demo-checkbox-mixed-curve-thick/demo-checkbox-mixed-curve-thick.component';
-import { MixedCheckboxCurveThickOutlineComponent } from './components/demo-checkbox-mixed-curve-thick-outline/demo-checkbox-mixed-curve-thick-outline.component';
 import { MixedCheckboxOutlineComponent } from './components/demo-checkbox-mixed-outline/demo-checkbox-mixed-outline.component';
 import { MixedCheckboxRoundComponent } from './components/demo-checkbox-mixed-round/demo-checkbox-mixed-round.component';
 import { MixedCheckboxRoundFillComponent } from './components/demo-checkbox-mixed-round-fill/demo-checkbox-mixed-round-fill.component';
-import { MixedCheckboxRoundFillOutlineComponent } from './components/demo-checkbox-mixed-round-fill-outline/demo-checkbox-mixed-round-fill-outline.component';
-import { MixedCheckboxRoundOutlineComponent } from './components/demo-checkbox-mixed-round-outline/demo-checkbox-mixed-round-outline.component';
 import { MixedCheckboxRoundThickComponent } from './components/demo-checkbox-mixed-round-thick/demo-checkbox-mixed-round-thick.component';
-import { MixedCheckboxRoundThickOutlineComponent } from './components/demo-checkbox-mixed-round-thick-outline/demo-checkbox-mixed-round-thick-outline.component';
 import { MixedCheckboxSquareFillComponent } from './components/demo-checkbox-mixed-square-fill/demo-checkbox-mixed-square-fill.component';
-import { MixedCheckboxSquareFillOutlineComponent } from './components/demo-checkbox-mixed-square-fill-outline/demo-checkbox-mixed-square-fill-outline.component';
 import { MixedCheckboxSquareThickComponent } from './components/demo-checkbox-mixed-square-thick/demo-checkbox-mixed-square-thick.component';
 import { MixedCheckboxSquareThickOutlineComponent } from './components/demo-checkbox-mixed-square-thick-outline/demo-checkbox-mixed-square-thick-outline.component';
 import { MixedCheckboxSwitchComponent } from './components/demo-checkbox-mixed-switch/demo-checkbox-mixed-switch.component';
@@ -76,7 +71,7 @@ import { DemoRadioButtonPlainComponent } from './components/demo-radio-button-pl
 import { DemoRadioButtonSwitchComponent } from './components/demo-radio-button-switch/demo-radio-button-switch.component';
 import { DemoRadioButtonAllComponent } from './components/demo-radio-button-all/demo-radio-button-all.component';
 import { DemosRadioButtonComponent } from './components/demos-radio-button/demos-radio-button.component';
-
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -123,21 +118,15 @@ import { DemosRadioButtonComponent } from './components/demos-radio-button/demos
     MixedCheckboxColorComponent,
     MixedCheckboxOutlineComponent,
     MixedCheckboxSquareFillComponent,
-    MixedCheckboxSquareFillOutlineComponent,
     MixedCheckboxSquareThickComponent,
     MixedCheckboxSquareThickOutlineComponent,
     MixedCheckboxCurveComponent,
     MixedCheckboxCurveOutlineComponent,
     MixedCheckboxCurveFillComponent,
-    MixedCheckboxCurveFillOutlineComponent,
     MixedCheckboxCurveThickComponent,
-    MixedCheckboxCurveThickOutlineComponent,
     MixedCheckboxRoundComponent,
-    MixedCheckboxRoundOutlineComponent,
     MixedCheckboxRoundFillComponent,
-    MixedCheckboxRoundFillOutlineComponent,
     MixedCheckboxRoundThickComponent,
-    MixedCheckboxRoundThickOutlineComponent,
     MixedCheckboxSwitchComponent,
     DemoCheckboxAllComponent,
     DemoCheckboxPlainComponent,
@@ -158,16 +147,15 @@ import { DemosRadioButtonComponent } from './components/demos-radio-button/demos
     DemoRadioButtonSwitchComponent,
     DemoRadioButtonAllComponent,
     DemosRadioButtonComponent,
+    HomeComponent,
 
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(routes, {
-      useHash: true,
-    }),
+    RouterModule.forRoot(routes, { useHash: true }),
     NgxPrettyCheckboxModule,
-    HighlightJsModule
+    HighlightJsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

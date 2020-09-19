@@ -4,7 +4,6 @@ import {
   ContentChildren,
   ElementRef,
   EventEmitter,
-  HostBinding,
   Input,
   Output,
   QueryList,
@@ -13,7 +12,6 @@ import {
   ChangeDetectionStrategy,
   ChangeDetectorRef
   } from '@angular/core';
-import { DEFAULT_OUTLINE_PREFIX, DEFAULT_PREFIX, DEFAULT_PRETTY_CLASS_NAME } from '../../model/params';
 import {
   PrettyCheckboxAnimation,
   PrettyCheckBoxChange,
@@ -37,16 +35,35 @@ import { NgxPrettyIndeterminateWillChangeComponent } from '../ngx-pretty-Indeter
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
   host: {
-    class: DEFAULT_PRETTY_CLASS_NAME
+    'class': 'pretty',
+    '[class.p-switch]': 'isSwitch',
+    '[class.p-locked]': 'lock',
+    '[class.p-bigger]': 'bigger',
+    '[class.p-has-focus]': 'enableFocus',
+    '[class.p-plain]': 'plain',
+    '[class.p-fill]': '_isFill',
+    '[class.p-slim]': '_isSlim',
+    '[class.p-thick]': '_isThick',
+    '[class.p-curve]': '_isCurve',
+    '[class.p-round]': '_isRound',
+    '[class.p-smooth]': '_isSmooth',
+    '[class.p-jelly]': '_isJelly',
+    '[class.p-tada]': '_isTada',
+    '[class.p-rotate]': '_isRotate',
+    '[class.p-pulse]': '_isPulse',
+    '[class.p-toggle]': '_isToggle',
+    '[class.p-default]': '_isDefault',
+    '[class.p-icon]': '_iconElem',
+    '[class.p-svg]': '_svgElem',
+    '[class.p-image]': '_imageElem',
+    '[class.p-has-hover]': '_isHover',
+    '[class.p-has-indeterminate]': '_isIndeterminate',
   },
   exportAs: 'ngxPrettyCheckboxWillChange'
 })
 export class NgxPrettyCheckboxWillChangeComponent {
 
   constructor(private cd: ChangeDetectorRef) {}
-
-  public readonly _prefix = DEFAULT_PREFIX;
-  public readonly _outlinePrefix = DEFAULT_OUTLINE_PREFIX;
 
   @ViewChild('inputElem', { static: true }) private _inputElem: ElementRef;
   @Output() change = new EventEmitter<PrettyCheckBoxChange>();
@@ -65,112 +82,58 @@ export class NgxPrettyCheckboxWillChangeComponent {
 
 
   // ----- INPUTS AND BINDING ------
-  // SWITCH
-  @HostBinding(`class.${DEFAULT_PREFIX}switch`)
   @Input() isSwitch = false;
-
-  //  LOCK
-  @HostBinding(`class.${DEFAULT_PREFIX}locked`)
   @Input() lock = false;
-
-  //  BIGGER
-  @HostBinding(`class.${DEFAULT_PREFIX}bigger`)
   @Input() bigger = false;
-
-  //  FOCUS
-  @HostBinding(`class.${DEFAULT_PREFIX}has-focus`)
   @Input() enableFocus = false;
-
-  //  PLAIN
-  @HostBinding(`class.${DEFAULT_PREFIX}plain`)
   @Input() plain = false; // To remove the border ( when checkbox is checked )
 
 
   // ---------- STROKE ----------
-  // Fill
-  @HostBinding(`class.${DEFAULT_PREFIX}${PrettyCheckboxStroke.Fill}`)
   get _isFill() { return this.stroke === PrettyCheckboxStroke.Fill; }
-
-  // Slim
-  @HostBinding(`class.${DEFAULT_PREFIX}${PrettyCheckboxStroke.Slim}`)
   get _isSlim() { return this.stroke === PrettyCheckboxStroke.Slim; }
-
-  // Thick
-  @HostBinding(`class.${DEFAULT_PREFIX}${PrettyCheckboxStroke.Thick}`)
   get _isThick() { return this.stroke === PrettyCheckboxStroke.Thick; }
 
-
   // ---------- SHAPE ----------
-  // Curve
-  @HostBinding(`class.${DEFAULT_PREFIX}${PrettyCheckboxShape.Curve}`)
   get _isCurve() { return this.shape === PrettyCheckboxShape.Curve; }
-
-  // Round
-  @HostBinding(`class.${DEFAULT_PREFIX}${PrettyCheckboxShape.Round}`)
   get _isRound() { return this.shape === PrettyCheckboxShape.Round; }
 
-
   // ---------- ANIMATION ----------
-  // Smooth
-  @HostBinding(`class.${DEFAULT_PREFIX}${PrettyCheckboxAnimation.Smooth}`)
   get _isSmooth() { return this.animation === PrettyCheckboxAnimation.Smooth; }
-
-  // Jelly
-  @HostBinding(`class.${DEFAULT_PREFIX}${PrettyCheckboxAnimation.Jelly}`)
   get _isJelly() { return this.animation === PrettyCheckboxAnimation.Jelly; }
-
-  // Tada
-  @HostBinding(`class.${DEFAULT_PREFIX}${PrettyCheckboxAnimation.Tada}`)
   get _isTada() { return this.animation === PrettyCheckboxAnimation.Tada; }
-
-  // Rotate
-  @HostBinding(`class.${DEFAULT_PREFIX}${PrettyCheckboxAnimation.Rotate}`)
   get _isRotate() { return this.animation === PrettyCheckboxAnimation.Rotate; }
-
-  // Pulse
-  @HostBinding(`class.${DEFAULT_PREFIX}${PrettyCheckboxAnimation.Pulse}`)
   get _isPulse() { return this.animation === PrettyCheckboxAnimation.Pulse; }
-
 
   // ---------- BINDING ----------
   // Toggle
   @ContentChildren(NgxPrettyToggleComponent) _toggleComp: QueryList<NgxPrettyToggleComponent>;
   @ContentChildren(NgxPrettyToggleWillChangeComponent) _toggleWillChangeComp: QueryList<NgxPrettyToggleWillChangeComponent>;
-
-  @HostBinding(`class.${DEFAULT_PREFIX}toggle`)
   get _isToggle() { return this._toggleComp.length === 2 || this._toggleWillChangeComp.length === 2; }
 
   // DEFAULT
-  @HostBinding(`class.${DEFAULT_PREFIX}default`)
   get _isDefault() { return !this.isSwitch && !this._iconElem && !this._svgElem && !this._imageElem; }
 
 
 
   // ----- CHILD SELECTOR AND BINDING -----
   // ICON
-  @HostBinding(`class.${DEFAULT_PREFIX}icon`)
   @ContentChild(NgxPrettyIconDirective, {static: false}) _iconElem: NgxPrettyIconDirective;
 
   // SVG
-  @HostBinding(`class.${DEFAULT_PREFIX}svg`)
   @ContentChild(NgxPrettySvgDirective, {static: false}) _svgElem: NgxPrettySvgDirective;
 
   // IMAGE
-  @HostBinding(`class.${DEFAULT_PREFIX}image`)
   @ContentChild(NgxPrettyImageDirective, {static: false}) _imageElem: NgxPrettyImageDirective;
 
   // HOVER
   @ContentChild(NgxPrettyHoverWillChangeComponent, {static: false}) _hoverWillChangeDir: NgxPrettyHoverWillChangeComponent;
   @ContentChild(NgxPrettyHoverComponent, {static: false}) _hoverComp: NgxPrettyHoverComponent;
-
-  @HostBinding(`class.${DEFAULT_PREFIX}has-hover`)
   get _isHover() { return this._hoverComp || this._hoverWillChangeDir; }
 
   // Indeterminate
   @ContentChild(NgxPrettyIndeterminateComponent, {static: false}) _indeterminateComp: NgxPrettyIndeterminateComponent;
   @ContentChild(NgxPrettyIndeterminateWillChangeComponent, {static: false}) _indeterminateWillChangeComp: NgxPrettyIndeterminateWillChangeComponent;
-
-  @HostBinding(`class.${DEFAULT_PREFIX}has-indeterminate`)
   get _isIndeterminate() { return this._indeterminateComp || this._indeterminateWillChangeComp; }
 
 

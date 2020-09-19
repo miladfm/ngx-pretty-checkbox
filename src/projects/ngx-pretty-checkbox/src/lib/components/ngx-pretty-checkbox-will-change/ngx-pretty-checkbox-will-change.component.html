@@ -9,7 +9,7 @@
 <div
   *ngIf="!_isToggle"
   class="state"
-  [ngClass]="[ color ? _prefix + color + (outline ? _outlinePrefix : '') : '' ]">
+  [ngClass]="[ color ? 'p-' + color + (outline ? '-o' : '') : '' ]">
 
     <ng-content select="[pIcon], [p-icon], [pSvg], [p-svg], [pImage], [p-image]"></ng-content>
 

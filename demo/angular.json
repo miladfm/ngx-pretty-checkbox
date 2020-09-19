@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "preserveSymlinks": true,
             "aot": true,
             "outputPath": "dist/pretty-checkbox-demo",
             "index": "src/index.html",
@@ -30,6 +31,7 @@
             ],
             "scripts": [
               "node_modules/material-design-lite/material.min.js",
+              "node_modules/marked/lib/marked.js"
             ]
           },
           "configurations": {

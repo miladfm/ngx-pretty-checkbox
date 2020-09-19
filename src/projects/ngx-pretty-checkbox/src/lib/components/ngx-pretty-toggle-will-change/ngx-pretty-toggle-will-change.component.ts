@@ -1,13 +1,14 @@
 import { Input, ElementRef, Component, HostBinding, SimpleChanges, OnChanges, Renderer2, ChangeDetectionStrategy } from '@angular/core';
 import { PrettyCheckboxColor, PrettyCheckBoxToggleType } from '../../model/interfaces';
-import { DEFAULT_PREFIX, DEFAULT_OUTLINE_PREFIX } from '../../model/params';
 import { getColorClassName } from '../../utility';
 
 @Component({
   selector: 'ngx-p-toggle[will-change], p-toggle[will-change]',
   templateUrl: 'ngx-pretty-toggle-will-change.component.html',
   host: {
-    class: 'state'
+    'class': 'state',
+    '[class.p-on]': 'isToggleOn',
+    '[class.p-off]': 'isToggleOff',
   },
   changeDetection: ChangeDetectionStrategy.OnPush
 })
@@ -15,12 +16,8 @@ export class NgxPrettyToggleWillChangeComponent implements OnChanges {
 
   @Input() type: PrettyCheckBoxToggleType;
 
-  @HostBinding(`class.${DEFAULT_PREFIX}on`)
   get isToggleOn() { return this.type === PrettyCheckBoxToggleType.On; }
-
-  @HostBinding(`class.${DEFAULT_PREFIX}off`)
   get isToggleOff() { return this.type === PrettyCheckBoxToggleType.Off; }
-
 
   @Input() color: PrettyCheckboxColor;
   @Input() outline = false;

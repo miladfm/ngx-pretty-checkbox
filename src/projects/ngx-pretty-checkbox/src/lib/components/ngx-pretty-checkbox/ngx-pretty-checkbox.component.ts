@@ -4,7 +4,6 @@ import {
   ContentChildren,
   ElementRef,
   EventEmitter,
-  HostBinding,
   Input,
   Output,
   QueryList,
@@ -19,7 +18,6 @@ import { NgxPrettyIconDirective } from '../../directives/ngx-pretty-icon.directi
 import { NgxPrettyImageDirective } from '../../directives/ngx-pretty-image.directive';
 import { NgxPrettySvgDirective } from '../../directives/ngx-pretty-svg.directive';
 import { PrettyCheckboxAnimation, PrettyCheckBoxChange, PrettyCheckboxColor, PrettyCheckboxShape, PrettyCheckboxStroke } from '../../model/interfaces';
-import { DEFAULT_OUTLINE_PREFIX, DEFAULT_PREFIX, DEFAULT_PRETTY_CLASS_NAME } from '../../model/params';
 import { strToBoolean } from '../../utility';
 import { NgxPrettyHoverWillChangeComponent } from '../ngx-pretty-hover-will-change/ngx-pretty-hover-will-change.component';
 import { NgxPrettyHoverComponent } from '../ngx-pretty-hover/ngx-pretty-hover.component';
@@ -31,25 +29,21 @@ import { NgxPrettyToggleComponent } from '../ngx-pretty-toggle/ngx-pretty-toggle
 @Component({
   selector: 'ngx-pretty-checkbox:not([will-change]), p-checkbox:not([will-change])',
   templateUrl: './ngx-pretty-checkbox.component.html',
-  // changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
   host: {
-    'class': DEFAULT_PRETTY_CLASS_NAME
+    'class': 'pretty',
+    '[class.p-locked]': 'lock'
   },
   exportAs: 'ngxPrettyCheckbox'
 })
 export class NgxPrettyCheckboxComponent implements AfterViewInit {
-
-  public readonly _prefix = DEFAULT_PREFIX;
-  public readonly _outlinePrefix = DEFAULT_OUTLINE_PREFIX;
-
 
   @Input() checked = false;
   @Input() disabled = false;
   @Input() value: any;
 
 
-  @HostBinding(`class.${DEFAULT_PREFIX}locked`)
+  // @HostBinding(`class.p-locked`)
   @Input() lock = false;
 
 
@@ -98,37 +92,37 @@ export class NgxPrettyCheckboxComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     const el = this.el.nativeElement;
 
-    if (this._isSwitch)    { this.renderer.addClass(el, `${DEFAULT_PREFIX}switch`); }
-    if (this._bigger)      { this.renderer.addClass(el, `${DEFAULT_PREFIX}bigger`); }
-    if (this._enableFocus) { this.renderer.addClass(el, `${DEFAULT_PREFIX}has-focus`); }
-    if (this._plain)       { this.renderer.addClass(el, `${DEFAULT_PREFIX}plain`); }
+    if (this._isSwitch)    { this.renderer.addClass(el, `p-switch`); }
+    if (this._bigger)      { this.renderer.addClass(el, `p-bigger`); }
+    if (this._enableFocus) { this.renderer.addClass(el, `p-has-focus`); }
+    if (this._plain)       { this.renderer.addClass(el, `p-plain`); }
 
-    if (this._stroke)     { this.renderer.addClass(el, `${DEFAULT_PREFIX}${this._stroke}`); }
-    if (this._shape)      { this.renderer.addClass(el, `${DEFAULT_PREFIX}${this._shape}`); }
-    if (this._animation)  { this.renderer.addClass(el, `${DEFAULT_PREFIX}${this._animation}`); }
+    if (this._stroke)     { this.renderer.addClass(el, `p-${this._stroke}`); }
+    if (this._shape)      { this.renderer.addClass(el, `p-${this._shape}`); }
+    if (this._animation)  { this.renderer.addClass(el, `p-${this._animation}`); }
 
-    if (this._iconDir)          { this.renderer.addClass(el, `${DEFAULT_PREFIX}icon`); }
-    if (this._svgDir)           { this.renderer.addClass(el, `${DEFAULT_PREFIX}svg`); }
-    if (this._imgDir)           { this.renderer.addClass(el, `${DEFAULT_PREFIX}image`); }
+    if (this._iconDir)          { this.renderer.addClass(el, `p-icon`); }
+    if (this._svgDir)           { this.renderer.addClass(el, `p-svg`); }
+    if (this._imgDir)           { this.renderer.addClass(el, `p-image`); }
 
     if (this._hoverDir || this._hoverWillChangeDir) {
-      this.renderer.addClass(el, `${DEFAULT_PREFIX}has-hover`);
+      this.renderer.addClass(el, `p-has-hover`);
     }
 
     if (this._indeterminateDir || this._indeterminateWillChangeDir) {
-      this.renderer.addClass(el, `${DEFAULT_PREFIX}has-indeterminate`);
+      this.renderer.addClass(el, `p-has-indeterminate`);
     }
 
-    if (this._isToggle) { this.renderer.addClass(el, `${DEFAULT_PREFIX}toggle`); }
+    if (this._isToggle) { this.renderer.addClass(el, `p-toggle`); }
 
     if (!this._isSwitch && !this._iconDir && !this._svgDir && !this._imgDir) {
-      this.renderer.addClass(el, `${DEFAULT_PREFIX}default`);
+      this.renderer.addClass(el, `p-default`);
     }
 
     // STATE ELEM
     if (this._color && !this._isToggle) {
       this.renderer.addClass(this._stateElem.nativeElement,
-        `${DEFAULT_PREFIX}${this._color}${this._outline ? DEFAULT_OUTLINE_PREFIX : ''}`
+        `p-${this._color}${this._outline ? '-o' : ''}`
       );
     }
 
