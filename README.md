@@ -8,11 +8,11 @@
 
 <p align="center">
   <a href="https://github.com/miladfm/ngx-pretty-checkbox/releases">
-    <img src="https://img.shields.io/badge/release-v1.0.2-blue.svg">
+    <img src="https://img.shields.io/badge/release-v1.2.0-blue.svg">
   </a>
 
   <a href="https://github.com/angular/angular">
-    <img src="https://img.shields.io/badge/angular-6.x-blue.svg">
+    <img src="https://img.shields.io/badge/angular-10.x-blue.svg">
   </a>
 
   <a href="https://lokesh-coder.github.io/pretty-checkbox/">
@@ -46,7 +46,8 @@ Latest version available for each version of Angular
 | ngx-pretty-checkbox | angular |
 |--|--|
 | 1.0.4 | 6.x 7.x |
-| 1.1.0 | >8 |
+| 1.1.0 | >8.x |
+| 1.2.0 | >10.x (ivy) |
 
 ### Installation
 - **Step 1** 
