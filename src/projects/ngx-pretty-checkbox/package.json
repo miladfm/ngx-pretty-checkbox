@@ -1,6 +1,6 @@
 {
   "name": "ngx-pretty-checkbox",
-  "version": "1.2.1",
+  "version": "1.2.0",
   "peerDependencies": {
     "@angular/common": "^10.0.14",
     "@angular/core": "^10.0.14",
@@ -8,5 +8,37 @@
   },
   "dependencies": {
     "tslib": "^2.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/miladfm/ngx-pretty-checkbox/issues"
+  },
+  "author": {
+    "name": "Milad Faghihi"
+  },
+  "description": "Quickly integrate pretty checkbox Components (checkbox, switch, radio button) with Angular",
+  "homepage": "https://miladfm.github.io/ngx-pretty-checkbox",
+  "keywords": [
+    "checkbox",
+    "radio",
+    "bootstrap",
+    "fonticon",
+    "icon",
+    "svg",
+    "switch",
+    "toggle",
+    "sass",
+    "css3",
+    "animation",
+    "pretty",
+    "check",
+    "colors",
+    "angular",
+    "ivy"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miladfm/ngx-pretty-checkbox.git",
+    "link": "https://github.com/miladfm/ngx-pretty-checkbox"
   }
 }

@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://miladfm.github.io/ngx-pretty-checkbox/"><img src="logo.gif" alt="Pretty checkbox angular" width="100"></a>
+  <a href="https://miladfm.github.io/ngx-pretty-checkbox/"><img src="/logo.gif" alt="Pretty checkbox angular" width="100"></a>
   <br> <br> NgxPrettyCheckbox <br>
 </h1>
 
@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://github.com/miladfm/ngx-pretty-checkbox/releases">
-    <img src="https://img.shields.io/badge/release-v1.2.0-blue.svg">
+    <img src="https://img.shields.io/badge/release-v1.2.1-blue.svg">
   </a>
 
   <a href="https://github.com/angular/angular">
@@ -33,7 +33,7 @@
 </div>
 
 <div align="center">
-<img src="preview.gif" alt="Pretty checkbox preview"/>
+<img src="/preview.gif" alt="Pretty checkbox preview"/>
 </div>
 
 <br><br><br><br>
