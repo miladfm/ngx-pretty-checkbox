@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { InstallLibComponent } from './install-lib.component';
 
@@ -6,7 +6,7 @@ describe('InstallLibComponent', () => {
   let component: InstallLibComponent;
   let fixture: ComponentFixture<InstallLibComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ InstallLibComponent ]
     })

@@ -153,7 +153,7 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(routes, { useHash: true }),
+    RouterModule.forRoot(routes, { useHash: true, relativeLinkResolution: 'legacy' }),
     NgxPrettyCheckboxModule,
     HighlightJsModule,
   ],
