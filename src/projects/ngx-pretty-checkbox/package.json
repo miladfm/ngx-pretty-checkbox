@@ -1,6 +1,6 @@
 {
   "name": "ngx-pretty-checkbox",
-  "version": "1.2.0",
+  "version": "11.0.0",
   "peerDependencies": {
     "@angular/common": "^10.0.14",
     "@angular/core": "^10.0.14",
