@@ -8,11 +8,11 @@
 
 <p align="center">
   <a href="https://github.com/miladfm/ngx-pretty-checkbox/releases">
-    <img src="https://img.shields.io/badge/release-v1.2.1-blue.svg">
+    <img src="https://img.shields.io/badge/release-v11.0.0-blue.svg">
   </a>
 
   <a href="https://github.com/angular/angular">
-    <img src="https://img.shields.io/badge/angular-10.x-blue.svg">
+    <img src="https://img.shields.io/badge/angular-11.x-blue.svg">
   </a>
 
   <a href="https://lokesh-coder.github.io/pretty-checkbox/">
