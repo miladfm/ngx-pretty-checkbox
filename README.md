@@ -45,9 +45,10 @@ Latest version available for each version of Angular
 
 | ngx-pretty-checkbox | angular |
 |--|--|
-| 1.0.4 | 6.x 7.x |
-| 1.1.0 | >8.x |
+| 11.0.0 | 11.x |
 | 1.2.0 | >10.x (ivy) |
+| 1.1.0 | >8.x |
+| 1.0.4 | 6.x 7.x 
 
 ### Installation
 - **Step 1** 
