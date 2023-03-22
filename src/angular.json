@@ -141,6 +141,6 @@
           }
         }
       }
-    }},
-  "defaultProject": "ngx-pretty-checkbox-project"
+    }
+  }
 }
