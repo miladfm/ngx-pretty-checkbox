@@ -71,6 +71,7 @@ import { DemoRadioButtonPlainComponent } from './components/demo-radio-button-pl
 import { DemoRadioButtonSwitchComponent } from './components/demo-radio-button-switch/demo-radio-button-switch.component';
 import { DemoRadioButtonAllComponent } from './components/demo-radio-button-all/demo-radio-button-all.component';
 import { DemosRadioButtonComponent } from './components/demos-radio-button/demos-radio-button.component';
+import {HomeComponent} from "./components/home/home.component";
 
 
 @NgModule({
@@ -144,7 +145,8 @@ import { DemosRadioButtonComponent } from './components/demos-radio-button/demos
     DemoRadioButtonPlainComponent,
     DemoRadioButtonSwitchComponent,
     DemoRadioButtonAllComponent,
-    DemosRadioButtonComponent
+    DemosRadioButtonComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

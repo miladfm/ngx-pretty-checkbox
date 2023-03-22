@@ -7,7 +7,6 @@ import {
 } from "./components/demo-checkbox-animation-tada/demo-checkbox-animation-tada.component";
 import {DemoRadioButtonComponent} from "./components/demo-radio-button/demo-radio-button.component";
 import {DemoRadioButtonPlainComponent} from "./components/demo-radio-button-plain/demo-radio-button-plain.component";
-import {HomeComponent} from "../../../../old-demo/src/app/home/home.component";
 import {
     MixedCheckboxCurveThickComponent
 } from "./components/demo-checkbox-mixed-curve-thick/demo-checkbox-mixed-curve-thick.component";
@@ -103,6 +102,7 @@ import {
 import {
     MixedCheckboxRoundFillComponent
 } from "./components/demo-checkbox-mixed-round-fill/demo-checkbox-mixed-round-fill.component";
+import {HomeComponent} from "./components/home/home.component";
 
 
 
