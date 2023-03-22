@@ -1,0 +1,1 @@
+export * from "./lib/libs-ngx-pretty-checkbox.component";
