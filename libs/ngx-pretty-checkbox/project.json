@@ -1,5 +1,5 @@
 {
-  "name": "ngx-pretty-checkbox",
+  "name": "libs-ngx-pretty-checkbox",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
   "sourceRoot": "libs/ngx-pretty-checkbox/src",

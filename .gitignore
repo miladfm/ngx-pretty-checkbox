@@ -5,6 +5,7 @@ publish
 
 
 # compiled output
+dist
 src/dist
 src/tmp
 src/out-tsc

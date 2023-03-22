@@ -5,26 +5,23 @@
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
+    "emitDecoratorMetadata": false,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
+    "target": "es2020",
     "module": "esnext",
-    "lib": [
-      "es2017",
-      "dom"
-    ],
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["esnext", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
     "baseUrl": ".",
     "paths": {
-      "ngx-pretty-checkbox": [
+      "@lib/ngx-pretty-checkbox": [
         "libs/ngx-pretty-checkbox/src/index.ts"
       ]
     }
   },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ]
+  "exclude": ["node_modules", "tmp"]
 }

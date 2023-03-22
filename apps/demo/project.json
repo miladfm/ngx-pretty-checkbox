@@ -24,7 +24,9 @@
           "apps/demo/src/assets"
         ],
         "styles": [
-          "apps/demo/src/styles.scss"
+          "apps/demo/src/styles.scss",
+          "node_modules/material-design-icons/iconfont/material-icons.css",
+          "node_modules/pretty-checkbox/dist/pretty-checkbox.min.css"
         ],
         "scripts": []
       },
