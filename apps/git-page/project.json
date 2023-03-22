@@ -24,9 +24,13 @@
           "apps/git-page/src/assets"
         ],
         "styles": [
-          "apps/git-page/src/styles.scss"
+          "apps/git-page/src/styles.scss",
+          "node_modules/pretty-checkbox/dist/pretty-checkbox.min.css",
+          "node_modules/material-design-lite/material.min.css"
         ],
-        "scripts": []
+        "scripts": [
+          "node_modules/material-design-lite/material.min.js"
+        ]
       },
       "configurations": {
         "production": {

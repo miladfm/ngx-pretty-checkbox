@@ -1,0 +1,121 @@
+<h4 class="content__header">Checkbox : Switch</h4>
+
+<div class="content__body">
+
+  <!-- Default -->
+  <div class="content__row">
+
+    <div class="content__demo">
+      <p-checkbox isSwitch="true">
+          Default
+      </p-checkbox>
+    </div>
+
+    <div class="content__code">
+        <textarea highlight-js [options]="{}" lang="html">
+<p-checkbox isSwitch="true">
+  Default
+</p-checkbox>
+          </textarea>
+    </div>
+
+  </div>
+
+
+  <!-- Fill -->
+  <div class="content__row">
+
+    <div class="content__demo">
+      <p-checkbox isSwitch="true" stroke="fill">
+          Fill
+      </p-checkbox>
+    </div>
+
+    <div class="content__code">
+        <textarea highlight-js [options]="{}" lang="html">
+<p-checkbox isSwitch="true" stroke="fill">
+  Fill
+</p-checkbox>
+          </textarea>
+    </div>
+
+  </div>
+
+
+  <!-- Slim -->
+  <div class="content__row">
+
+    <div class="content__demo">
+        <p-checkbox isSwitch="true" stroke="slim">
+          Slim
+        </p-checkbox>
+    </div>
+
+    <div class="content__code">
+        <textarea highlight-js [options]="{}" lang="html">
+<p-checkbox isSwitch="true" stroke="slim">
+  Slim
+</p-checkbox>
+          </textarea>
+    </div>
+
+  </div>
+
+
+</div>
+
+
+
+<h5 class="content__header--secondary">Run-Time change</h5>
+
+<div class="content__body">
+
+  <!-- run-time -->
+  <div class="content__row">
+
+    <div class="content__demo flex__column">
+
+      <!-- IS_SWITCH -->
+      <div class="content__demo--action">
+        <span class="content__demo--action-text">is switch:</span>
+        <p-checkbox animation="smooth" [checked]="isSwitch" (change)="isSwitch = $event.checked">
+            <i p-icon class="material-icons">check</i>
+        </p-checkbox>
+      </div>
+
+      <!-- STROKE DROPDOWN  -->
+      <div class="content__demo--action">
+        <span class="content__demo--action-text">Stroke:</span>
+        <select [(ngModel)]="stroke">
+          <option value="hidden" class="hidden-option">HIDDEN</option>
+          <option>Default - Outline</option>
+          <option value="fill">Fill</option>
+          <option value="slim">Slim</option>
+        </select>
+      </div>
+
+      <p-checkbox will-change [isSwitch]="isSwitch" [stroke]="stroke">
+          Run-time changeable
+      </p-checkbox>
+
+    </div>
+
+    <div class="content__code">
+        <textarea highlight-js [options]="{}" lang="html">
+<p-checkbox will-change [isSwitch]="isSwitch" [stroke]="stroke">
+    Label text
+</p-checkbox>
+          </textarea>
+
+          <textarea highlight-js [options]="{}" lang="typescript">
+@Component({ ... })
+export class ... {
+  stroke: PrettyCheckboxStroke;
+  isSwitch: boolean = true;
+}
+          </textarea>
+    </div>
+
+  </div>
+
+</div>

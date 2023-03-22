@@ -1,0 +1,126 @@
+<h4 class="content__header">Install - Library</h4>
+
+
+<!-- STEP 1 -->
+<div class="install__step">
+
+  <div class="install__row">
+    <div class="install__step--header">Step 1:</div>
+
+    <div>
+      Download
+      <a href="https://lokesh-coder.github.io/pretty-checkbox" target="_blank">pretty-checkbox</a>
+      from
+      <a href="https://www.npmjs.com/package/pretty-checkbox" target="_blank">npm</a> or
+      <a href="https://yarnpkg.com/en/package/pretty-checkbox" target="_blank">yarn</a>
+    </div>
+
+  </div>
+
+  <textarea highlight-js [options]="{}" lang="html">
+> yarn add pretty-checkbox  //or
+> npm install pretty-checkbox
+  </textarea>
+
+  <div class="install__row">
+    <span class="install__step--sub-header">Alternatively</span>
+    , you can also use CDN link
+  </div>
+
+  <textarea highlight-js [options]="{}" lang="html">
+      https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css
+  </textarea>
+
+</div>
+
+
+
+<!-- STEP 2 -->
+<div class="install__step">
+
+  <div class="install__row">
+    <div class="install__step--header">Step 2:</div>
+    <div>Download pretty-checkbox angular module from npm</div>
+
+  </div>
+  
+  <textarea highlight-js [options]="{}" lang="html">
+> npm install ngx-pretty-checkbox
+  </textarea>
+</div>
+
+
+
+<!-- STEP 3 -->
+<div class="install__step">
+
+  <div class="install__row">
+    <div class="install__step--header">Step 3:</div>
+
+    <div>
+      Add
+      <span class="install__step--sub-header">dist/pretty-checkbox.min.css</span>
+      file from node_module of pretty-checkbox in your html or import
+      <span class="install__step--sub-header">src/pretty-checkbox.scss</span>
+      file in your scss file
+    </div>
+
+  </div>
+
+  <textarea highlight-js [options]="{}" lang="scss">
+@import '~pretty-checkbox/src/pretty-checkbox.scss';
+  </textarea>
+</div>
+
+
+
+<!-- STEP 4 -->
+<div class="install__step">
+
+  <div class="install__row">
+    <div class="install__step--header">Step 4:</div>
+
+    <div>
+      Add ngx-pretty-checkbox in your AppModule
+    </div>
+
+  </div>
+
+  <textarea highlight-js [options]="{}" lang="typescript">
+import { NgxPrettyCheckboxModule } from 'ngx-pretty-checkbox';
+
+@NgModule({
+  declarations: [ ... ],
+  imports: [
+    ...,
+    NgxPrettyCheckboxModule
+  ],
+  providers: [ ... ],
+  bootstrap: [ ... ]
+})
+export class AppModule { 
+  ...
+}
+  </textarea>
+</div>
+
+
+
+<!-- STEP 5 -->
+<div class="install__step">
+
+  <div class="install__row">
+    <div class="install__step--header">Step 5:</div>
+
+    <div>
+      Use it in your angular application
+    </div>
+
+  </div>
+
+  <textarea highlight-js [options]="{}" lang="html">
+<p-checkbox>
+  Default
+</p-checkbox>
+  </textarea>
+</div>
