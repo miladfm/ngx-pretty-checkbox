@@ -1,6 +1,5 @@
 import { PrintProcess } from "./print-process";
 import { PrintProcessStepState } from "./print-process.model";
-import {confirmVersion, getNewSemanticVersion} from "./semantic-version";
 import { execSync } from "./terminal-exec";
 import * as cpx from "cpx";
 import fs from 'fs';
@@ -26,7 +25,7 @@ function onErrorExec(step: PublishPackageStep) {
 
 async function run() {
   // const versionString = await getNewSemanticVersion(libPackageJson.version);
-  const confirmedPublish = await terminalConfirm(`Are you sure to publish this version ${libPackageJson.version}?)`, false);
+  const confirmedPublish = await terminalConfirm(`Are you sure to publish this version (${libPackageJson.version}?)`, false);
 
   if (!confirmedPublish) {
     return;
