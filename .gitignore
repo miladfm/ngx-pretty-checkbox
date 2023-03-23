@@ -1,26 +1,10 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-npm
-publish
-
-
 # compiled output
 dist
-src/dist
-src/tmp
-src/out-tsc
-
-demo/dist
-demo/tmp
-demo/out-tsc
 
 # dependencies
 node_modules
-src/node_modules
-src/package-lock.json
-
-demo/node_modules
-demo/package-lock.json
 
 # IDEs and editors
 /.idea
