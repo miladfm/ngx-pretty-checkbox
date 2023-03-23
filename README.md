@@ -42,14 +42,15 @@
 
 ### Changes log
 
-| ngx-pretty-checkbox | angular | feature              |
-|---------------------|---------|----------------------|
-| 15.0.0              | 15.x    | Standalone component |
-| 12.0.0              | 12.x    |                      |
-| 11.0.0              | 11.x    |                      |
-| 1.2.0               | >10.x   | ivy                  |
-| 1.1.0               | >8.x    |                      |
-| 1.0.4               | 6.x 7.x |                      |
+| ngx-pretty-checkbox | angular | feature                                                                                                                                                                                                                                                                                                                       |
+|---------------------|---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 15.1.0              | 15.x    | Stateless checkbox. There is no local state to update the checkbox by the user interaction. The component emit only the new state event.  Use case: for a one-way data binding. For example, when the checkbox is clicked, a request should be sent to the server and the UI should be updated if the response is successful. |
+| 15.0.0              | 15.x    | Standalone component                                                                                                                                                                                                                                                                                                          |
+| 12.0.0              | 12.x    |                                                                                                                                                                                                                                                                                                                               |
+| 11.0.0              | 11.x    |                                                                                                                                                                                                                                                                                                                               |
+| 1.2.0               | >10.x   | ivy                                                                                                                                                                                                                                                                                                                           |
+| 1.1.0               | >8.x    |                                                                                                                                                                                                                                                                                                                               |
+| 1.0.4               | 6.x 7.x |                                                                                                                                                                                                                                                                                                                               |
 
 ### Installation
 - **Step 1**
@@ -149,13 +150,40 @@ export class MyComponent {
 
 - **Step 5**
 
-Use it in your angular application
+Basic usage
 ```sh
 <p-checkbox>
   Default
 </p-checkbox>
 ```
 <br><br><br>
+
+
+Stateless usage
+```sh
+@Component({
+  standalone: true,
+  imports: [NgxPrettyCheckboxComponent],
+  selector: 'app-root',
+  template: `
+    <p-checkbox [stateless]="true" [checked]="checked" (change)="onStateChange($event)">Stateless Checkbox</p-checkbox>
+  `
+})
+export class MyComponent {
+  
+  public checked = false;
+
+  private http = inject(HttpClient);
+  private cd = inject(ChangeDetectorRef);
+  
+  onStateChange(change: PrettyCheckBoxChange) {
+    this.http.post(...).subscribe(_ => {
+      this.checked = true;
+      this.cd.detectChanges();
+    })
+  }
+}
+```
 ## More demos and document
 
 There are more features like  ***Radio buttons*** , ***Toggle*** , ***States*** , ***Animations*** , ***Border less*** , ***Lock*** , ***Scale***, ***SCSS Settings***.
