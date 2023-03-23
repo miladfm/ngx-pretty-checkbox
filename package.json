@@ -2,10 +2,10 @@
   "name": "ngx-pretty-checkbox",
   "version": "0.0.0",
   "scripts": {
-    "start": "ng serve",
-    "build": "ng build",
-    "build:lib": "ng build ngx-pretty-checkbox",
-    "start:lib": "ng build ngx-pretty-checkbox --watch"
+    "start:demo": "nx run demo:serve",
+    "start:git-page": "nx run git-page:serve",
+    "build:lib": "nx run libs-ngx-pretty-checkbox:build:production",
+    "publish": "npx ts-node-esm tools/publish/main.ts"
   },
   "private": true,
   "dependencies": {
@@ -18,6 +18,7 @@
     "@angular/platform-browser-dynamic": "^15.2.3",
     "@angular/router": "^15.2.3",
     "@nrwl/angular": "^15.8.7",
+    "cpx": "^1.5.0",
     "material-design-icons": "^3.0.1",
     "material-design-lite": "^1.3.0",
     "ngx-highlight-js": "^15.0.0",
@@ -43,6 +44,7 @@
     "@nrwl/linter": "15.8.7",
     "@nrwl/nx-cloud": "latest",
     "@schematics/angular": "^15.2.4",
+    "@types/cpx": "^1.5.2",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/jest": "^29.4.0",

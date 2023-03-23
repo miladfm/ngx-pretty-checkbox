@@ -3,7 +3,9 @@
   "compilerOptions": {
     "declarationMap": false,
     "target": "ES2022",
-    "useDefineForClassFields": false
+    "useDefineForClassFields": false,
+    "declaration": true,
+    "sourceMap": true
   },
   "angularCompilerOptions": {
     "compilationMode": "partial"

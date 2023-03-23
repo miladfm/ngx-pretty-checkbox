@@ -16,6 +16,8 @@
     "skipDefaultLibCheck": true,
     "strictNullChecks": false,
     "strictPropertyInitialization": false,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "paths": {
       "@lib/ngx-pretty-checkbox": [
