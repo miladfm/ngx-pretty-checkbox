@@ -41,14 +41,18 @@ import { NgxPrettyImageDirective } from '../directives/ngx-pretty-image.directiv
         [value]="value"
         [checked]="checked"
         [disabled]="disabled"
+        (click)="_onClick($event, inputElem.checked, inputElem.value)"
         (change)="_onChange($event, inputElem.checked, inputElem.value)"/>
 
     <div #stateElem *ngIf="!_isToggle" class="state">
       <ng-content select="[pIcon], [p-icon], [pSvg], [p-svg], [pImage], [p-image]"></ng-content>
-      <label><ng-content></ng-content></label>
+      <label>
+        <ng-content></ng-content>
+      </label>
     </div>
 
-    <ng-content select="ngx-p-indeterminate, p-indeterminate, ngx-p-hover, p-hover, ngx-p-toggle, p-toggle"></ng-content>
+    <ng-content
+        select="ngx-p-indeterminate, p-indeterminate, ngx-p-hover, p-hover, ngx-p-toggle, p-toggle"></ng-content>
   `,
   styles: [],
   exportAs: 'ngxPrettyCheckbox',
@@ -59,6 +63,7 @@ export class NgxPrettyCheckboxComponent {
   @Input() disabled = false;
   @Input() value: any;
   @Input() lock = false;
+  @Input() stateless = false;
 
   @ViewChild('inputElem', { static: true }) private _inputElem: ElementRef;
   @ViewChild('stateElem', { static: false }) private _stateElem: ElementRef;
@@ -144,7 +149,17 @@ export class NgxPrettyCheckboxComponent {
 
 
   // ---------- PRIVATE METHODS ---------
+  public _onClick(event: Event, checked: boolean, value: string) {
+    if (!this.stateless) {
+      return;
+    }
+    event.stopPropagation();
+    event.preventDefault();
+    this.change.emit({ value, checked, event });
+  }
+
   public _onChange(event: Event, checked: boolean, value: string) {
+    console.log('CHANGE', checked)
     // Stop propagation on the change event. Otherwise, the change event, from the input element, will bubble up
     event.stopPropagation();
     this.checked = checked;

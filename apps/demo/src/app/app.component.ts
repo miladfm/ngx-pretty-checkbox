@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {ChangeDetectorRef, Component, inject} from '@angular/core';
 import {
   NgxPrettyCheckboxModule,
   NgxPrettyCheckboxComponent,
@@ -15,7 +15,7 @@ import {
   NgxPrettySvgDirective,
   NgxPrettyToggleComponent,
   NgxPrettyToggleWillChangeComponent,
-  PrettyCheckboxStroke
+  PrettyCheckboxStroke, PrettyCheckBoxChange
 } from '@lib/ngx-pretty-checkbox';
 import {FormsModule} from "@angular/forms";
 
@@ -52,6 +52,11 @@ import {FormsModule} from "@angular/forms";
       border-bottom: 1px solid #ccc;
     }
 
+    .row--column {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
     .row > * {
       margin-right: 30px;
     }
@@ -62,4 +67,20 @@ export class AppComponent {
 
   stroke2_2: PrettyCheckboxStroke;
   isSwitch2_2 = true;
+
+  statelessValue = true;
+
+
+  private cd = inject(ChangeDetectorRef);
+
+
+  onStatelessInputChange(change: PrettyCheckBoxChange) {
+    console.log('STATELESS VALUE CHANGES', change);
+    setTimeout(_ => {
+      this.statelessValue = change.checked;
+      this.cd.detectChanges();
+    })
+    console.log('statelessValue CHANGED', this.statelessValue);
+
+  }
 }

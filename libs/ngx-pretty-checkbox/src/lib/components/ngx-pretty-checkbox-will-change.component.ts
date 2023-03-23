@@ -68,6 +68,7 @@ import {NgxPrettyToggleComponent} from "./ngx-pretty-toggle.component";
         [value]="value"
         [checked]="checked"
         [disabled]="disabled"
+        (click)="_onClick($event, inputElem.checked, inputElem.value)"
         (change)="_onChange($event, inputElem.checked, inputElem.value)"/>
 
     <div
@@ -101,6 +102,7 @@ export class NgxPrettyCheckboxWillChangeComponent {
   @Input() checked = false;
   @Input() disabled = false;
   @Input() value: any;
+  @Input() stateless = false;
 
 
   // ----- INPUTS AND BINDING ------
@@ -160,6 +162,15 @@ export class NgxPrettyCheckboxWillChangeComponent {
 
 
   // ---------- PRIVATE METHODS ---------
+  public _onClick(event: Event, checked: boolean, value: string) {
+    if (!this.stateless) {
+      return;
+    }
+    event.stopPropagation();
+    event.preventDefault();
+    this.change.emit({ value, checked, event });
+  }
+
   public _onChange(event: Event, checked: boolean, value: string) {
     // Stop propagation on the change event. Otherwise, the change event, from the input element, will bubble up
     event.stopPropagation();

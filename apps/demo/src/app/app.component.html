@@ -1,7 +1,16 @@
 <h1>Checkbox Demo</h1>
 
-<!------------------------------- 1-1 BASIC ------------------------------->
-<h3> 1-1 Basic</h3>
+<!------------------------------- STATELESS ------------------------------->
+<h3> Stateless</h3>
+<div class="row row--column">
+    <p-checkbox [stateless]="true" [checked]="statelessValue" (change)="onStatelessInputChange($event)">Default</p-checkbox>
+    <p-checkbox will-change [stateless]="true" [checked]="statelessValue" (change)="onStatelessInputChange($event)">Default</p-checkbox>
+    <p>CHECKED: {{statelessValue}}</p>
+    <button (click)="statelessValue = !statelessValue">TOGGLE</button>
+</div>
+
+<!------------------------------- BASIC ------------------------------->
+<h3> Basic</h3>
 <div class="row">
 
     <p-checkbox>Default</p-checkbox>
@@ -11,8 +20,8 @@
 </div>
 
 
-<!------------------------------- 1-2 BASIC DYNAMIC ------------------------------->
-<h3> 1-2 Basic Runtime</h3>
+<!------------------------------- BASIC DYNAMIC ------------------------------->
+<h3> Basic Runtime</h3>
 <div class="row">
 
     <select [(ngModel)]="stroke1_2">
@@ -27,8 +36,8 @@
 </div>
 
 
-<!------------------------------- 2-1 SWITCH ------------------------------->
-<h3> 2-1 Switch</h3>
+<!------------------------------- SWITCH ------------------------------->
+<h3> Switch</h3>
 <div class="row">
 
     <p-checkbox isSwitch="true">Default</p-checkbox>
@@ -38,8 +47,8 @@
 </div>
 
 
-<!------------------------------- 2-2 SWITCH ------------------------------->
-<h3> 2-1 Switch Runtime</h3>
+<!------------------------------- SWITCH DYNAMIC ------------------------------->
+<h3> Switch Runtime</h3>
 <div class="row">
 
     <div>
@@ -58,8 +67,8 @@
 </div>
 
 
-<!------------------------------- 3-1 Mixed (Color) ------------------------------->
-<h3> 3-1 Mixed (Color)</h3>
+<!------------------------------- Mixed (Color) ------------------------------->
+<h3> Mixed (Color)</h3>
 <div class="row">
 
     <p-checkbox isSwitch="true" color="primary">Default</p-checkbox>
