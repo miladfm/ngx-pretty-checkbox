@@ -51,6 +51,7 @@ async function run() {
   printProcess.updateState(PublishPackageStep.CopyAssetsFolder, PrintProcessStepState.Pending);
   cpx.copySync('logo.gif', 'dist/libs/ngx-pretty-checkbox');
   cpx.copySync('preview.gif', 'dist/libs/ngx-pretty-checkbox');
+  cpx.copySync('README.md', 'dist/libs/ngx-pretty-checkbox');
   printProcess.updateState(PublishPackageStep.CopyAssetsFolder, PrintProcessStepState.Done);
 
   // 3- Publish to npm

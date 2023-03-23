@@ -40,18 +40,16 @@
 
 
 
-### Dependencies
+### Changes log
 
-Latest version available for each version of Angular
-
-| ngx-pretty-checkbox | angular      |
-|---------------------|--------------|
-| 15.0.0              | 15.x         |
-| 12.0.0              | 12.x         |
-| 11.0.0              | 11.x         |
-| 1.2.0               | >10.x (ivy)  |
-| 1.1.0               | >8.x         |
-| 1.0.4               | 6.x 7.x      |
+| ngx-pretty-checkbox | angular | feature              |
+|---------------------|---------|----------------------|
+| 15.0.0              | 15.x    | Standalone component |
+| 12.0.0              | 12.x    |                      |
+| 11.0.0              | 11.x    |                      |
+| 1.2.0               | >10.x   | ivy                  |
+| 1.1.0               | >8.x    |                      |
+| 1.0.4               | 6.x 7.x |                      |
 
 ### Installation
 - **Step 1**
@@ -88,21 +86,63 @@ Add dist/pretty-checkbox.min.css file from node_module of pretty-checkbox in you
 
 - **Step 4**
 
-Add ngx-pretty-checkbox in your AppModule
+Add ngx-pretty-checkbox in your AppModule or component to import all standalone components
 ```sh
 import { NgxPrettyCheckboxModule } from 'ngx-pretty-checkbox';
 
 @NgModule({
-  declarations: [ ... ],
   imports: [
     ...,
     NgxPrettyCheckboxModule
   ],
-  providers: [ ... ],
-  bootstrap: [ ... ]
+  ...
 })
 export class AppModule { 
   ...
+}
+```
+
+Or import the ngx-pretty-checkbox standalone components to you component
+```sh
+import {
+  NgxPrettyCheckboxComponent,
+  NgxPrettyCheckboxWillChangeComponent,
+  NgxPrettyHoverComponent,
+  NgxPrettyHoverWillChangeComponent,
+  NgxPrettyIconDirective,
+  NgxPrettyImageDirective,
+  NgxPrettyIndeterminateComponent,
+  NgxPrettyIndeterminateWillChangeComponent,
+  NgxPrettyRadioComponent,
+  NgxPrettyRadioGroupDirective,
+  NgxPrettyRadioWillChangeComponent,
+  NgxPrettySvgDirective,
+  NgxPrettyToggleComponent,
+  NgxPrettyToggleWillChangeComponent,
+} from 'ngx-pretty-checkbox';
+
+@Component({
+  standalone: true,
+  imports: [
+    NgxPrettyCheckboxComponent,
+    NgxPrettyCheckboxWillChangeComponent,
+    NgxPrettyHoverComponent,
+    NgxPrettyHoverWillChangeComponent,
+    NgxPrettyIndeterminateComponent,
+    NgxPrettyIndeterminateWillChangeComponent,
+    NgxPrettyRadioComponent,
+    NgxPrettyRadioWillChangeComponent,
+    NgxPrettyToggleComponent,
+    NgxPrettyToggleWillChangeComponent,
+    NgxPrettyIconDirective,
+    NgxPrettyImageDirective,
+    NgxPrettyRadioGroupDirective,
+    NgxPrettySvgDirective
+  ],
+  selector: 'my-component',
+  ...
+})
+export class MyComponent {
 }
 ```
 <br>
