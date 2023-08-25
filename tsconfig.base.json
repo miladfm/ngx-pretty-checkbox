@@ -10,8 +10,13 @@
     "importHelpers": true,
     "target": "es2020",
     "module": "esnext",
-    "typeRoots": ["node_modules/@types"],
-    "lib": ["esnext", "dom"],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "esnext",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "strictNullChecks": false,
@@ -25,5 +30,8 @@
       ]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }

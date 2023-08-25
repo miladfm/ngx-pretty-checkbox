@@ -6,12 +6,13 @@
   "prefix": "app",
   "targets": {
     "build": {
-      "executor": "@nrwl/angular:package",
+      "executor": "@nx/angular:package",
       "outputs": [
         "{workspaceRoot}/dist/{projectRoot}"
       ],
       "options": {
-        "project": "libs/ngx-pretty-checkbox/ng-package.json"
+        "project": "libs/ngx-pretty-checkbox/ng-package.json",
+        "updateBuildableProjectDepsInPackageJson": true
       },
       "configurations": {
         "production": {
@@ -24,7 +25,7 @@
       "defaultConfiguration": "production"
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
+      "executor": "@nx/jest:jest",
       "outputs": [
         "{workspaceRoot}/coverage/{projectRoot}"
       ],
@@ -40,7 +41,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "outputs": [
         "{options.outputFile}"
       ],
