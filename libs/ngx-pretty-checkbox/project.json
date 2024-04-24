@@ -11,8 +11,7 @@
         "{workspaceRoot}/dist/{projectRoot}"
       ],
       "options": {
-        "project": "libs/ngx-pretty-checkbox/ng-package.json",
-        "updateBuildableProjectDepsInPackageJson": true
+        "project": "libs/ngx-pretty-checkbox/ng-package.json"
       },
       "configurations": {
         "production": {
