@@ -5,7 +5,7 @@
     "start:demo": "nx run demo:serve",
     "start:git-page": "nx run git-page:serve",
     "build:lib": "nx run libs-ngx-pretty-checkbox:build:production",
-    "publish": "npx ts-node-esm tools/publish/main.ts"
+    "publish": "npx tsx tools/publish/main.ts"
   },
   "private": true,
   "dependencies": {
