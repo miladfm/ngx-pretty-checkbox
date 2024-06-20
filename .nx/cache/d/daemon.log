@@ -1,0 +1,70 @@
+[NX Daemon Server] - 2024-06-20T21:45:48.924Z - Started listening on: /var/folders/ps/7tbbqyb12yn475w5vql622ym0000gn/T/54b1a56fb9f0f371c0e4/d.sock
+[NX Daemon Server] - 2024-06-20T21:45:48.926Z - [WATCHER]: Subscribed to changes within: /Users/miladfaghihi/Desktop/projects/personal/ngx-pretty-checkbox (native)
+[NX Daemon Server] - 2024-06-20T21:45:48.934Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-06-20T21:45:48.934Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-06-20T21:45:48.935Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-06-20T21:45:48.936Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-06-20T21:45:48.962Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-06-20T21:45:48.962Z - [REQUEST]: 
+[NX Daemon Server] - 2024-06-20T21:45:48.962Z - [REQUEST]: 
+[NX Daemon Server] - 2024-06-20T21:45:49.127Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-06-20T21:45:49.127Z - Time taken for 'total for creating and serializing project graph' 190.88183403015137ms
+[NX Daemon Server] - 2024-06-20T21:45:49.129Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-06-20T21:45:49.129Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 191. Response time: 2.
+[NX Daemon Server] - 2024-06-20T21:45:49.134Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-06-20T21:45:49.135Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-06-20T21:45:49.135Z - Time taken for 'total for creating and serializing project graph' 1.1457499265670776ms
+[NX Daemon Server] - 2024-06-20T21:45:49.136Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-06-20T21:45:49.136Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 1.
+[NX Daemon Server] - 2024-06-20T21:45:49.140Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-06-20T21:46:28.563Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-06-20T21:46:28.627Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-06-20T21:46:33.946Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-06-20T21:46:34.005Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-06-20T21:47:04.258Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-06-20T21:47:04.258Z - [WATCHER]: Stopping the watcher for /Users/miladfaghihi/Desktop/projects/personal/ngx-pretty-checkbox (sources)
+[NX Daemon Server] - 2024-06-20T21:47:04.258Z - [WATCHER]: Stopping the watcher for /Users/miladfaghihi/Desktop/projects/personal/ngx-pretty-checkbox (outputs)
+[NX Daemon Server] - 2024-06-20T21:47:04.258Z - Server stopped because: "Lock file changed"
+[NX Daemon Server] - 2024-06-20T21:53:47.564Z - Started listening on: /var/folders/ps/7tbbqyb12yn475w5vql622ym0000gn/T/54b1a56fb9f0f371c0e4/d.sock
+[NX Daemon Server] - 2024-06-20T21:53:47.569Z - [WATCHER]: Subscribed to changes within: /Users/miladfaghihi/Desktop/projects/personal/ngx-pretty-checkbox (native)
+[NX Daemon Server] - 2024-06-20T21:53:47.575Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-06-20T21:53:47.576Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-06-20T21:53:47.576Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-06-20T21:53:47.577Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-06-20T21:53:47.596Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-06-20T21:53:47.596Z - [REQUEST]: 
+[NX Daemon Server] - 2024-06-20T21:53:47.596Z - [REQUEST]: 
+[NX Daemon Server] - 2024-06-20T21:53:47.690Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-06-20T21:53:47.691Z - Time taken for 'total for creating and serializing project graph' 113.08245897293091ms
+[NX Daemon Server] - 2024-06-20T21:53:47.695Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-06-20T21:53:47.695Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 113. Response time: 5.
+[NX Daemon Server] - 2024-06-20T21:53:47.708Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-06-20T21:53:47.708Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-06-20T21:53:47.709Z - Time taken for 'total for creating and serializing project graph' 0.7203340530395508ms
+[NX Daemon Server] - 2024-06-20T21:53:47.726Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-06-20T21:53:47.726Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 18.
+[NX Daemon Server] - 2024-06-20T21:53:47.730Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-06-20T21:53:47.730Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-06-20T21:53:47.731Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-06-20T21:53:47.732Z - Time taken for 'total for creating and serializing project graph' 0.5745000839233398ms
+[NX Daemon Server] - 2024-06-20T21:53:47.735Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-06-20T21:53:47.735Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 4.
+[NX Daemon Server] - 2024-06-20T21:54:27.142Z - [WATCHER]: libs/ngx-pretty-checkbox/package.json was modified
+[NX Daemon Server] - 2024-06-20T21:54:27.143Z - [REQUEST]: Responding to the client. File watch changed
+[NX Daemon Server] - 2024-06-20T21:54:27.143Z - Done responding to the client File watch changed
+[NX Daemon Server] - 2024-06-20T21:54:27.143Z - Handled FILE-WATCH-CHANGED. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-06-20T21:54:27.143Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-06-20T21:54:27.143Z - Time taken for 'changed-projects' 0.2603750228881836ms
+[NX Daemon Server] - 2024-06-20T21:54:27.244Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-06-20T21:54:27.244Z - [REQUEST]: libs/ngx-pretty-checkbox/package.json
+[NX Daemon Server] - 2024-06-20T21:54:27.245Z - [REQUEST]: 
+[NX Daemon Server] - 2024-06-20T21:54:27.293Z - Time taken for 'Load Nx Plugin: /Users/miladfaghihi/Desktop/projects/personal/ngx-pretty-checkbox/node_modules/nx/src/plugins/project-json/build-nodes/package-json-next-to-project-json' 0.2424999475479126ms
+[NX Daemon Server] - 2024-06-20T21:54:27.648Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-06-20T21:54:27.649Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-06-20T21:54:27.649Z - Time taken for 'total for creating and serializing project graph' 0.5412079095840454ms
+[NX Daemon Server] - 2024-06-20T21:54:27.653Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-06-20T21:54:27.653Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 4.
+[NX Daemon Server] - 2024-06-20T21:55:28.086Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-06-20T21:55:28.086Z - [WATCHER]: Stopping the watcher for /Users/miladfaghihi/Desktop/projects/personal/ngx-pretty-checkbox (sources)
+[NX Daemon Server] - 2024-06-20T21:55:28.086Z - [WATCHER]: Stopping the watcher for /Users/miladfaghihi/Desktop/projects/personal/ngx-pretty-checkbox (outputs)
+[NX Daemon Server] - 2024-06-20T21:55:28.086Z - Server stopped because: "Lock file changed"
